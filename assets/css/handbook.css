@@ -230,17 +230,17 @@ figcaption { color: var(--muted); font-size: 12.5px; margin-top: 6px; }
 
 body.print { font-size: 9.6pt; line-height: 1.42; }
 
-/* full-bleed cover page */
+/* full-bleed cover page — absolute positioning (WeasyPrint has no CSS grid) */
 .p-cover {
   page: cover; position: relative; width: 210mm; height: 297mm; overflow: hidden;
-  display: grid; grid-template-columns: 30% 70%; page-break-after: always;
+  page-break-after: always;
 }
-.p-cover .cover-pattern { background: var(--pattern); background-size: 22mm 22mm; }
-.p-cover .cover-photo { background-size: cover; background-position: center; }
-.p-cover .cover-title { position: absolute; left: 30%; top: 44%; transform: translateX(-14mm); background:#fff; padding: 9mm 11mm 7mm; }
-.p-cover .cover-title h1 { margin:0; color: var(--teal); text-transform: uppercase; font-weight: 700; font-size: 34pt; line-height: .98; }
-.p-cover .cover-title p { margin: 4mm 0 0; text-transform: uppercase; letter-spacing:.18em; font-size: 10pt; font-weight: 500; }
-.p-cover .cover-logo { position: absolute; right: 12mm; bottom: 12mm; color:#fff; font-size: 13pt; }
+.p-cover .cover-pattern { position: absolute; top: 0; left: 0; width: 32%; height: 100%; background: var(--pattern); background-size: 22mm 22mm; }
+.p-cover .cover-photo   { position: absolute; top: 0; right: 0; width: 68%; height: 100%; background-size: cover; background-position: center; }
+.p-cover .cover-title   { position: absolute; left: 14mm; top: 44%; width: 150mm; background: #fff; padding: 9mm 11mm 7mm; }
+.p-cover .cover-title h1 { margin: 0; color: var(--teal); text-transform: uppercase; font-weight: 700; font-size: 40pt; line-height: .96; }
+.p-cover .cover-title p { margin: 4mm 0 0; color: #333; text-transform: uppercase; letter-spacing: .18em; font-size: 11pt; font-weight: 500; }
+.p-cover .cover-logo { position: absolute; right: 12mm; bottom: 12mm; color: #fff; font-size: 13pt; }
 
 /* master contents */
 .p-contents { page-break-after: always; padding-top: 6mm; }
@@ -272,10 +272,23 @@ body.print { font-size: 9.6pt; line-height: 1.42; }
 .p-body > h2:first-child { column-span: all; }
 .p-body h2 { column-span: all; font-size: 30pt; margin: 2mm 0 4mm; }
 .p-body .quote { column-span: all; }
-.p-body .people-grid, .p-body .cards { column-span: all; }
 .p-body .hero-img { column-span: all; max-height: 78mm; }
 .p-body h3 { font-size: 12pt; }
 .p-body h4 { font-size: 10pt; }
+
+/* People / card grids: WeasyPrint has no CSS grid, so use inline-block
+   columns (which it supports) to reproduce the multi-up layout. */
+.p-body .people-grid, .p-body .cards { column-span: all; display: block; font-size: 0; }
+.p-body .people-grid .person {
+  display: inline-block; width: 32%; margin: 0 0.6% 5mm; vertical-align: top;
+  font-size: 9pt;
+}
+.p-body .cards .card {
+  display: inline-block; width: 48%; margin: 0 0.9% 5mm; vertical-align: top;
+  font-size: 9pt; border-top: 2pt solid var(--teal); padding-top: 3mm;
+}
+.p-body .people-grid .person h4, .p-body .cards .card h4 { font-size: 10.5pt; }
+.p-body .cards .card p, .p-body .cards .card li { font-size: 8.6pt; }
 .p-body .quote p { font-size: 15pt; }   /* clamp() not needed in fixed paged media */
 
 .p-thankyou { page: divider; position: relative; width: 210mm; height: 297mm; background: var(--teal); color:#fff; }
