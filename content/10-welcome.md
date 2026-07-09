@@ -16,7 +16,7 @@ toc:
   - ["NYUAD Shared Governance", 17]
 ---
 
-##### Welcome to the Division
+##### Welcome to the Division Test
 
 ![Welcome from the Dean of Science](assets/images/hero-welcome.png){.hero-img}
 
