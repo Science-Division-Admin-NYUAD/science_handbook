@@ -10,7 +10,7 @@
 
   <header class="site-header">
     <a class="wordmark" href="index.html">
-      <span class="nyu">NYU</span><span class="bar"></span><span class="ad">ABU&nbsp;DHABI</span>
+      <img class="logo-img" src="{{ logo }}" alt="NYU Abu Dhabi">
     </a>
     <nav class="site-nav">
       {% for s in nav %}
@@ -29,7 +29,7 @@
       <p>A Handbook for New Joiners</p>
     </div>
     <div class="cover-logo">
-      <span class="nyu">NYU</span><span class="bar"></span><span class="ad">ABU&nbsp;DHABI</span>
+      <img class="logo-img" src="{{ logo }}" alt="NYU Abu Dhabi">
     </div>
   </section>
 
@@ -54,10 +54,10 @@
     <div class="divider-inner wrap">
       <p class="eyebrow">Section {{ page.order }}</p>
       <h1>{{ page.title }}</h1>
-      {% if page.toc %}
+      {% if page.subsections %}
       <ul class="divider-toc">
-        {% for item in page.toc %}
-        <li><span class="dt-name">{{ item[0] }}</span><span class="dt-page">{{ '%02d'|format(item[1]) }}</span></li>
+        {% for sub in page.subsections %}
+        <li><a href="#{{ sub.id }}">{{ sub.name }}</a></li>
         {% endfor %}
       </ul>
       {% endif %}

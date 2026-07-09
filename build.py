@@ -32,6 +32,7 @@ SITE = ROOT / "site"
 
 SITE_TITLE = "Division of Science — New Joiners Handbook"
 PDF_NAME = "handbook.pdf"
+LOGO = "assets/images/Digital-NO-LINE-NYUAD-white.png"  # white NYUAD logo
 
 # GitHub repo + workflow used for the build-status badge on the website.
 REPO = "Science-Division-Admin-NYUAD/science_handbook"
@@ -95,10 +96,15 @@ def render_markdown(body: str) -> str:
             "md_in_html",    # parse markdown inside our <div> wrappers
             "sane_lists",
             "smarty",        # curly quotes / dashes, like the print original
+            "toc",           # adds id="" anchors to every heading
         ],
+        extension_configs={"toc": {"toc_depth": "2-2"}},  # collect only <h2>
         output_format="html5",
     )
-    return md.convert(body)
+    html = md.convert(body)
+    # md.toc_tokens holds the <h2> headings (id + text) for in-page nav.
+    subsections = [{"id": t["id"], "name": t["name"]} for t in md.toc_tokens]
+    return html, subsections
 
 
 # ---------------------------------------------------------------------------
@@ -111,7 +117,7 @@ def load_sections():
         meta, body = split_front_matter(path.read_text(encoding="utf-8"))
         meta.setdefault("order", 999)
         meta.setdefault("slug", path.stem)
-        meta["html"] = render_markdown(body)
+        meta["html"], meta["subsections"] = render_markdown(body)
         meta["source"] = path.name
         sections.append(meta)
     sections.sort(key=lambda s: s["order"])
@@ -152,6 +158,7 @@ def build_site(sections):
             pdf_name=PDF_NAME,
             badge_img=BADGE_IMG,
             badge_link=BADGE_LINK,
+            logo=LOGO,
             mode="screen",
         )
         (SITE / target).write_text(html, encoding="utf-8")
@@ -163,7 +170,7 @@ def build_pdf(sections):
 
     env = jinja_env()
     print_tpl = env.get_template("print.html.j2")
-    html = print_tpl.render(site_title=SITE_TITLE, sections=sections)
+    html = print_tpl.render(site_title=SITE_TITLE, sections=sections, logo=LOGO)
     # Render relative to SITE so assets/ resolves for both HTML and PDF.
     out = SITE / PDF_NAME
     HTML(string=html, base_url=str(SITE)).write_pdf(str(out))

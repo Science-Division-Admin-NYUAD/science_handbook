@@ -1,6 +1,6 @@
 ---
 order: 1
-title: "Welcome to the Division"
+title: "Welcome to the Division of Science"
 nav_label: "Welcome"
 slug: welcome
 hero: hero-welcome.png
@@ -16,7 +16,7 @@ toc:
   - ["NYUAD Shared Governance", 17]
 ---
 
-##### Welcome to the Division Test
+##### Welcome to the Division
 
 ![Welcome from the Dean of Science](assets/images/hero-welcome.png){.hero-img}
 
@@ -38,8 +38,11 @@ Welcome once again to the Division of Science at NYU Abu Dhabi. I look forward t
 
 Warm regards,
 
+::: signature
 **Marta Losada**
+
 Dean of Science, NYU Abu Dhabi
+:::
 
 ## Inclusion, Diversity, Belonging, and Equity at NYUAD
 

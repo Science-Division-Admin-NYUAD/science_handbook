@@ -91,5 +91,8 @@ If you have not already, you will soon be receiving an introductory email and fu
 
 Warm regards,
 
+::: signature
 **Eve Johnston**
+
 Associate Dean of Administration and Planning, NYU Abu Dhabi
+:::

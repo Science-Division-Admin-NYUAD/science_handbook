@@ -46,6 +46,12 @@ a { color: var(--teal-dark); }
 .wordmark .ad,  .cover-logo .ad  { font-weight: 400; }
 .wordmark .bar, .cover-logo .bar { width: 1px; height: 1em; background: currentColor; opacity: .6; }
 
+/* NYUAD logo image (white, transparent) — used on teal / photo backgrounds */
+.logo-img { display: block; width: auto; }
+.site-header .logo-img { height: 26px; }
+.cover-logo .logo-img { height: 34px; }
+.p-cover .cover-logo .logo-img { height: 11mm; }
+
 /* ==========================================================================
    SCREEN — website chrome
    ========================================================================== */
@@ -126,13 +132,13 @@ body.screen .divider h1 {
   font-weight: 300; text-transform: uppercase; font-size: clamp(34px,6vw,58px);
   line-height: 1.02; margin: 0 0 22px; letter-spacing: -.5px;
 }
-.divider-toc { list-style: none; margin: 0; padding: 0; max-width: 560px; }
-.divider-toc li {
-  display: flex; justify-content: space-between; gap: 16px;
-  padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,.25);
+.divider-toc { list-style: none; margin: 0; padding: 0; max-width: 640px; }
+.divider-toc li { border-bottom: 1px solid rgba(255,255,255,.25); }
+.divider-toc li a {
+  display: block; padding: 9px 2px; color: #fff; text-decoration: none;
   text-transform: uppercase; letter-spacing: .04em; font-size: 13.5px;
 }
-.dt-page { opacity: .85; }
+.divider-toc li a:hover { background: rgba(255,255,255,.12); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ==========================================================================
    ARTICLE TYPOGRAPHY (shared screen + print)
@@ -145,6 +151,7 @@ body.screen .article { padding-bottom: 60px; border-top: 3px solid var(--rule); 
   color: var(--teal); font-weight: 300; text-transform: uppercase;
   font-size: 40px; line-height: 1.02; letter-spacing: -.5px;
   margin: 8px 0 18px;
+  scroll-margin-top: 84px;   /* clear the sticky header when jumped to */
 }
 .article h3, .p-body h3 {
   color: var(--teal); font-weight: 700; text-transform: uppercase;
@@ -200,8 +207,15 @@ figcaption { color: var(--muted); font-size: 12.5px; margin-top: 6px; }
 /* Callout / note --------------------------------------------------------- */
 .note { border-left: 3px solid var(--teal); background: #f2fafc; padding: 12px 16px; margin: 16px 0; font-size: 14px; }
 
-/* Hero image at top of a section ---------------------------------------- */
-.hero-img { width: 100%; max-height: 360px; object-fit: cover; margin: 0 0 22px; }
+/* Hero image at top of a section — show the whole photo, never crop ------ */
+.hero-img { display: block; width: 100%; height: auto; margin: 0 0 22px; }
+
+/* Signature block (name on its own line, role beneath) ------------------- */
+.signature { margin: 6px 0 2px; }
+.signature p { margin: 0; line-height: 1.35; }
+.signature p:first-child { color: var(--teal); font-weight: 600; font-size: 16px; }
+.signature p:first-child strong { font-weight: 600; }
+.p-body .signature p:first-child { font-size: 12pt; }
 
 /* ---------- Footer (screen) -------------------------------------------- */
 .site-footer { background: #f3f5f6; margin-top: 40px; padding: 22px 0; font-size: 13.5px; color: var(--muted); }
