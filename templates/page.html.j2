@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.cover %}{{ site_title }}{% else %}{{ page.title }} — Division of Science{% endif %}</title>
+  <link rel="stylesheet" href="assets/css/handbook.css">
+</head>
+<body class="screen {% if page.cover %}is-cover{% endif %}">
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">
+      <span class="nyu">NYU</span><span class="bar"></span><span class="ad">ABU&nbsp;DHABI</span>
+    </a>
+    <nav class="site-nav">
+      {% for s in nav %}
+      <a href="{{ s.slug }}.html" {% if s.slug == page.slug %}class="active"{% endif %}>{{ s.nav_label or s.title }}</a>
+      {% endfor %}
+    </nav>
+    <a class="pdf-btn" href="{{ pdf_name }}" download>Download PDF</a>
+  </header>
+
+  {% if page.cover %}
+  <section class="cover">
+    <div class="cover-pattern"></div>
+    <div class="cover-photo" style="background-image:url('assets/images/{{ page.hero }}')"></div>
+    <div class="cover-title">
+      <h1>Welcome to<br>the Division<br>of Science</h1>
+      <p>A Handbook for New Joiners</p>
+    </div>
+    <div class="cover-logo">
+      <span class="nyu">NYU</span><span class="bar"></span><span class="ad">ABU&nbsp;DHABI</span>
+    </div>
+  </section>
+
+  <section class="cover-toc wrap">
+    <h2>Contents</h2>
+    <div class="toc-grid">
+      {% for s in nav %}
+      <a class="toc-card" href="{{ s.slug }}.html">
+        {% if s.hero %}<span class="toc-thumb" style="background-image:url('assets/images/{{ s.hero }}')"></span>{% endif %}
+        <span class="toc-meta">
+          <span class="toc-name">{{ s.title }}</span>
+          {% if s.toc %}<span class="toc-sub">{% for item in s.toc %}{{ item[0] }}{% if not loop.last %} · {% endif %}{% endfor %}</span>{% endif %}
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% else %}
+  <section class="divider">
+    <div class="arch"></div>
+    <div class="divider-inner wrap">
+      <p class="eyebrow">Section {{ page.order }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.toc %}
+      <ul class="divider-toc">
+        {% for item in page.toc %}
+        <li><span class="dt-name">{{ item[0] }}</span><span class="dt-page">{{ '%02d'|format(item[1]) }}</span></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </section>
+
+  <main class="article wrap">
+    {{ page.html | safe }}
+  </main>
+  {% endif %}
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Division of Science · New Joiners Handbook</span>
+      <span class="footer-links">
+        <a class="build-badge" href="{{ badge_link }}" title="Latest build status">
+          <img src="{{ badge_img }}" alt="Build status">
+        </a>
+        <a href="{{ pdf_name }}" download>Download the full handbook (PDF)</a>
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>

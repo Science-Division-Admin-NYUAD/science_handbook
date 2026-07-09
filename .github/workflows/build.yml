@@ -1,0 +1,87 @@
+name: Build handbook (site + PDF)
+
+# What this does:
+#  - On every pull request      -> build the website AND the PDF as a check,
+#                                  and upload them as downloadable artifacts.
+#  - On every push to `main`     -> build, then publish the website to
+#                                  GitHub Pages (the PDF travels with the site,
+#                                  reachable at <pages-url>/handbook.pdf).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:        # lets you run it manually from the Actions tab
+
+permissions:
+  contents: read
+  pages: write              # required to deploy to GitHub Pages
+  id-token: write           # required for the Pages deploy action
+
+# Only keep the most recent run per branch; cancel older in-progress ones.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # 1. Build the site + PDF (runs for BOTH pushes and pull requests)
+  # ---------------------------------------------------------------------------
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Install system libraries needed by WeasyPrint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libpango-1.0-0 libpangocffi-0.10 libpangocairo-1.0-0 \
+            libcairo2 libgdk-pixbuf-2.0-0 libffi-dev fonts-dejavu
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build website and PDF
+        run: python build.py
+
+      - name: Upload build artifacts (site + PDF, for review on PRs)
+        uses: actions/upload-artifact@v4
+        with:
+          name: handbook-site
+          path: site/
+
+      - name: Upload the PDF on its own (easy to download)
+        uses: actions/upload-artifact@v4
+        with:
+          name: handbook-pdf
+          path: site/handbook.pdf
+
+      - name: Package the site for GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  # ---------------------------------------------------------------------------
+  # 2. Deploy to GitHub Pages (only on push to main)
+  # ---------------------------------------------------------------------------
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

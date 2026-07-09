@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site_title }}</title>
+  <link rel="stylesheet" href="assets/css/handbook.css">
+</head>
+<body class="print">
+
+  {# ---- Cover ---- #}
+  {% set cover = sections | selectattr('cover') | first %}
+  <section class="p-cover">
+    <div class="cover-pattern"></div>
+    <div class="cover-photo" style="background-image:url('assets/images/{{ cover.hero }}')"></div>
+    <div class="cover-title">
+      <h1>Welcome to<br>the Division<br>of Science</h1>
+      <p>A Handbook for New Joiners</p>
+    </div>
+    <div class="cover-logo">
+      <span class="nyu">NYU</span><span class="bar"></span><span class="ad">ABU&nbsp;DHABI</span>
+    </div>
+  </section>
+
+  {# ---- Master contents ---- #}
+  <section class="p-contents">
+    <h1>Contents</h1>
+    {% for s in sections if not s.cover %}
+    <div class="contents-block">
+      <h2>{{ s.title }}</h2>
+      {% if s.toc %}
+      <ul>
+        {% for item in s.toc %}
+        <li><span>{{ item[0] }}</span><span class="cp">{{ '%02d'|format(item[1]) }}</span></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  {# ---- Sections ---- #}
+  {% for s in sections if not s.cover %}
+  <section class="p-divider">
+    <div class="arch"></div>
+    <div class="divider-inner">
+      <p class="eyebrow">Section {{ s.order }}</p>
+      <h1>{{ s.title }}</h1>
+      {% if s.toc %}
+      <ul class="divider-toc">
+        {% for item in s.toc %}
+        <li><span class="dt-name">{{ item[0] }}</span><span class="dt-page">{{ '%02d'|format(item[1]) }}</span></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="p-body">
+    {{ s.html | safe }}
+  </section>
+  {% endfor %}
+
+  <section class="p-thankyou">
+    <div class="arch"></div>
+    <h1>Thank You</h1>
+  </section>
+
+</body>
+</html>
