@@ -8,7 +8,7 @@ This repository holds the **NYU Abu Dhabi Division of Science "New Joiners Handb
 
 The handbook is written once, in plain text files, and is automatically turned into **two things**:
 
-1. **A website** — published with GitHub Pages.
+1. **A website** — published with GitHub Pages.  https://science-division-admin-nyuad.github.io/science_handbook/
 2. **A PDF** — a print-ready copy that looks like the original booklet. A **Download PDF** link appears on every page of the website.
 
 You never edit the website or the PDF directly. You edit the text files, and a robot (a "GitHub Action") rebuilds both for you every time a change is approved.
