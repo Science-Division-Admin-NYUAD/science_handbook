@@ -46,6 +46,8 @@ Dean of Science, NYU Abu Dhabi
 
 ## Inclusion, Diversity, Belonging, and Equity at NYUAD
 
+![Inclusion, diversity, belonging and equity at NYUAD](assets/images/scene-p06.jpg){.hero-img}
+
 The values of inclusion, diversity, belonging, and equity (IDBE) have been fundamental to NYUAD since its inception, and are reflected in our mission and values.
 
 All University community members are expected to uphold these values through active work and the ongoing pursuit of education, engagement, self-reflection, and a willingness to advance practices that lead to a more inclusive institution.
@@ -53,6 +55,8 @@ All University community members are expected to uphold these values through act
 The Division of Science is deeply committed to fostering inclusion, diversity, belonging, and equity across all facets of our operations, from our robust recruitment processes, through to our teaching curriculum, targeted research projects and Global Perspectives in Science Seminar Series. (See section three.)
 
 ## Teaching
+
+![Teaching in the Division of Science](assets/images/hero-teaching.png){.hero-img}
 
 ### Academic Programs
 
@@ -190,6 +194,9 @@ NYUAD has dedicated significant resources to developing one of the premier scien
 Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the CTP equipment and contact details on the Intranet.
 
 #### Library and Academic Technology
+
+![NYUAD Library](assets/images/scene-p12.jpg){.hero-img}
+
 Service to scholars is the primary mission of the NYUAD Library. Members of the NYU community have access to our extensive range of physical and electronic resources, including: over 88,000 physical books; over 6,000 DVDs; over 250,000 e-journals; over 1,400 databases; nearly 3 million e-books; and a wide range of equipment and software to help with research and teaching.
 
 The NYUAD Library is fully connected to NYU Libraries e-resources in New York, providing seamless access for our global scholars. These electronic resources are accessible within the library and remotely. Additionally, if a resource cannot be found in the main collection, eligible borrowers may request it from NYU Bobst Library or other libraries around the world. Dedicated to your academic needs and to those of your students is Amani Magid, Coordinator of Library Instruction; Associate Academic Librarian for the Sciences and Engineering. Contact: am6087@nyu.edu
@@ -322,6 +329,8 @@ Administrative Coordinator
 :::
 
 ## NYUAD Shared Governance
+
+![NYUAD shared governance](assets/images/scene-p17.jpg){.hero-img}
 
 #### Faculty Meetings
 Formal program faculty meetings are scheduled regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.

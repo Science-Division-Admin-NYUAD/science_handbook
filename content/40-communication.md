@@ -17,6 +17,8 @@ toc:
 
 ## Communication
 
+![NYUAD Library](assets/images/scene-p44.jpg){.hero-img}
+
 ### Newsletters
 
 #### Institutional Newsletters
@@ -108,6 +110,8 @@ Announcements: psychology.announcementsgroups@nyu.edu
 :::
 
 ## Activity Reporting
+
+![Activity reporting](assets/images/scene-p46.jpg){.hero-img}
 
 #### Faculty 180
 Each year, all NYU faculty from all of the NYU campuses report on their activities: teaching, research, and service. NYU uses this centralized system to generate reports, celebrate faculty successes and awards, and to minimize the information requests we send to faculty. You will submit your report using Interfolio Faculty 180 (F180). Entries are used to create research reports for the Division, and for use in the APR and accreditation documents. You will receive an email copy of your submissions which you can file for future reference.

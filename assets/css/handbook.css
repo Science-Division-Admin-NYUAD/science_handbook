@@ -48,8 +48,8 @@ a { color: var(--teal-dark); }
 
 /* NYUAD logo image (white, transparent) — used on teal / photo backgrounds */
 .logo-img { display: block; width: auto; }
-.site-header .logo-img { height: 26px; }
-.cover-logo .logo-img { height: 34px; }
+.site-header .logo-img { height: 46px; }
+.cover-logo .logo-img { height: 40px; }
 .p-cover .cover-logo .logo-img { height: 11mm; }
 
 /* ==========================================================================
@@ -285,8 +285,14 @@ body.print { font-size: 9.6pt; line-height: 1.42; }
 .p-body { columns: 2; column-gap: 9mm; padding-top: 2mm; }
 .p-body > h2:first-child { column-span: all; }
 .p-body h2 { column-span: all; font-size: 30pt; margin: 2mm 0 4mm; }
-.p-body .quote { column-span: all; }
-.p-body .hero-img { column-span: all; max-height: 78mm; }
+/* Each pull-quote gets its own teal page, like the original booklet */
+.p-body .quote {
+  column-span: all; break-before: page; break-after: page;
+  background: var(--teal); color: #fff; padding: 95mm 22mm; margin: 0;
+}
+.p-body .quote p { font-size: 21pt; line-height: 1.3; text-align: center; font-style: italic; }
+/* Photos: scale to fit, preserve aspect ratio (never crop or stretch) */
+.p-body .hero-img { column-span: all; width: auto; max-width: 100%; max-height: 92mm; margin: 3mm 0 5mm; }
 .p-body h3 { font-size: 12pt; }
 .p-body h4 { font-size: 10pt; }
 

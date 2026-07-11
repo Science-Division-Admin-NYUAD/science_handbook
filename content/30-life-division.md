@@ -18,6 +18,8 @@ toc:
 
 ## Teaching
 
+![Course preparation and teaching](assets/images/scene-p33.jpg){.hero-img}
+
 ### Academic Calendar
 All academic calendars can be viewed on the Intranet. The calendar includes semester start dates, add/drop periods for courses, and important public holidays in the UAE.
 
@@ -64,6 +66,8 @@ Some things to keep in mind:
 
 ## Teaching & Learning Resources
 
+![Teaching and learning resources](assets/images/scene-p34.jpg){.hero-img}
+
 #### The Office of Undergraduate Education
 The Office of Undergraduate Education focuses on undergraduate teaching, learning, and academic mentoring. Areas that fall within Undergraduate Education include the Core Curriculum, John Sexton and Lisa Goldberg Academic Resource Center, Writing Center, Hilary Ballon Center for Excellence in Teaching and Learning, Registrar, Academic Policies, and the Office of Student Research.
 
@@ -91,6 +95,8 @@ Participate in our cutting-edge research initiatives, take full advantage of the
 
 ## Research
 
+![Research at NYUAD](assets/images/scene-p36.jpg){.hero-img}
+
 ### Research Fund Essentials
 
 #### Chartfields and UDW+
@@ -113,6 +119,8 @@ Cayuse SP is an online tool used by PIs and Administrators to collaborate on and
 All research travel should be booked through the University's travel agency, Nirvana, using the Concur software platform. Guidelines are available along with the Travel and Travel-Related Expense Reimbursement Policy. We encourage you to familiarize yourself with the policy before planning or booking any travel.
 
 ### Research: Space and Safety
+
+![Research space and safety](assets/images/scene-p38.jpg){.hero-img}
 
 #### Space Access Requests
 Space access requests should be submitted to Public Safety. Requests will be approved based on the expectation that a person has already, or will as soon as possible, complete all OSHMS and EHS training requirements. Non-compliance will result in access being revoked.
@@ -141,6 +149,8 @@ All personnel should be aware that "Report It" is the appropriate channel to rep
 
 ## Program Seminar Series & Research Talks
 
+![Program seminars and research talks](assets/images/scene-p40.jpg){.hero-img}
+
 #### Program Seminar Series
 Each program in the Division of Science hosts a collection of semi-formal weekly talks throughout the academic year. These Seminar Series — or Colloquium Series in the case of Mathematics — build the reputation of the programs, division, and university at large by facilitating networking connections and research collaborations with local and international scholars.
 
@@ -155,6 +165,8 @@ NYUAD offers a complimentary economy return ticket, airport ground transfers in 
 Each month, the Division of Science hosts an international speaker as part of its Global Perspectives in Science Lecture Series. The mission of the series is to expand academic networks by hosting leading scholars who are experts in scientific fields currently unexplored at NYUAD, or who come from regions or institutions with which faculty in the Division of Science have not yet collaborated. Faculty can propose speakers to Julie Brookes at julie.brookes@nyu.edu.
 
 ## Capstones
+
+![Science Capstone Festival](assets/images/scene-p42.jpg){.hero-img}
 
 The Capstone Project is one of the culminating experiences for all students at NYUAD. It is a mandatory requirement and completion is scheduled for the student's fourth year. The Capstone experience in the Division of Science requires students to engage in a long-term, mentored learning experience that culminates in a piece of original research, scientific theory, or both. This approach enables students to:
 

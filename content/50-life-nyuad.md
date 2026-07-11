@@ -16,6 +16,8 @@ toc:
 
 ## Campus Location and Map
 
+![NYUAD campus map](assets/images/campus-map.jpg){.hero-img}
+
 The NYUAD campus is located on Saadiyat Island. A place dedicated to innovation, creativity, research, and knowledge, Saadiyat is also home to Louvre Abu Dhabi, Berklee Abu Dhabi, and Manarat Al Saadiyat, and is the future home of Zayed National Museum, Guggenheim Abu Dhabi, Natural History Museum Abu Dhabi, and teamLab Phenomena Abu Dhabi.
 
 Adjacent to Abu Dhabi's mainland and surrounded by natural mangroves and beautiful beaches, Saadiyat brings together diverse cultures and fosters knowledge and understanding through its museums, educational, and cultural institutions.
@@ -31,6 +33,8 @@ For non-emergencies, but urgent care, call Campus Safety at 02 628-7777 (87777) 
 The purpose of the NYUAD Department of Campus Safety is to create, promote, and preserve a safe and secure University environment. Any incident involving NYUAD premises or community members may be reported to the NYUAD Department of Campus Safety via +971 2 628-7777, nyuad.campussafety247@nyu.edu, or via the Safe NYU app.
 
 ## Community Life
+
+![Community life at NYUAD](assets/images/scene-p49.jpg){.hero-img}
 
 ::: cards
 ::: card
@@ -104,6 +108,8 @@ Inspired by Sheikh Zayed's vision and legacy, NYUAD is dedicated to fostering a 
 - **Green Workplace Certification:** NYUAD recognizes efforts to improve the sustainability of the workplace.
 
 ## NYUAD Public Programs
+
+![NYUAD Arts Center](assets/images/scene-p52.jpg){.hero-img}
 
 #### The NYUAD Institute
 A center of advanced research, scholarly, and creative activity, the NYU Abu Dhabi Institute was established in 2008 for Abu Dhabi, the UAE, and the world. A cornerstone of academic excellence, the Institute brings together academics, professionals, and leaders from around the world to its academic conferences and public programs to discuss research areas and topics of local and global significance. Institute talks, conferences, research workshops, public lectures, film screenings, and exhibitions explore topics central to NYUAD academic and research pursuits, including sustainability, urban planning, climate change, peace, genomics, and world finance.
