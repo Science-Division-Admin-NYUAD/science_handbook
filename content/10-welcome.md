@@ -287,44 +287,57 @@ Associate Program Head for Undergraduate Studies of Psychology; Associate Profes
 
 ::: people-grid
 ::: person
-#### Eve Johnston
-Associate Dean of Administration and Planning
-<span class="email">ej21@nyu.edu</span>
+#### Marta Martinez
+Assistant Manager, Division of Science
+
+<span class="email">mmc826@nyu.edu</span>
 :::
 ::: person
 #### Julie Brookes
 Manager of Curriculum Affairs and Special Projects
+
 <span class="email">jcb22@nyu.edu</span>
 :::
 ::: person
 #### Emma Baker
 Operations Manager
+
 <span class="email">elb7@nyu.edu</span>
 :::
 ::: person
 #### Katie Stanworth
-Manager, Communications and Outreach
+Manager
+Communications and Outreach
+
 <span class="email">kls10@nyu.edu</span>
 :::
 ::: person
-#### Marta Martinez
-Assistant Manager, Division of Science
+#### Karima Raafat
+Administrative Coordinator
+Physics & Psychology
+
 <span class="email">mmc826@nyu.edu</span>
 :::
 ::: person
 #### Hend Alhammadi
 Administrative Coordinator
+PASS
+
 <span class="email">ha2456@nyu.edu</span>
 :::
 ::: person
 #### Elie Altenburger
 Administrative Coordinator
+Chemistry & Maths
+
 <span class="email">ea2973@nyu.edu</span>
 :::
 ::: person
-#### Holly Spence
+#### Walah Al Mesmari
 Administrative Coordinator
-<span class="email">hs4100@nyu.edu</span>
+Biology & Computer Science
+
+<span class="email">wha224@nyu.edu</span>
 :::
 :::
 
