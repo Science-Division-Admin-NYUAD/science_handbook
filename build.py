@@ -1,200 +1,176 @@
 #!/usr/bin/env python3
 """
-Build the Division of Science handbook website from the official PDF.
+Build the editable Division of Science handbook website.
 
-The website is intentionally a faithful PDF viewer: each visible page is a
-rendered image of the June 2025 handbook PDF, and the download link points to
-the same source PDF. This keeps the website from drifting away from the PDF.
+The source of truth is the Markdown in content/*.md. The PDF in assets/ is kept
+as a reference download, but the website itself is real text that can be edited,
+linked, styled, and republished from these content files.
 """
 
 from __future__ import annotations
 
+import re
 import shutil
 from pathlib import Path
 
+import markdown
+import yaml
+
 
 ROOT = Path(__file__).parent
+CONTENT = ROOT / "content"
 ASSETS = ROOT / "assets"
-PDF = ASSETS / "handbook.pdf"
-PAGES = ASSETS / "pdf-pages"
 SITE = ROOT / "site"
+CSS = ASSETS / "css" / "site.css"
+PDF = ASSETS / "handbook.pdf"
+
+SITE_TITLE = "Division of Science - New Joiners Handbook"
+
+FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
+FENCE_CLOSE_RE = re.compile(r"^:::\s*$")
 
 
-MAIN_SECTIONS = [
-    ("WELCOME TO THE DIVISION", 4),
-    ("JOINING THE DIVISION", 20),
-    ("LIFE IN THE DIVISION", 33),
-    ("COMMUNICATION", 45),
-    ("LIFE AT NYUAD", 49),
-    ("LIFE IN THE UAE", 55),
-]
+def split_front_matter(text: str) -> tuple[dict, str]:
+    match = FRONT_MATTER_RE.match(text)
+    if not match:
+        return {}, text
+    meta = yaml.safe_load(match.group(1)) or {}
+    return meta, text[match.end():]
 
 
-def page_files() -> list[Path]:
-    pages = sorted(PAGES.glob("page-*.jpg"))
-    if not pages:
-        raise SystemExit("No rendered PDF pages found in assets/pdf-pages.")
-    return pages
+def expand_fences(md_text: str) -> str:
+    out: list[str] = []
+    stack: list[str] = []
+    for line in md_text.splitlines():
+        opened = FENCE_OPEN_RE.match(line)
+        if opened:
+            classes = opened.group("classes").strip()
+            stack.append(classes)
+            out.append(f'<div class="{classes}" markdown="1">')
+            continue
+        if FENCE_CLOSE_RE.match(line) and stack:
+            stack.pop()
+            out.append("</div>")
+            continue
+        out.append(line)
+    while stack:
+        stack.pop()
+        out.append("</div>")
+    return "\n".join(out)
 
 
-def render_index(pages: list[Path]) -> str:
-    page_markup = "\n".join(
-        f'''      <section class="pdf-page" id="page-{i}">
-        <img src="assets/pdf-pages/{page.name}" alt="Handbook page {i}">
-      </section>'''
-        for i, page in enumerate(pages, 1)
+def render_markdown(body: str) -> tuple[str, list[dict[str, str]]]:
+    md = markdown.Markdown(
+        extensions=["extra", "md_in_html", "sane_lists", "toc"],
+        extension_configs={"toc": {"toc_depth": "2-3"}},
+        output_format="html5",
     )
-    section_links = "\n".join(
-        f'      <a href="#page-{page}">{label}</a>' for label, page in MAIN_SECTIONS
+    html = md.convert(expand_fences(body))
+    subsections = [{"id": token["id"], "name": token["name"]} for token in md.toc_tokens]
+    return html, subsections
+
+
+def load_sections() -> list[dict]:
+    sections = []
+    for path in sorted(CONTENT.glob("*.md")):
+        meta, body = split_front_matter(path.read_text(encoding="utf-8"))
+        meta.setdefault("order", 999)
+        meta.setdefault("slug", path.stem)
+        meta["source"] = path.name
+        meta["html"], meta["subsections"] = render_markdown(body)
+        sections.append(meta)
+    return sorted(sections, key=lambda item: item["order"])
+
+
+def nav_items(sections: list[dict]) -> list[dict]:
+    return [section for section in sections if not section.get("cover")]
+
+
+def page_filename(section: dict) -> str:
+    return "index.html" if section.get("cover") else f"{section['slug']}.html"
+
+
+def render_header(nav: list[dict], active_slug: str | None) -> str:
+    links = "\n".join(
+        f'''        <a href="{section['slug']}.html"{" class=\"active\"" if section["slug"] == active_slug else ""}>{section.get("nav_label") or section["title"]}</a>'''
+        for section in nav
+    )
+    return f"""  <header class="topbar">
+    <nav class="main-nav" aria-label="Main sections">
+{links}
+    </nav>
+    <a class="download" href="handbook.pdf" download>Download PDF</a>
+  </header>
+"""
+
+
+def render_cover(section: dict, nav: list[dict]) -> str:
+    cards = "\n".join(
+        f'''      <a class="section-card" href="{item['slug']}.html">
+        <span class="section-name">{item['title']}</span>
+        <span class="section-meta">{len(item.get('subsections', []))} editable subsections</span>
+      </a>'''
+        for item in nav
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Division of Science - New Joiners Handbook</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
-
-    :root {{
-      --teal: #0091b3;
-      --ink: #1f2933;
-      --muted: #697386;
-      --page: #ffffff;
-      --bg: #eef3f6;
-      --rule: #d9e2e8;
-    }}
-    * {{ box-sizing: border-box; }}
-    html {{ scroll-behavior: smooth; }}
-    body {{
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: 'Nunito', Arial, Helvetica, sans-serif;
-      line-height: 1.4;
-    }}
-    .topbar {{
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 8px 14px;
-      background: var(--teal);
-      color: white;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
-    }}
-    .section-nav {{
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 4px;
-      min-width: 0;
-      overflow-x: auto;
-      scrollbar-width: thin;
-    }}
-    .section-nav a {{
-      display: inline-flex;
-      align-items: center;
-      min-height: 34px;
-      padding: 6px 9px;
-      color: white;
-      border-radius: 3px;
-      font-size: 12px;
-      font-weight: 800;
-      text-decoration: none;
-      white-space: nowrap;
-    }}
-    .section-nav a:hover {{
-      background: rgba(255, 255, 255, 0.16);
-    }}
-    .actions {{
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      white-space: nowrap;
-    }}
-    .actions a {{
-      display: inline-flex;
-      align-items: center;
-      min-height: 34px;
-      padding: 7px 12px;
-      border-radius: 4px;
-      background: white;
-      color: #007a95;
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
-    }}
-    .viewer {{
-      width: min(100%, 1060px);
-      margin: 0 auto;
-      padding: 24px 18px 42px;
-    }}
-    .pdf-page {{
-      margin: 0 auto 28px;
-      background: var(--page);
-      box-shadow: 0 2px 14px rgba(20, 35, 45, 0.18);
-    }}
-    .pdf-page img {{
-      display: block;
-      width: 100%;
-      height: auto;
-    }}
-    .footer {{
-      padding: 22px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 13px;
-    }}
-    @media (max-width: 640px) {{
-      .topbar {{
-        align-items: stretch;
-        flex-direction: column;
-      }}
-      .section-nav {{
-        justify-content: flex-start;
-        padding-bottom: 2px;
-      }}
-      .actions {{
-        width: 100%;
-      }}
-      .actions a {{
-        width: 100%;
-        justify-content: center;
-      }}
-      .viewer {{
-        padding-inline: 8px;
-      }}
-    }}
-    @media print {{
-      body {{ background: white; }}
-      .topbar, .footer {{ display: none; }}
-      .viewer {{ width: 100%; padding: 0; }}
-      .pdf-page {{
-        margin: 0;
-        box-shadow: none;
-        page-break-after: always;
-      }}
-    }}
-  </style>
+  <title>{SITE_TITLE}</title>
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <header class="topbar">
-    <nav class="section-nav" aria-label="Main sections">
-{section_links}
-    </nav>
-    <div class="actions">
-      <a href="handbook.pdf" download>Download PDF</a>
-    </div>
-  </header>
-  <main class="viewer">
-{page_markup}
+{render_header(nav, None)}
+  <main class="cover">
+    <section class="cover-hero">
+      <p class="eyebrow">NYU Abu Dhabi</p>
+      <h1>Welcome to the Division of Science</h1>
+      <p class="deck">A handbook for new joiners, now maintained as editable website content.</p>
+    </section>
+    <section class="section-grid" aria-label="Handbook sections">
+{cards}
+    </section>
   </main>
-  <footer class="footer">Division of Science - New Joiners Handbook</footer>
+</body>
+</html>
+"""
+
+
+def render_section(section: dict, nav: list[dict]) -> str:
+    toc = "\n".join(
+        f'''      <a href="#{item['id']}">{item['name']}</a>'''
+        for item in section.get("subsections", [])
+        if item["name"] != section["title"]
+    )
+    toc_block = f"""    <aside class="page-toc" aria-label="On this page">
+      <p>On this page</p>
+{toc}
+    </aside>
+""" if toc else ""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{section['title']} - Division of Science</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+{render_header(nav, section['slug'])}
+  <main class="page-shell">
+    <section class="page-title">
+      <p class="eyebrow">Editable handbook section</p>
+      <h1>{section['title']}</h1>
+    </section>
+    <div class="content-layout">
+{toc_block}
+      <article class="article">
+{section['html']}
+      </article>
+    </div>
+  </main>
 </body>
 </html>
 """
@@ -217,23 +193,25 @@ def render_redirect() -> str:
 
 
 def build_site() -> None:
-    pages = page_files()
-    if not PDF.exists():
-        raise SystemExit("Missing assets/handbook.pdf.")
+    sections = load_sections()
+    nav = nav_items(sections)
+    cover = next((section for section in sections if section.get("cover")), None)
 
     if SITE.exists():
         shutil.rmtree(SITE)
-    (SITE / "assets" / "pdf-pages").mkdir(parents=True)
+    (SITE / "assets" / "css").mkdir(parents=True)
+    shutil.copy2(CSS, SITE / "assets" / "css" / "site.css")
+    if PDF.exists():
+        shutil.copy2(PDF, SITE / "handbook.pdf")
 
-    shutil.copy2(PDF, SITE / "handbook.pdf")
-    for page in pages:
-        shutil.copy2(page, SITE / "assets" / "pdf-pages" / page.name)
-
-    (SITE / "index.html").write_text(render_index(pages), encoding="utf-8")
+    for section in sections:
+        html = render_cover(section, nav) if section.get("cover") else render_section(section, nav)
+        (SITE / page_filename(section)).write_text(html, encoding="utf-8")
     (SITE / "404.html").write_text(render_redirect(), encoding="utf-8")
 
-    print(f"  site: {len(pages)} PDF pages -> {SITE}")
-    print(f"  pdf : {SITE / 'handbook.pdf'}")
+    print(f"  site: {len(sections)} pages -> {SITE}")
+    if PDF.exists():
+        print(f"  pdf : {SITE / 'handbook.pdf'}")
 
 
 if __name__ == "__main__":
