@@ -1,1 +1,2 @@
-# No Python packages are required for the static PDF viewer build.
+Markdown==3.7
+PyYAML==6.0.2
