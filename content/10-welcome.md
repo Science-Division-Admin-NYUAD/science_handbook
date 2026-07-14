@@ -3,7 +3,6 @@ order: 1
 title: "Welcome to the Division of Science"
 nav_label: "Welcome"
 slug: welcome
-hero: hero-welcome.png
 toc:
   - ["Welcome From the Dean of Science", 5]
   - ["Inclusion, Diversity, Belonging and Equity at NYUAD", 6]
@@ -20,7 +19,6 @@ toc:
 
 ##### Welcome to the Division
 
-![Welcome from the Dean of Science](assets/images/hero-welcome.png){.hero-img}
 
 ## Welcome From the Dean of Science
 
@@ -34,7 +32,6 @@ Let us redefine what is possible, together.
 
 ## Inclusion, Diversity, Belonging, and Equity at NYUAD
 
-![Inclusion, diversity, belonging and equity at NYUAD](assets/images/scene-p06.jpg){.hero-img}
 
 The values of inclusion, diversity, belonging, and equity (IDBE) have been fundamental to NYUAD since its inception, and are reflected in our mission and values.
 
@@ -44,7 +41,6 @@ The Division of Science is deeply committed to fostering inclusion, diversity, b
 
 ## Teaching
 
-![Teaching in the Division of Science](assets/images/hero-teaching.png){.hero-img}
 
 ### Academic Programs
 
@@ -178,7 +174,6 @@ One of the most exciting recent initiatives is the launch of *Nova of Celestoria
 
 ## Facilities and Infrastructure
 
-![Facilities and Infrastructure](assets/images/hero-facilities.png){.hero-img}
 
 #### The Experimental Research Building (ERB)
 The ERB is home to many faculty labs and research groups, each one equipped with state-of-the-art technology and equipment. It also houses many Core Technology Platforms, including:
@@ -205,7 +200,6 @@ Support is provided by a team of highly-qualified specialists who maintain and u
 
 #### Library and Academic Technology
 
-![NYUAD Library](assets/images/scene-p12.jpg){.hero-img}
 
 Service to scholars is the primary mission of the NYUAD Library. Members of the NYU community have access to our extensive range of physical and electronic resources, including: over 88,000 physical books; over 6,000 DVDs; over 250,000 e-journals; over 1,400 databases; nearly 3 million e-books; and a wide range of equipment and software to help with research and teaching.
 
@@ -349,7 +343,6 @@ Administrative Coordinator
 
 ## NYUAD Shared Governance
 
-![NYUAD shared governance](assets/images/scene-p17.jpg){.hero-img}
 
 #### Faculty Meetings
 Formal program faculty meetings are scheduled regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.

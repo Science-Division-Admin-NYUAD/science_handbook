@@ -3,7 +3,6 @@ order: 2
 title: "Joining the Division"
 nav_label: "Joining"
 slug: joining
-hero: hero-joining.png
 toc:
   - ["Before You Arrive", 21]
   - ["Traveling to the UAE", 22]
@@ -18,7 +17,6 @@ toc:
 
 ## Before You Arrive
 
-![Arriving at NYUAD](assets/images/scene-p19.jpg){.hero-img}
 
 ### Orientation
 To facilitate a smooth onboarding journey, the Office of Academic Appointments and the Office of Research Appointments are here to provide support. As a starting point, you should complete the following steps before arriving at NYU Abu Dhabi:
@@ -71,7 +69,6 @@ Post-Award Research Administration: nyuad.postaward-researchadmin@nyu.edu
 
 ## Traveling to the UAE
 
-![Traveling to the UAE](assets/images/scene-p20.jpg){.hero-img}
 
 ### Passport and Visa
 The Employee Mobility Services team will arrange your relocation travel with a representative from one of the NYUAD-approved travel agencies, who will contact you with a proposed travel itinerary. Upon confirmation of your travel choice, the agent will book your relocation flight to Abu Dhabi and provide you with a detailed itinerary/e-ticket. You will need a passport valid for more than seven months with at least two blank pages at the time of your travel to Abu Dhabi. Also remember to carry a copy of your travel itinerary.
@@ -86,7 +83,6 @@ If you are required to carry a supply of prescription medication with you while 
 
 ## Arriving on Campus
 
-![Arriving on campus](assets/images/scene-p21.jpg){.hero-img}
 
 ### Campus Access
 
@@ -112,7 +108,6 @@ We strive for excellence in teaching and a multidisciplinary approach to researc
 
 ## Information Technology
 
-![Information Technology](assets/images/hero-it.png){.hero-img}
 
 ### Hardware Requests
 Eligible NYUAD employees are issued with a computer when joining NYUAD. The computer will be issued in line with the NYUAD Computer Distribution Policy and requested prior to your arrival or start date.
@@ -183,7 +178,6 @@ A cloud-based enterprise resource planning (ERP) system used by NYU for managing
 
 ## Policies
 
-![NYUAD campus](assets/images/scene-p29.jpg){.hero-img}
 
 It is essential that you know where to find and refer to NYUAD policies, procedures, and guidelines. They are available on the Intranet in the Policies & Governance section. As a minimum, all faculty and research staff should ensure they are familiar with the following frequently-used policies:
 
@@ -194,7 +188,6 @@ It is essential that you know where to find and refer to NYUAD policies, procedu
 
 ## Offboarding
 
-![Campus residences](assets/images/scene-p30.jpg){.hero-img}
 
 Although this guide is primarily about onboarding, the offboarding process is likewise very important. The below steps must be followed before departing the university. Please note, it is the responsibility of the PI to ensure compliance for all group personnel.
 

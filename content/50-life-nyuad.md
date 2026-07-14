@@ -3,7 +3,6 @@ order: 5
 title: "Life at NYU Abu Dhabi"
 nav_label: "Life at NYUAD"
 slug: life-nyuad
-hero: hero-facilities.png
 toc:
   - ["Campus Location and Map", 50]
   - ["Community Life", 51]
@@ -33,7 +32,6 @@ To download the app or to read more about Campus Safety's Emergency Procedures a
 
 ## Community Life
 
-![Community life at NYUAD](assets/images/scene-p49.jpg){.hero-img}
 
 ::: cards
 ::: card
@@ -131,7 +129,6 @@ Inspired by Sheikh Zayed's vision and legacy, NYUAD is dedicated to fostering a 
 
 ### NYUAD Public Programs
 
-![NYUAD Arts Center](assets/images/scene-p52.jpg){.hero-img}
 
 #### The NYUAD Institute
 A center of advanced research, scholarly, and creative activity, the NYU Abu Dhabi Institute was established in 2008 for Abu Dhabi, the UAE, and the world. A cornerstone of academic excellence, the Institute brings together academics, professionals, and leaders from around the world to its academic conferences and public programs to discuss research areas and topics of local and global significance. Institute talks, conferences, research workshops, public lectures, film screenings, and exhibitions explore topics central to NYUAD academic and research pursuits, including sustainability, urban planning, climate change, peace, genomics, and world finance.

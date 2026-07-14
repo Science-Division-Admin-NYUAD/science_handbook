@@ -3,7 +3,6 @@ order: 3
 title: "Life in the Division"
 nav_label: "Life in the Division"
 slug: life-division
-hero: hero-research.png
 toc:
   - ["Academic and Research Essentials", 34]
   - ["Research", 38]
@@ -14,7 +13,6 @@ toc:
 
 ## Academic and Research Essentials
 
-![Course preparation and teaching](assets/images/scene-p33.jpg){.hero-img}
 
 ### Academic Calendar
 All academic calendars can be viewed on the Intranet. The calendar includes semester start dates, add/drop periods for courses, and important public holidays in the UAE.
@@ -76,7 +74,6 @@ NYU's learning management system, NYU Brightspace, allows you to create online c
 
 ### Teaching & Learning Resources
 
-![Teaching and learning resources](assets/images/scene-p34.jpg){.hero-img}
 
 #### The Office of Undergraduate Education
 The Office of Undergraduate Education focuses on undergraduate teaching, learning, and academic mentoring. Areas that fall within Undergraduate Education include the Core Curriculum, John Sexton and Lisa Goldberg Academic Resource Center, Writing Center, Hilary Ballon Center for Excellence in Teaching and Learning, Registrar, Academic Policies, and the Office of Student Research.
@@ -105,7 +102,6 @@ Participate in our cutting-edge research initiatives, take full advantage of the
 
 ## Research
 
-![Research at NYUAD](assets/images/scene-p36.jpg){.hero-img}
 
 ### Research Fund Essentials
 
@@ -128,7 +124,6 @@ All research travel should be booked through the University's travel agency, Nir
 
 ### Research: Space and Safety
 
-![Research space and safety](assets/images/scene-p38.jpg){.hero-img}
 
 #### Space Access Requests
 Space access requests should be submitted to Public Safety. Requests will be approved based on the expectation that a person has already, or will as soon as possible, complete all OSHMS and EHS training requirements. Non-compliance will result in access being revoked.
@@ -165,7 +160,6 @@ Dive into the wealth of resources and opportunities available within our Divisio
 
 ## Teaching
 
-![Program seminars and research talks](assets/images/scene-p40.jpg){.hero-img}
 
 ### Program Seminar Series & Research Talks
 
@@ -194,7 +188,6 @@ Faculty can propose speakers to Julie Brookes at julie.brookes@nyu.edu.
 
 ### Capstones
 
-![Science Capstone Festival](assets/images/scene-p42.jpg){.hero-img}
 
 The Capstone Project is one of the culminating experiences for all students at NYUAD. It is a mandatory requirement and completion is scheduled for the student's fourth year. The Capstone experience in the Division of Science requires students to engage in a long-term, mentored learning experience that culminates in a piece of original research, scientific theory, or both. It is typically, but not exclusively, associated with students joining ongoing NYUAD research projects. This approach enables students to:
 
