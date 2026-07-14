@@ -23,6 +23,7 @@ ASSETS = ROOT / "assets"
 SITE = ROOT / "site"
 CSS = ASSETS / "css" / "site.css"
 PDF = ASSETS / "handbook.pdf"
+IMAGES = ASSETS / "images"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
 
@@ -106,13 +107,7 @@ def render_header(nav: list[dict], active_slug: str | None) -> str:
 
 
 def render_cover(section: dict, nav: list[dict]) -> str:
-    cards = "\n".join(
-        f'''      <a class="section-card" href="{item['slug']}.html">
-        <span class="section-name">{item['title']}</span>
-        <span class="section-meta">{len(item.get('subsections', []))} editable subsections</span>
-      </a>'''
-        for item in nav
-    )
+    contents = "\n".join(render_contents_row(item) for item in nav)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,18 +119,48 @@ def render_cover(section: dict, nav: list[dict]) -> str:
 <body>
 {render_header(nav, None)}
   <main class="cover">
-    <section class="cover-hero">
-      <p class="eyebrow">NYU Abu Dhabi</p>
-      <h1>Welcome to the Division of Science</h1>
-      <p class="deck">A handbook for new joiners, now maintained as editable website content.</p>
+    <section class="cover-hero" aria-labelledby="cover-title">
+      <img src="assets/images/cover-page.jpg" alt="" aria-hidden="true">
+      <h1 id="cover-title" class="sr-only">Welcome to the Division of Science: A handbook for new joiners</h1>
     </section>
-    <section class="section-grid" aria-label="Handbook sections">
-{cards}
+    <section class="contents-page" aria-label="Contents">
+      <div class="pdf-rule" aria-hidden="true"></div>
+      <h2>Contents</h2>
+{contents}
     </section>
   </main>
 </body>
 </html>
 """
+
+
+def render_contents_row(section: dict) -> str:
+    image = f"assets/images/contents-{section['slug']}.jpg"
+    topics = "\n".join(
+        f'''            <li><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
+        for topic in section.get("toc", [])
+    )
+    return f"""      <a class="contents-row" href="{section['slug']}.html">
+        <img src="{image}" alt="">
+        <div class="contents-copy">
+          <h3>{section['title']}</h3>
+          <ul>
+{topics}
+          </ul>
+        </div>
+      </a>"""
+
+
+def render_topic_list(section: dict, limit: int | None = None) -> str:
+    topics = section.get("toc", [])
+    if limit:
+        topics = topics[:limit]
+    if not topics:
+        return ""
+    items = "\n".join(f"          <li>{topic[0]}</li>" for topic in topics)
+    return f"""        <ul class="topic-list">
+{items}
+        </ul>"""
 
 
 def render_section(section: dict, nav: list[dict]) -> str:
@@ -145,7 +170,7 @@ def render_section(section: dict, nav: list[dict]) -> str:
         if item["name"] != section["title"]
     )
     toc_block = f"""    <aside class="page-toc" aria-label="On this page">
-      <p>On this page</p>
+      <p>Section topics</p>
 {toc}
     </aside>
 """ if toc else ""
@@ -160,9 +185,10 @@ def render_section(section: dict, nav: list[dict]) -> str:
 <body>
 {render_header(nav, section['slug'])}
   <main class="page-shell">
-    <section class="page-title">
-      <p class="eyebrow">Editable handbook section</p>
+    <section class="page-title section-hero">
+      <p class="eyebrow">Division of Science</p>
       <h1>{section['title']}</h1>
+      {render_topic_list(section)}
     </section>
     <div class="content-layout">
 {toc_block}
@@ -201,6 +227,8 @@ def build_site() -> None:
         shutil.rmtree(SITE)
     (SITE / "assets" / "css").mkdir(parents=True)
     shutil.copy2(CSS, SITE / "assets" / "css" / "site.css")
+    if IMAGES.exists():
+        shutil.copytree(IMAGES, SITE / "assets" / "images")
     if PDF.exists():
         shutil.copy2(PDF, SITE / "handbook.pdf")
 
