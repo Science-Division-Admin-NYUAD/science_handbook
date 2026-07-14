@@ -9,11 +9,13 @@ toc:
   - ["Inclusion, Diversity, Belonging and Equity at NYUAD", 6]
   - ["Teaching", 7]
   - ["Research", 9]
-  - ["Facilities and Infrastructure", 11]
-  - ["Meet the Associate Deans", 14]
-  - ["Meet the Program Heads", 15]
-  - ["Meet the Administrators", 16]
-  - ["NYUAD Shared Governance", 17]
+  - ["Reaching for the Stars: Launch of PASS", 11]
+  - ["Key Initiatives: Driving Innovation in Science, Communication, and Collaboration", 12]
+  - ["Facilities and Infrastructure", 13]
+  - ["Meet the Associate Deans", 16]
+  - ["Meet the Program Heads", 17]
+  - ["Meet the Administrators", 18]
+  - ["NYUAD Shared Governance", 19]
 ---
 
 ##### Welcome to the Division
@@ -22,27 +24,13 @@ toc:
 
 ## Welcome From the Dean of Science
 
-#### Dear Colleagues,
+Welcome to the Division of Science at NYU Abu Dhabi. You are joining a global community of scientists and scholars who are not only answering today's questions but asking the ones that will define tomorrow. From quantum breakthroughs and space systems to climate resilience and health innovation, our work spans disciplines, cultures, and continents.
 
-Welcome to the Division of Science at NYU Abu Dhabi. We are thrilled to have you join our dynamic and diverse community of scientists, researchers, and educators. Here at NYUAD, we pride ourselves on fostering an environment where innovation, collaboration, and inclusivity are at the forefront of everything we do.
+This is a moment of tremendous opportunity. We are forging deeper collaborations across the UAE and beyond, all grounded in our shared commitment to make our world better with science. This commitment is essential to how we work, how we grow, and how we impact the world around us. You are now part of that momentum.
 
-Together, we strive for excellence in teaching and a multidisciplinary approach to research that enriches our individual scientific endeavors, broadens the scope of our research, greatly contributes to our mission of pushing scientific boundaries and advancing knowledge, and creates plentiful opportunities for our students, locally and around the world.
+We encourage you to dive in, connect widely, and help shape what comes next. Whether in the lab, classroom, or beyond, your ideas will have space to grow and the support to thrive.
 
-As you embark on this new journey, I encourage you to dive into the wealth of resources and programming within our division and across the university. Participate in our cutting-edge research initiatives, take full advantage of the state-of-the-art facilities at your disposal, and engage with colleagues across disciplines and divisions. Your work here will not only advance your field but also inspire and educate the next generation of scientists.
-
-Beyond the lab and classroom, Abu Dhabi offers a rich cultural and natural landscape for you to explore. From world-class museums and cultural sites to beautiful parks and recreational facilities, the city provides a vibrant backdrop for both personal and professional growth.
-
-We are confident that your time at NYUAD will be both fulfilling and impactful. Together, we will strive to make positive impacts to the local community, build scientific capacity across the region, contribute to the global knowledge base, and address some of the most pressing challenges facing our world today.
-
-Welcome once again to the Division of Science at NYU Abu Dhabi. I look forward to seeing the incredible contributions you will make to our thriving community and the wider scientific world.
-
-Warm regards,
-
-::: signature
-**Marta Losada**
-
-Dean of Science, NYU Abu Dhabi
-:::
+Let us redefine what is possible, together.
 
 ## Inclusion, Diversity, Belonging, and Equity at NYUAD
 
@@ -154,6 +142,7 @@ The NYUAD Research Institute is a world-class center of cutting-edge and innovat
 Faculty and researchers from the Division of Science lead and/or collaborate in the following Research Institute Centers:
 
 - Center for Astro Physics and Space Science
+- Center for Astro Physics and Space Systems
 - Center for Brain and Health
 - Center for Cyber Security
 - Center for Genomics and Systems Biology
@@ -165,6 +154,27 @@ Faculty and researchers from the Division of Science lead and/or collaborate in 
 - Mubadala Arabian Center for Climate and Environmental Sciences (ACCESS)
 - Public Health Research Center
 - Water Research Center
+
+## Reaching for the Stars: Launch of PASS
+
+### PhD in Astrophysics and Space Systems at NYU Abu Dhabi
+
+Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
+
+#### Vision and Impact
+PASS is more than a program. It is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
+
+This program is closely aligned with national priorities and offers opportunities to contribute to cutting-edge scientific efforts in the UAE and beyond. PASS provides a rich environment for publication, international collaboration, and translational research with real-world applications.
+
+#### Strategic Collaborations with the UAE Space Sector
+PASS benefits from longstanding collaborations with the UAE Space Agency and the Mohammed Bin Rashid Space Centre (MBRSC), two cornerstone institutions in the nation's space science ecosystem. These collaborations open doors for PASS students to engage with active research themes and stay informed about the latest developments in UAE-led missions and initiatives. Such partnerships reflect NYUAD's role as a hub for novel research in space-related science and engineering, and they strengthen the practical relevance and national integration of PASS.
+
+## Key Initiatives: Driving Innovation in Science, Communication, and Collaboration
+
+![Nova of Celestoria](assets/images/nova-celestoria.jpg){.hero-img}
+
+#### Nova of Celestoria
+One of the most exciting recent initiatives is the launch of *Nova of Celestoria*, a coming-of-age graphic novel written and illustrated by NYUAD students and inspired by real astrophysics. Produced by the Center for Astrophysics and Space Science, the novel blends imaginative storytelling with scientific accuracy to spark interest in space exploration across generations.
 
 ## Facilities and Infrastructure
 
@@ -218,12 +228,12 @@ Associate Dean for Research and Graduate Programs; Program Head of Biology; Prof
 :::
 ::: person
 #### Diogo Arsénio
-Associate Dean for Faculty Affairs and Advancement; Associate Professor of Mathematics
+Associate Professor of Mathematics
 <span class="email">dva207@nyu.edu</span>
 :::
 ::: person
 #### Hisham Sati
-Associate Dean for Student Success and Curricular Affairs; Professor of Mathematics
+Director, Center for Quantum and Topological Systems (CQTS); Associate Dean for Student Success and Curricular Affairs; Professor of Mathematics; Global Network Professor of Mathematics, Courant Institute of Mathematical Sciences
 <span class="email">ha56@nyu.edu</span>
 :::
 :::
@@ -287,10 +297,10 @@ Associate Program Head for Undergraduate Studies of Psychology; Associate Profes
 
 ::: people-grid
 ::: person
-#### Marta Martinez
-Assistant Manager, Division of Science
+#### Eve Johnston
+Associate Dean of Administration and Planning
 
-<span class="email">mmc826@nyu.edu</span>
+<span class="email">ej21@nyu.edu</span>
 :::
 ::: person
 #### Julie Brookes
@@ -312,30 +322,26 @@ Communications and Outreach
 <span class="email">kls10@nyu.edu</span>
 :::
 ::: person
-#### Karima Raafat
-Administrative Coordinator
-Physics & Psychology
+#### Marta Martinez
+Assistant Manager, Division of Science
 
 <span class="email">mmc826@nyu.edu</span>
 :::
 ::: person
 #### Hend Alhammadi
 Administrative Coordinator
-PASS
 
 <span class="email">ha2456@nyu.edu</span>
 :::
 ::: person
 #### Elie Altenburger
 Administrative Coordinator
-Chemistry & Maths
 
 <span class="email">ea2973@nyu.edu</span>
 :::
 ::: person
-#### Walah Al Mesmari
+#### Walah Almesmari
 Administrative Coordinator
-Biology & Computer Science
 
 <span class="email">wha224@nyu.edu</span>
 :::

@@ -5,12 +5,8 @@ nav_label: "Communication"
 slug: communication
 hero: hero-research.png
 toc:
-  - ["Newsletters", 44]
-  - ["Calendars and Email Groups", 44]
-  - ["Program Email Groups", 44]
-  - ["Activity Reporting", 46]
-  - ["Tamkeen Monthly Highlights", 46]
-  - ["Press Releases", 46]
+  - ["Communication", 46]
+  - ["Activity Reporting", 48]
 ---
 
 ##### Communication, Activity Reporting, and Promoting Your Research
