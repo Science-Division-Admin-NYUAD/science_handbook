@@ -109,7 +109,8 @@ def render_cover(section: dict, nav: list[dict]) -> str:
     cards = "\n".join(
         f'''      <a class="section-card" href="{item['slug']}.html">
         <span class="section-name">{item['title']}</span>
-        <span class="section-meta">{len(item.get('subsections', []))} editable subsections</span>
+        <span class="section-meta">{len(item.get('toc', []))} main topics</span>
+        {render_topic_list(item, limit=5)}
       </a>'''
         for item in nav
     )
@@ -125,9 +126,13 @@ def render_cover(section: dict, nav: list[dict]) -> str:
 {render_header(nav, None)}
   <main class="cover">
     <section class="cover-hero">
-      <p class="eyebrow">NYU Abu Dhabi</p>
-      <h1>Welcome to the Division of Science</h1>
-      <p class="deck">A handbook for new joiners, now maintained as editable website content.</p>
+      <div class="cover-pattern" aria-hidden="true"></div>
+      <div class="cover-art" aria-hidden="true"></div>
+      <div class="cover-title-block">
+        <p class="eyebrow">NYU Abu Dhabi</p>
+        <h1>Welcome to the Division of Science</h1>
+        <p class="deck">A handbook for new joiners</p>
+      </div>
     </section>
     <section class="section-grid" aria-label="Handbook sections">
 {cards}
@@ -138,6 +143,18 @@ def render_cover(section: dict, nav: list[dict]) -> str:
 """
 
 
+def render_topic_list(section: dict, limit: int | None = None) -> str:
+    topics = section.get("toc", [])
+    if limit:
+        topics = topics[:limit]
+    if not topics:
+        return ""
+    items = "\n".join(f"          <li>{topic[0]}</li>" for topic in topics)
+    return f"""        <ul class="topic-list">
+{items}
+        </ul>"""
+
+
 def render_section(section: dict, nav: list[dict]) -> str:
     toc = "\n".join(
         f'''      <a href="#{item['id']}">{item['name']}</a>'''
@@ -145,7 +162,7 @@ def render_section(section: dict, nav: list[dict]) -> str:
         if item["name"] != section["title"]
     )
     toc_block = f"""    <aside class="page-toc" aria-label="On this page">
-      <p>On this page</p>
+      <p>Section topics</p>
 {toc}
     </aside>
 """ if toc else ""
@@ -160,9 +177,10 @@ def render_section(section: dict, nav: list[dict]) -> str:
 <body>
 {render_header(nav, section['slug'])}
   <main class="page-shell">
-    <section class="page-title">
-      <p class="eyebrow">Editable handbook section</p>
+    <section class="page-title section-hero">
+      <p class="eyebrow">Division of Science</p>
       <h1>{section['title']}</h1>
+      {render_topic_list(section)}
     </section>
     <div class="content-layout">
 {toc_block}
