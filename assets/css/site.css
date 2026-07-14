@@ -99,52 +99,29 @@ a {
   padding: 24px 22px 56px;
 }
 
-.cover-hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: 32% 68%;
-  min-height: 720px;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cover-hero {
+  width: min(100%, 760px);
+  margin: 0 auto;
   background: var(--paper);
-  box-shadow: 0 2px 18px rgba(25, 25, 25, 0.1);
+  box-shadow: 0 2px 18px rgba(25, 25, 25, 0.12);
 }
 
-.cover-pattern {
-  background-color: var(--teal);
-  background-image:
-    radial-gradient(circle at 18px 18px, #fff 0 5px, transparent 6px),
-    radial-gradient(circle at 54px 54px, #fff 0 5px, transparent 6px),
-    linear-gradient(45deg, transparent 47%, rgba(255, 255, 255, 0.78) 48% 52%, transparent 53%),
-    linear-gradient(-45deg, transparent 47%, rgba(255, 255, 255, 0.78) 48% 52%, transparent 53%);
-  background-size: 72px 72px;
-}
-
-.cover-art {
-  position: relative;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.28)),
-    linear-gradient(125deg, #d8eef2 0%, #f7fbfc 47%, #dce7dd 100%);
-}
-
-.cover-art::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(108deg, transparent 0 49%, rgba(111, 138, 74, 0.4) 50%, transparent 51%),
-    linear-gradient(78deg, transparent 0 56%, rgba(111, 138, 74, 0.26) 57%, transparent 58%),
-    linear-gradient(160deg, transparent 0 62%, rgba(0, 143, 168, 0.18) 63%, transparent 64%);
-  background-size: 240px 240px, 190px 190px, 310px 310px;
-  opacity: 0.85;
-}
-
-.cover-title-block {
-  position: absolute;
-  left: 7%;
-  bottom: 12%;
-  width: min(700px, 82%);
-  padding: 22px 26px 18px;
-  background: rgba(255, 255, 255, 0.96);
+.cover-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .eyebrow {
@@ -168,90 +145,111 @@ h1 {
   text-transform: uppercase;
 }
 
-.deck {
-  max-width: 760px;
-  margin: 14px 0 0;
-  color: var(--ink);
-  font-size: 28px;
-  font-weight: 400;
+.contents-page {
+  margin-top: 28px;
+  padding: 58px 68px 46px;
+  background: var(--paper);
+  box-shadow: 0 2px 18px rgba(25, 25, 25, 0.08);
+}
+
+.pdf-rule {
+  height: 2px;
+  margin-bottom: 74px;
+  background: var(--line);
+}
+
+.contents-page h2 {
+  margin: 0 0 44px;
+  color: var(--teal);
+  font-size: 74px;
+  font-weight: 300;
   letter-spacing: 0;
-  line-height: 1.2;
+  line-height: 1;
   text-transform: uppercase;
 }
 
-.section-grid {
+.contents-row {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
-  margin-top: 28px;
-  background: var(--paper);
-  border-top: 2px solid var(--line);
-  border-bottom: 2px solid var(--line);
-}
-
-.section-card {
-  display: grid;
-  grid-template-columns: minmax(220px, 34%) minmax(0, 1fr);
-  gap: 22px;
-  min-height: 120px;
-  padding: 20px 26px;
+  grid-template-columns: minmax(260px, 52%) minmax(0, 1fr);
+  gap: 24px;
+  padding: 0 0 32px;
+  margin-bottom: 34px;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   text-decoration: none;
 }
 
-.section-card:last-child {
-  border-bottom: 0;
+.contents-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-self: start;
 }
 
-.section-card:hover {
-  background: var(--teal-soft);
+.contents-row:hover .contents-copy h3,
+.contents-row:focus .contents-copy h3 {
+  color: var(--teal-dark);
 }
 
-.section-name {
-  grid-column: 1;
-  grid-row: 1 / span 2;
+.contents-copy {
+  padding-left: 24px;
+  border-left: 1px solid var(--line);
+}
+
+.contents-copy h3 {
+  margin: 0 0 26px;
   color: var(--teal);
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 34px;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
-.section-meta {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: start;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.2;
+.contents-copy ul {
+  display: grid;
+  gap: 3px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contents-copy li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px;
+  gap: 16px;
+  color: #3d3d3d;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.22;
   text-transform: uppercase;
 }
 
+.contents-copy li span:last-child {
+  text-align: right;
+}
+
 .topic-list {
-  grid-column: 2;
-  grid-row: 2;
-  margin: 8px 0 0;
+  margin: 44px 0 0;
   padding: 0;
-  color: var(--ink);
-  font-size: 15px;
+  color: #fff;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.28;
+  line-height: 1.32;
   list-style: none;
   text-transform: uppercase;
 }
 
 .topic-list li + li {
-  margin-top: 4px;
+  margin-top: 13px;
 }
 
 .page-title {
   position: relative;
-  min-height: 440px;
-  padding: 94px 68px 58px;
+  min-height: 690px;
+  padding: 292px 68px 72px;
   overflow: hidden;
   background: var(--teal);
   color: #fff;
@@ -282,8 +280,9 @@ h1 {
 .page-title h1 {
   max-width: 720px;
   color: #fff;
-  font-size: 66px;
+  font-size: 70px;
   font-weight: 300;
+  line-height: 1.04;
 }
 
 .page-title .topic-list {
@@ -482,33 +481,35 @@ h1 {
     padding: 16px 14px 44px;
   }
 
-  .cover-hero {
-    grid-template-columns: 112px 1fr;
-    min-height: 620px;
-  }
-
   h1 {
     font-size: 52px;
   }
 
-  .deck {
-    font-size: 22px;
+  .contents-page {
+    padding: 42px 36px 34px;
   }
 
-  .section-card {
+  .pdf-rule {
+    margin-bottom: 48px;
+  }
+
+  .contents-page h2 {
+    font-size: 56px;
+  }
+
+  .contents-row {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 18px;
   }
 
-  .topic-list {
-    grid-column: 1;
-    grid-row: auto;
-    margin: 0;
+  .contents-copy {
+    padding-left: 0;
+    border-left: 0;
   }
 
   .page-title {
-    min-height: 380px;
-    padding: 78px 38px 48px;
+    min-height: 540px;
+    padding: 220px 38px 54px;
   }
 
   .page-title h1 {
@@ -539,47 +540,35 @@ h1 {
     justify-content: center;
   }
 
-  .cover-hero {
-    display: block;
-    min-height: 560px;
-  }
-
-  .cover-pattern {
-    width: 100%;
-    height: 112px;
-  }
-
-  .cover-art {
-    min-height: 448px;
-  }
-
-  .cover-title-block {
-    left: 18px;
-    right: 18px;
-    bottom: 36px;
-    width: auto;
-    padding: 18px;
-  }
-
   h1 {
     font-size: 40px;
   }
 
-  .deck {
-    font-size: 18px;
+  .contents-page {
+    padding: 30px 20px 26px;
   }
 
-  .section-card {
-    padding: 18px;
+  .pdf-rule {
+    height: 1px;
+    margin-bottom: 34px;
   }
 
-  .section-name {
-    font-size: 22px;
+  .contents-page h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .contents-copy h3 {
+    font-size: 25px;
+  }
+
+  .contents-copy li {
+    font-size: 14px;
   }
 
   .page-title {
-    min-height: 340px;
-    padding: 64px 24px 40px;
+    min-height: 430px;
+    padding: 156px 24px 40px;
   }
 
   .section-hero::after {
