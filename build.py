@@ -38,10 +38,8 @@ def page_files() -> list[Path]:
 
 
 def render_index(pages: list[Path]) -> str:
-    page_count = len(pages)
     page_markup = "\n".join(
         f'''      <section class="pdf-page" id="page-{i}">
-        <div class="page-label">Page {i} of {page_count}</div>
         <img src="assets/pdf-pages/{page.name}" alt="Handbook page {i}">
       </section>'''
         for i, page in enumerate(pages, 1)
@@ -56,6 +54,8 @@ def render_index(pages: list[Path]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Division of Science - New Joiners Handbook</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
     :root {{
       --teal: #0091b3;
       --ink: #1f2933;
@@ -70,7 +70,7 @@ def render_index(pages: list[Path]) -> str:
       margin: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Nunito', Arial, Helvetica, sans-serif;
       line-height: 1.4;
     }}
     .topbar {{
@@ -80,24 +80,17 @@ def render_index(pages: list[Path]) -> str:
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      padding: 10px 18px;
+      gap: 12px;
+      padding: 8px 14px;
       background: var(--teal);
       color: white;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
-    }}
-    .title {{
-      min-width: 0;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
     }}
     .section-nav {{
       flex: 1;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 4px;
       min-width: 0;
       overflow-x: auto;
@@ -111,7 +104,7 @@ def render_index(pages: list[Path]) -> str:
       color: white;
       border-radius: 3px;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 800;
       text-decoration: none;
       white-space: nowrap;
     }}
@@ -146,13 +139,6 @@ def render_index(pages: list[Path]) -> str:
       background: var(--page);
       box-shadow: 0 2px 14px rgba(20, 35, 45, 0.18);
     }}
-    .page-label {{
-      padding: 8px 12px;
-      color: var(--muted);
-      border-bottom: 1px solid var(--rule);
-      font-size: 12px;
-      font-weight: 700;
-    }}
     .pdf-page img {{
       display: block;
       width: 100%;
@@ -186,7 +172,7 @@ def render_index(pages: list[Path]) -> str:
     }}
     @media print {{
       body {{ background: white; }}
-      .topbar, .page-label, .footer {{ display: none; }}
+      .topbar, .footer {{ display: none; }}
       .viewer {{ width: 100%; padding: 0; }}
       .pdf-page {{
         margin: 0;
@@ -198,7 +184,6 @@ def render_index(pages: list[Path]) -> str:
 </head>
 <body>
   <header class="topbar">
-    <div class="title">Division of Science - New Joiners Handbook</div>
     <nav class="section-nav" aria-label="Main sections">
 {section_links}
     </nav>
