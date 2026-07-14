@@ -19,6 +19,17 @@ PDF = ASSETS / "handbook.pdf"
 PAGES = ASSETS / "pdf-pages"
 SITE = ROOT / "site"
 
+
+MAIN_SECTIONS = [
+    ("WELCOME TO THE DIVISION", 4),
+    ("JOINING THE DIVISION", 20),
+    ("LIFE IN THE DIVISION", 33),
+    ("COMMUNICATION", 45),
+    ("LIFE AT NYUAD", 49),
+    ("LIFE IN THE UAE", 55),
+]
+
+
 def page_files() -> list[Path]:
     pages = sorted(PAGES.glob("page-*.jpg"))
     if not pages:
@@ -35,8 +46,8 @@ def render_index(pages: list[Path]) -> str:
       </section>'''
         for i, page in enumerate(pages, 1)
     )
-    jump_links = "\n".join(
-        f'        <a href="#page-{i}">{i}</a>' for i in range(1, page_count + 1)
+    section_links = "\n".join(
+        f'      <a href="#page-{page}">{label}</a>' for label, page in MAIN_SECTIONS
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -70,7 +81,7 @@ def render_index(pages: list[Path]) -> str:
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding: 12px 20px;
+      padding: 10px 18px;
       background: var(--teal);
       color: white;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
@@ -81,6 +92,31 @@ def render_index(pages: list[Path]) -> str:
       font-weight: 700;
       letter-spacing: 0.02em;
       text-transform: uppercase;
+    }}
+    .section-nav {{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }}
+    .section-nav a {{
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 9px;
+      color: white;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }}
+    .section-nav a:hover {{
+      background: rgba(255, 255, 255, 0.16);
     }}
     .actions {{
       display: flex;
@@ -104,28 +140,6 @@ def render_index(pages: list[Path]) -> str:
       width: min(100%, 1060px);
       margin: 0 auto;
       padding: 24px 18px 42px;
-    }}
-    .page-nav {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 0 auto 22px;
-      padding: 12px;
-      background: var(--page);
-      border: 1px solid var(--rule);
-    }}
-    .page-nav a {{
-      width: 32px;
-      height: 30px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--teal);
-      border: 1px solid var(--rule);
-      border-radius: 3px;
-      font-size: 12px;
-      font-weight: 700;
-      text-decoration: none;
     }}
     .pdf-page {{
       margin: 0 auto 28px;
@@ -152,8 +166,12 @@ def render_index(pages: list[Path]) -> str:
     }}
     @media (max-width: 640px) {{
       .topbar {{
-        align-items: flex-start;
+        align-items: stretch;
         flex-direction: column;
+      }}
+      .section-nav {{
+        justify-content: flex-start;
+        padding-bottom: 2px;
       }}
       .actions {{
         width: 100%;
@@ -168,7 +186,7 @@ def render_index(pages: list[Path]) -> str:
     }}
     @media print {{
       body {{ background: white; }}
-      .topbar, .page-nav, .page-label, .footer {{ display: none; }}
+      .topbar, .page-label, .footer {{ display: none; }}
       .viewer {{ width: 100%; padding: 0; }}
       .pdf-page {{
         margin: 0;
@@ -181,14 +199,14 @@ def render_index(pages: list[Path]) -> str:
 <body>
   <header class="topbar">
     <div class="title">Division of Science - New Joiners Handbook</div>
+    <nav class="section-nav" aria-label="Main sections">
+{section_links}
+    </nav>
     <div class="actions">
       <a href="handbook.pdf" download>Download PDF</a>
     </div>
   </header>
   <main class="viewer">
-    <nav class="page-nav" aria-label="PDF pages">
-{jump_links}
-    </nav>
 {page_markup}
   </main>
   <footer class="footer">Division of Science - New Joiners Handbook</footer>
