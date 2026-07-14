@@ -5,13 +5,13 @@ nav_label: "Joining"
 slug: joining
 hero: hero-joining.png
 toc:
-  - ["Before You Arrive", 19]
-  - ["Traveling to the UAE", 20]
-  - ["Arriving on Campus", 21]
-  - ["Information Technology", 23]
-  - ["Software for Administrative Tasks", 25]
-  - ["Policies", 29]
-  - ["Offboarding", 30]
+  - ["Before You Arrive", 21]
+  - ["Traveling to the UAE", 22]
+  - ["Arriving on Campus", 23]
+  - ["Information Technology", 25]
+  - ["Software for Administrative Tasks", 27]
+  - ["Policies", 31]
+  - ["Offboarding", 32]
 ---
 
 ##### Joining the Division
