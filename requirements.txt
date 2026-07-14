@@ -1,8 +1,1 @@
-Markdown==3.7
-Jinja2==3.1.4
-PyYAML==6.0.2
-weasyprint==62.3
-# pydyf must match the WeasyPrint release: 62.3 needs the 0.10.x API.
-# (pydyf 0.11+ removed Stream.transform, causing
-#  "AttributeError: 'super' object has no attribute 'transform'".)
-pydyf==0.10.0
+# No Python packages are required for the static PDF viewer build.
