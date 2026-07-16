@@ -1,11 +1,11 @@
 ---
-order: 4
+order: 3
 title: "Communication, Activity Reporting, and Promoting Your Research"
 nav_label: "Communication"
 slug: communication
 toc:
-  - ["Communication", 46]
-  - ["Activity Reporting", 48]
+  - ["Communication", 44]
+  - ["Activity Reporting", 46]
 ---
 
 ##### Communication, Activity Reporting, and Promoting Your Research

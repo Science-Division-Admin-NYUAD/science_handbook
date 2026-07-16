@@ -145,6 +145,7 @@ def render_cover(section: dict, nav: list[dict]) -> str:
 
 def render_contents_row(section: dict) -> str:
     image = f"assets/images/contents-{section['slug']}.jpg"
+    contents_title = section.get("contents_title") or section["title"]
     topics = "\n".join(
         f'''            <li><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
         for topic in section.get("toc", [])
@@ -152,7 +153,7 @@ def render_contents_row(section: dict) -> str:
     return f"""      <a class="contents-row" href="{section['slug']}.html">
         <img src="{image}" alt="">
         <div class="contents-copy">
-          <h3>{section['title']}</h3>
+          <h3>{contents_title}</h3>
           <ul>
 {topics}
           </ul>
@@ -172,12 +173,26 @@ def render_topic_list(section: dict, limit: int | None = None) -> str:
         </ul>"""
 
 
-def render_section(section: dict, nav: list[dict]) -> str:
-    toc = "\n".join(
-        f'''      <a href="#{item['id']}">{item['name']}</a>'''
+def normalize_heading(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def render_section_topic_links(section: dict) -> str:
+    subsection_ids = {
+        normalize_heading(item["name"]): item["id"]
         for item in section.get("subsections", [])
-        if item["name"] != section["title"]
-    )
+    }
+    links = []
+    for topic in section.get("toc", []):
+        label = topic[0]
+        anchor = subsection_ids.get(normalize_heading(label))
+        if anchor:
+            links.append(f'''      <a href="#{anchor}">{label}</a>''')
+    return "\n".join(links)
+
+
+def render_section(section: dict, nav: list[dict]) -> str:
+    toc = render_section_topic_links(section)
     toc_block = f"""    <aside class="page-toc" aria-label="On this page">
       <p>Section topics</p>
 {toc}
