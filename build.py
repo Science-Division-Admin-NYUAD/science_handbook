@@ -98,10 +98,16 @@ def render_header(nav: list[dict], active_slug: str | None) -> str:
         for section in nav
     )
     return f"""  <header class="topbar">
+    <input class="menu-toggle" type="checkbox" id="main-menu-toggle" aria-hidden="true">
+    <label class="menu-button" for="main-menu-toggle" aria-label="Open main menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <nav class="main-nav" aria-label="Main sections">
 {links}
     </nav>
-    <a class="download" href="handbook.pdf" download>Download PDF</a>
+    <a class="download" href="handbook.pdf" download>Prefer a PDF? Download it here</a>
   </header>
 """
 
@@ -121,7 +127,10 @@ def render_cover(section: dict, nav: list[dict]) -> str:
   <main class="cover">
     <section class="cover-hero" aria-labelledby="cover-title">
       <img src="assets/images/cover-page.jpg" alt="" aria-hidden="true">
-      <h1 id="cover-title" class="sr-only">Welcome to the Division of Science: A handbook for new joiners</h1>
+      <div class="cover-title-panel">
+        <h1 id="cover-title">Welcome to the Division of Science</h1>
+        <p>A handbook for new joiners</p>
+      </div>
     </section>
     <section class="contents-page" aria-label="Contents">
       <div class="pdf-rule" aria-hidden="true"></div>
