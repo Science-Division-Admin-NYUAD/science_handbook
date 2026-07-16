@@ -3,24 +3,26 @@ order: 1
 title: "Welcome to the Division of Science"
 nav_label: "Welcome"
 slug: welcome
+contents_title: "Welcome"
 toc:
-  - ["Welcome From the Dean of Science", 5]
-  - ["Inclusion, Diversity, Belonging and Equity at NYUAD", 6]
-  - ["Teaching", 7]
+  - ["A small note from our Dean of Science", 5]
+  - ["Our Key Initiatives", 6]
+  - ["IDBE at NYUAD", 7]
+  - ["NYUAD Shared Governance", 8]
   - ["Research", 9]
-  - ["Reaching for the Stars: Launch of PASS", 11]
-  - ["Key Initiatives: Driving Innovation in Science, Communication, and Collaboration", 12]
-  - ["Facilities and Infrastructure", 13]
-  - ["Meet the Associate Deans", 16]
-  - ["Meet the Program Heads", 17]
-  - ["Meet the Administrators", 18]
-  - ["NYUAD Shared Governance", 19]
+  - ["Facilities and Infrastructure", 11]
+  - ["Our Associate Deans", 14]
+  - ["Our Programs", 15]
+  - ["Our Program Heads", 17]
+  - ["PASS Program: Reaching for the Stars", 18]
+  - ["MIDSAI Program", 19]
+  - ["Our Program Administrators", 20]
 ---
 
 ##### Welcome to the Division
 
 
-## Welcome From the Dean of Science
+## A small note from our Dean of Science
 
 Welcome to the Division of Science at NYU Abu Dhabi. You are joining a global community of scientists and scholars who are not only answering today's questions but asking the ones that will define tomorrow. From quantum breakthroughs and space systems to climate resilience and health innovation, our work spans disciplines, cultures, and continents.
 
@@ -30,7 +32,13 @@ We encourage you to dive in, connect widely, and help shape what comes next. Whe
 
 Let us redefine what is possible, together.
 
-## Inclusion, Diversity, Belonging, and Equity at NYUAD
+## Our Key Initiatives
+
+
+#### Nova of Celestoria
+One of the most exciting recent initiatives is the launch of *Nova of Celestoria*, a coming-of-age graphic novel written and illustrated by NYUAD students and inspired by real astrophysics. Produced by the Center for Astrophysics and Space Science, the novel blends imaginative storytelling with scientific accuracy to spark interest in space exploration across generations.
+
+## IDBE at NYUAD
 
 
 The values of inclusion, diversity, belonging, and equity (IDBE) have been fundamental to NYUAD since its inception, and are reflected in our mission and values.
@@ -39,42 +47,32 @@ All University community members are expected to uphold these values through act
 
 The Division of Science is deeply committed to fostering inclusion, diversity, belonging, and equity across all facets of our operations, from our robust recruitment processes, through to our teaching curriculum, targeted research projects and Global Perspectives in Science Seminar Series. (See section three.)
 
-## Teaching
+## NYUAD Shared Governance
 
 
-### Academic Programs
+#### Faculty Meetings
+Formal program faculty meetings are scheduled regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
 
-There are six academic programs within the Division of Science: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
+Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting. Voting styles are at the discretion of the program heads.
 
-### Undergraduate
+#### Councils
+NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils.
 
-Though the program structure differs slightly for each of the undergraduate Science majors, there are consistent elements:
+#### Faculty Council
+Faculty Council meetings are recurring and take place during the Institutional Slot. The schedule can be found on the Intranet but will also be announced via email, and posted on the divisional calendar for convenience.
 
-#### Foundations of Science
-An innovative and integrated program that all Biology, Chemistry and Physics undergraduates are required to take. It fosters interdisciplinarity and an experimental approach to learning.
+#### Faculty Forum
+The NYUAD Faculty Forum is a faculty-only venue that allows faculty to collectively explore ideas and concerns in a less formal setting than the Faculty Council. It meets four times each semester. Attendance and participation at the Faculty Forum is open to all members of faculty and academic librarians.
 
-#### Global Education
-A careful sequence of interrelated and intercultural experiences over four years, including the opportunity to spend one semester abroad. It encourages greater intercultural understanding towards social responsibility, both locally and globally.
+#### Postdoctoral Council Steering Committee (PCSC)
+The PCSC serves as the interface between members of the postdoctoral community and the upper administration of NYUAD. It is an advisory committee that provides a bridge between the senior academic administration, the community, and the Postdoctoral Council. The PCSC normally meets twice a month.
 
-#### Capstone Project
-Every science student completes a Capstone research project in their fourth year. They work closely with one of our many research labs or groups on a demanding, year-long endeavor that culminates in a significant piece of research that is presented at the annual Science Capstone Festival.
+#### Staff Council
+The Staff Council liaises with all staff — academic, administrative, and researchers — to gather concerns, opinions, and suggestions, and feed this back to NYUAD leadership. Like the Faculty Council, there are regular optional attendance Staff Forums, which are announced on the Intranet and via email.
 
-### Graduate
+#### Student Government
+NYUAD's Student Government serves as the voice of students in the NYUAD community. It works closely with the administration in formulating and implementing policies, supports student interest groups, and facilitates communication and cooperation within NYU's global network. Regular general assembly takes place for students to discuss and vote on school issues. A platform is also available for the student body to suggest and vote for ideas to better improve the school community. Each science program has a student representative.
 
-The Division of Science offers Global PhD Fellowships across many of its programs. Though the program structures differ, there are some consistent elements.
-
-#### 4–5 Years in Total
-Students carry out their research within the cutting-edge labs and research groups at NYUAD.
-
-#### 1–2 Years in New York
-The programs generally involve classwork in New York. Our students have access to the extraordinary resources available within NYU's network of prestigious Graduate Schools.
-
-### NYU Degree
-Students are awarded an NYU Degree.
-
-::: quote
-Every science student completes a Capstone research project in their fourth year… a demanding, year-long endeavor that culminates in a significant piece of research.
-:::
 
 ## Research
 
@@ -151,26 +149,6 @@ Faculty and researchers from the Division of Science lead and/or collaborate in 
 - Public Health Research Center
 - Water Research Center
 
-## Reaching for the Stars: Launch of PASS
-
-### PhD in Astrophysics and Space Systems at NYU Abu Dhabi
-
-Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
-
-#### Vision and Impact
-PASS is more than a program. It is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
-
-This program is closely aligned with national priorities and offers opportunities to contribute to cutting-edge scientific efforts in the UAE and beyond. PASS provides a rich environment for publication, international collaboration, and translational research with real-world applications.
-
-#### Strategic Collaborations with the UAE Space Sector
-PASS benefits from longstanding collaborations with the UAE Space Agency and the Mohammed Bin Rashid Space Centre (MBRSC), two cornerstone institutions in the nation's space science ecosystem. These collaborations open doors for PASS students to engage with active research themes and stay informed about the latest developments in UAE-led missions and initiatives. Such partnerships reflect NYUAD's role as a hub for novel research in space-related science and engineering, and they strengthen the practical relevance and national integration of PASS.
-
-## Key Initiatives: Driving Innovation in Science, Communication, and Collaboration
-
-
-#### Nova of Celestoria
-One of the most exciting recent initiatives is the launch of *Nova of Celestoria*, a coming-of-age graphic novel written and illustrated by NYUAD students and inspired by real astrophysics. Produced by the Center for Astrophysics and Space Science, the novel blends imaginative storytelling with scientific accuracy to spark interest in space exploration across generations.
-
 ## Facilities and Infrastructure
 
 
@@ -211,7 +189,7 @@ If you require technological assistance, you can contact the IT Service Desk 24 
 At NYUAD, we pride ourselves on fostering an environment where innovation, collaboration, and inclusivity are at the forefront of everything we do.
 :::
 
-## Meet the Associate Deans
+## Our Associate Deans
 
 ::: people-grid
 ::: person
@@ -231,7 +209,44 @@ Director, Center for Quantum and Topological Systems (CQTS); Associate Dean for 
 :::
 :::
 
-## Meet the Program Heads
+## Our Programs
+
+
+### Academic Programs
+
+There are six academic programs within the Division of Science: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
+
+### Undergraduate
+
+Though the program structure differs slightly for each of the undergraduate Science majors, there are consistent elements:
+
+#### Foundations of Science
+An innovative and integrated program that all Biology, Chemistry and Physics undergraduates are required to take. It fosters interdisciplinarity and an experimental approach to learning.
+
+#### Global Education
+A careful sequence of interrelated and intercultural experiences over four years, including the opportunity to spend one semester abroad. It encourages greater intercultural understanding towards social responsibility, both locally and globally.
+
+#### Capstone Project
+Every science student completes a Capstone research project in their fourth year. They work closely with one of our many research labs or groups on a demanding, year-long endeavor that culminates in a significant piece of research that is presented at the annual Science Capstone Festival.
+
+### Graduate
+
+The Division of Science offers Global PhD Fellowships across many of its programs. Though the program structures differ, there are some consistent elements.
+
+#### 4–5 Years in Total
+Students carry out their research within the cutting-edge labs and research groups at NYUAD.
+
+#### 1–2 Years in New York
+The programs generally involve classwork in New York. Our students have access to the extraordinary resources available within NYU's network of prestigious Graduate Schools.
+
+### NYU Degree
+Students are awarded an NYU Degree.
+
+::: quote
+Every science student completes a Capstone research project in their fourth year… a demanding, year-long endeavor that culminates in a significant piece of research.
+:::
+
+## Our Program Heads
 
 ::: people-grid
 ::: person
@@ -286,7 +301,23 @@ Associate Program Head for Undergraduate Studies of Psychology; Associate Profes
 :::
 :::
 
-## Meet Your Administrators
+## PASS Program: Reaching for the Stars
+
+### PhD in Astrophysics and Space Systems at NYU Abu Dhabi
+
+Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
+
+#### Vision and Impact
+PASS is more than a program. It is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
+
+This program is closely aligned with national priorities and offers opportunities to contribute to cutting-edge scientific efforts in the UAE and beyond. PASS provides a rich environment for publication, international collaboration, and translational research with real-world applications.
+
+#### Strategic Collaborations with the UAE Space Sector
+PASS benefits from longstanding collaborations with the UAE Space Agency and the Mohammed Bin Rashid Space Centre (MBRSC), two cornerstone institutions in the nation's space science ecosystem. These collaborations open doors for PASS students to engage with active research themes and stay informed about the latest developments in UAE-led missions and initiatives. Such partnerships reflect NYUAD's role as a hub for novel research in space-related science and engineering, and they strengthen the practical relevance and national integration of PASS.
+
+## MIDSAI Program
+
+## Our Program Administrators
 
 ::: people-grid
 ::: person
@@ -339,29 +370,3 @@ Administrative Coordinator
 <span class="email">wha224@nyu.edu</span>
 :::
 :::
-
-## NYUAD Shared Governance
-
-
-#### Faculty Meetings
-Formal program faculty meetings are scheduled regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
-
-Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting. Voting styles are at the discretion of the program heads.
-
-#### Councils
-NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils.
-
-#### Faculty Council
-Faculty Council meetings are recurring and take place during the Institutional Slot. The schedule can be found on the Intranet but will also be announced via email, and posted on the divisional calendar for convenience.
-
-#### Faculty Forum
-The NYUAD Faculty Forum is a faculty-only venue that allows faculty to collectively explore ideas and concerns in a less formal setting than the Faculty Council. It meets four times each semester. Attendance and participation at the Faculty Forum is open to all members of faculty and academic librarians.
-
-#### Postdoctoral Council Steering Committee (PCSC)
-The PCSC serves as the interface between members of the postdoctoral community and the upper administration of NYUAD. It is an advisory committee that provides a bridge between the senior academic administration, the community, and the Postdoctoral Council. The PCSC normally meets twice a month.
-
-#### Staff Council
-The Staff Council liaises with all staff — academic, administrative, and researchers — to gather concerns, opinions, and suggestions, and feed this back to NYUAD leadership. Like the Faculty Council, there are regular optional attendance Staff Forums, which are announced on the Intranet and via email.
-
-#### Student Government
-NYUAD's Student Government serves as the voice of students in the NYUAD community. It works closely with the administration in formulating and implementing policies, supports student interest groups, and facilitates communication and cooperation within NYU's global network. Regular general assembly takes place for students to discuss and vote on school issues. A platform is also available for the student body to suggest and vote for ideas to better improve the school community. Each science program has a student representative.

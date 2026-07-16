@@ -1,11 +1,11 @@
 ---
-order: 5
+order: 4
 title: "Life at NYU Abu Dhabi"
 nav_label: "Life at NYUAD"
 slug: life-nyuad
 toc:
-  - ["Campus Location and Map", 50]
-  - ["Community Life", 51]
+  - ["Campus Location and Map", 48]
+  - ["Community Life", 49]
 ---
 
 ##### Life at NYU Abu Dhabi

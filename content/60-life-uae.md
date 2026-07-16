@@ -1,13 +1,12 @@
 ---
-order: 6
+order: 5
 title: "Life in Abu Dhabi"
 nav_label: "Life in the UAE"
 slug: life-uae
 toc:
-  - ["About", 56]
-  - ["Things to Do in Abu Dhabi", 57]
-  - ["Across the Emirate: Things to See and Do", 60]
-  - ["A Note from Eve Johnston, Associate Dean of Administration", 62]
+  - ["About", 54]
+  - ["Things to Do in Abu Dhabi", 55]
+  - ["Across the Emirate: Things to See and Do", 58]
 ---
 
 ##### Life in Abu Dhabi
@@ -80,20 +79,3 @@ Situated in the second tower of Etihad Towers, on the 74th floor of Conrad Abu D
 
 #### Yas Island
 A dedicated leisure destination, Yas Island is home to the iconic Yas Marina Circuit, several theme parks, prestigious golf clubs, and the expansive Yas Mall, making it an all-encompassing destination for entertainment and recreation. Yas Marina Circuit, famous for hosting the annual Formula 1 Etihad Airways Abu Dhabi Grand Prix, offers high-speed excitement for motorsport enthusiasts. Visitors can indulge in the thrills of Ferrari World, Yas Waterworld, and Warner Bros. World Abu Dhabi, each offering a range of rides and attractions.
-
-## A Note from the Associate Dean of Administration and Planning
-
-#### Dear Colleagues,
-
-In closing, we hope that this document provides many answers and useful resources to make your introduction to the division as smooth as possible. We hope that it supplements the information provided in your orientation sessions and serves as an informative continuation of the onboarding process. Each section contains plentiful links to the university's widely-used Intranet page, which contains more extensive information, contact details, FAQs, help links, forms, and policies. If anything remains unclear or if you have any further questions, please feel free to reach out to any one of our team for support.
-
-If you have not already, you will soon be receiving an introductory email and further information from your Program Administrative Coordinator. For now, on behalf of our entire administration team, we welcome you to the Division of Science and to NYU Abu Dhabi!
-
-Warm regards,
-
-::: signature
-**Eve Johnston**
-
-Associate Dean of Administration and Planning  
-NYU Abu Dhabi
-:::
