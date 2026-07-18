@@ -161,15 +161,29 @@ def render_contents_row(section: dict) -> str:
       </a>"""
 
 
+def topic_anchor_lookup(section: dict) -> dict[str, str]:
+    return {
+        normalize_heading(item["name"]): item["id"]
+        for item in section.get("subsections", [])
+    }
+
+
 def render_topic_list(section: dict, limit: int | None = None) -> str:
     topics = section.get("toc", [])
     if limit:
         topics = topics[:limit]
     if not topics:
         return ""
-    items = "\n".join(f"          <li>{topic[0]}</li>" for topic in topics)
+    anchors = topic_anchor_lookup(section)
+    items = []
+    for topic in topics:
+        label = topic[0]
+        anchor = anchors.get(normalize_heading(label))
+        label_html = f'<a href="#{anchor}">{label}</a>' if anchor else label
+        items.append(f"          <li>{label_html}</li>")
+    items_html = "\n".join(items)
     return f"""        <ul class="topic-list">
-{items}
+{items_html}
         </ul>"""
 
 
@@ -178,10 +192,7 @@ def normalize_heading(text: str) -> str:
 
 
 def render_section_topic_links(section: dict) -> str:
-    subsection_ids = {
-        normalize_heading(item["name"]): item["id"]
-        for item in section.get("subsections", [])
-    }
+    subsection_ids = topic_anchor_lookup(section)
     links = []
     for topic in section.get("toc", []):
         label = topic[0]
@@ -210,7 +221,6 @@ def render_section(section: dict, nav: list[dict]) -> str:
 {render_header(nav, section['slug'])}
   <main class="page-shell">
     <section class="page-title section-hero">
-      <p class="eyebrow">Division of Science</p>
       <h1>{section['title']}</h1>
       {render_topic_list(section)}
     </section>

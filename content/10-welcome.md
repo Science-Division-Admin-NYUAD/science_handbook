@@ -5,8 +5,7 @@ nav_label: "Welcome"
 slug: welcome
 contents_title: "Welcome"
 toc:
-  - ["A small note from our Dean of Science", 5]
-  - ["Our Key Initiatives", 6]
+  - ["A note from our Dean", 5]
   - ["IDBE at NYUAD", 7]
   - ["NYUAD Shared Governance", 8]
   - ["Research", 9]
@@ -22,7 +21,7 @@ toc:
 ##### Welcome to the Division
 
 
-## A small note from our Dean of Science
+## A note from our Dean
 
 Welcome to the Division of Science at NYU Abu Dhabi. You are joining a global community of scientists and scholars who are not only answering today's questions but asking the ones that will define tomorrow. From quantum breakthroughs and space systems to climate resilience and health innovation, our work spans disciplines, cultures, and continents.
 
@@ -31,12 +30,6 @@ This is a moment of tremendous opportunity. We are forging deeper collaborations
 We encourage you to dive in, connect widely, and help shape what comes next. Whether in the lab, classroom, or beyond, your ideas will have space to grow and the support to thrive.
 
 Let us redefine what is possible, together.
-
-## Our Key Initiatives
-
-
-#### Nova of Celestoria
-One of the most exciting recent initiatives is the launch of *Nova of Celestoria*, a coming-of-age graphic novel written and illustrated by NYUAD students and inspired by real astrophysics. Produced by the Center for Astrophysics and Space Science, the novel blends imaginative storytelling with scientific accuracy to spark interest in space exploration across generations.
 
 ## IDBE at NYUAD
 
@@ -50,29 +43,13 @@ The Division of Science is deeply committed to fostering inclusion, diversity, b
 ## NYUAD Shared Governance
 
 
+#### Councils & Forums
+NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement. For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page on the intranet.
+
 #### Faculty Meetings
-Formal program faculty meetings are scheduled regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
+Formal program faculty meetings are planned regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
 
-Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting. Voting styles are at the discretion of the program heads.
-
-#### Councils
-NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils.
-
-#### Faculty Council
-Faculty Council meetings are recurring and take place during the Institutional Slot. The schedule can be found on the Intranet but will also be announced via email, and posted on the divisional calendar for convenience.
-
-#### Faculty Forum
-The NYUAD Faculty Forum is a faculty-only venue that allows faculty to collectively explore ideas and concerns in a less formal setting than the Faculty Council. It meets four times each semester. Attendance and participation at the Faculty Forum is open to all members of faculty and academic librarians.
-
-#### Postdoctoral Council Steering Committee (PCSC)
-The PCSC serves as the interface between members of the postdoctoral community and the upper administration of NYUAD. It is an advisory committee that provides a bridge between the senior academic administration, the community, and the Postdoctoral Council. The PCSC normally meets twice a month.
-
-#### Staff Council
-The Staff Council liaises with all staff — academic, administrative, and researchers — to gather concerns, opinions, and suggestions, and feed this back to NYUAD leadership. Like the Faculty Council, there are regular optional attendance Staff Forums, which are announced on the Intranet and via email.
-
-#### Student Government
-NYUAD's Student Government serves as the voice of students in the NYUAD community. It works closely with the administration in formulating and implementing policies, supports student interest groups, and facilitates communication and cooperation within NYU's global network. Regular general assembly takes place for students to discuss and vote on school issues. A platform is also available for the student body to suggest and vote for ideas to better improve the school community. Each science program has a student representative.
-
+Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting matters. Voting styles are at the discretion of the program heads.
 
 ## Research
 
