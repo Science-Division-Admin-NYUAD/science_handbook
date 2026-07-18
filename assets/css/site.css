@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -153,8 +154,8 @@ a {
   align-items: center;
   justify-content: center;
   width: 76%;
-  min-height: 390px;
-  padding: 34px 42px 30px;
+  min-height: clamp(258px, 51vw, 390px);
+  padding: clamp(22px, 4.5vw, 34px) clamp(24px, 5.5vw, 42px) clamp(20px, 4vw, 30px);
   background: rgba(255, 255, 255, 0.99);
   border-radius: 28px;
   text-align: center;
@@ -165,7 +166,7 @@ a {
   max-width: 100%;
   margin: 0;
   color: var(--teal);
-  font-size: 56px;
+  font-size: clamp(30px, 7.4vw, 56px);
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1.03;
@@ -175,7 +176,7 @@ a {
 .cover-title-panel p {
   margin: 16px 0 0;
   color: var(--ink);
-  font-size: 25px;
+  font-size: clamp(15px, 3.3vw, 25px);
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1.12;
@@ -304,10 +305,23 @@ h1 {
   margin-top: 13px;
 }
 
+.topic-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topic-list a:hover,
+.topic-list a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .page-title {
   position: relative;
   min-height: 690px;
-  padding: 292px 68px 72px;
+  isolation: isolate;
+  padding: 316px 86px 72px;
   overflow: hidden;
   background: var(--teal);
   color: #fff;
@@ -321,6 +335,7 @@ h1 {
   border-bottom: 0;
   border-top-left-radius: 50% 38%;
   border-top-right-radius: 50% 38%;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -336,17 +351,20 @@ h1 {
 }
 
 .page-title h1 {
-  max-width: 720px;
+  max-width: 840px;
+  margin: 0 auto;
   color: #fff;
-  font-size: 70px;
-  font-weight: 300;
+  font-size: clamp(48px, 6.1vw, 70px);
+  font-weight: 400;
   line-height: 1.04;
+  text-align: center;
 }
 
 .page-title .topic-list {
   display: block;
   max-width: 780px;
-  margin: 44px 0 0;
+  margin: 48px auto 0;
+  padding: 0 clamp(24px, 3.4vw, 42px);
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -407,6 +425,12 @@ h1 {
   letter-spacing: 0;
   line-height: 1.08;
   text-transform: uppercase;
+}
+
+.article h2[id],
+.article h3[id],
+.article h4[id] {
+  scroll-margin-top: 50px;
 }
 
 .article h2:first-child,
@@ -632,17 +656,7 @@ h1 {
 
   .cover-title-panel {
     top: 33.2%;
-    min-height: 326px;
-    padding: 24px 28px 22px;
     border-radius: 24px;
-  }
-
-  .cover-title-panel h1 {
-    font-size: 44px;
-  }
-
-  .cover-title-panel p {
-    font-size: 20px;
   }
 
   h1 {
@@ -673,11 +687,17 @@ h1 {
 
   .page-title {
     min-height: 540px;
-    padding: 220px 38px 54px;
+    padding: 246px 54px 54px;
+  }
+
+  .section-hero::after {
+    inset: 34px 26px -74px;
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
   }
 
   .page-title h1 {
-    font-size: 48px;
+    font-size: clamp(40px, 7.4vw, 52px);
   }
 
   .content-layout {
@@ -685,7 +705,7 @@ h1 {
   }
 
   .page-toc {
-    position: static;
+    display: none;
   }
 }
 
@@ -710,18 +730,11 @@ h1 {
     left: 6%;
     top: 33%;
     width: 78%;
-    min-height: 258px;
-    padding: 20px 20px 18px;
     border-radius: 20px;
-  }
-
-  .cover-title-panel h1 {
-    font-size: 30px;
   }
 
   .cover-title-panel p {
     margin-top: 10px;
-    font-size: 15px;
   }
 
   h1 {
@@ -752,20 +765,24 @@ h1 {
 
   .page-title {
     min-height: 430px;
-    padding: 156px 24px 40px;
+    padding: 178px 28px 40px;
   }
 
   .section-hero::after {
-    inset: 28px 20px -70px;
+    inset: 28px 20px -62px;
+    border-width: 2px;
+    border-top-left-radius: 48% 24%;
+    border-top-right-radius: 48% 24%;
   }
 
   .page-title h1 {
-    font-size: 38px;
+    font-size: clamp(34px, 8.8vw, 40px);
   }
 
   .page-title .topic-list {
     font-size: 13px;
-    margin-top: 30px;
+    margin-top: 32px;
+    padding: 0 26px;
   }
 
   .article {
