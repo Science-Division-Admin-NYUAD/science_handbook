@@ -40,6 +40,8 @@ All University community members are expected to uphold these values through act
 
 The Division of Science is deeply committed to fostering inclusion, diversity, belonging, and equity across all facets of our operations, from our robust recruitment processes, through to our teaching curriculum, targeted research projects and Global Perspectives in Science Seminar Series. (See section three.)
 
+For more information, please visit our [Global Access and Engagement](https://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page on the intranet.
+
 ## NYUAD Shared Governance
 
 

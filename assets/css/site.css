@@ -460,10 +460,10 @@ h1 {
 .article h5 {
   margin: 0 0 18px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0;
-  line-height: 1.2;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
