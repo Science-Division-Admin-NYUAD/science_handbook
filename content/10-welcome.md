@@ -8,14 +8,15 @@ toc:
   - ["A note from our Dean", 5]
   - ["IDBE at NYUAD", 7]
   - ["NYUAD Shared Governance", 8]
-  - ["Research", 9]
-  - ["Facilities and Infrastructure", 11]
-  - ["Our Associate Deans", 14]
-  - ["Our Programs", 15]
-  - ["Our Program Heads", 17]
-  - ["PASS Program: Reaching for the Stars", 18]
-  - ["MIDSAI Program", 19]
-  - ["Our Program Administrators", 20]
+  - ["Our Programs", 9]
+  - ["Our Program Heads", 11]
+  - ["Graduate & Postdoctoral Programs", 12]
+  - ["Research", 13]
+  - ["Facilities and Infrastructure", 15]
+  - ["Our Dean & Associate Deans", 18]
+  - ["PASS Program: Reaching for the Stars", 19]
+  - ["MIDSAI Program", 20]
+  - ["Our Program Administrators", 21]
 ---
 
 ##### Welcome to the Division
@@ -52,6 +53,87 @@ NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral as
 Formal program faculty meetings are planned regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
 
 Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting matters. Voting styles are at the discretion of the program heads.
+
+## Our Programs
+
+
+### Undergraduate Programs
+
+There are six academic programs within the Division of Science: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
+
+#### Capstone Project
+Every science student completes a Capstone research project in their fourth year. They work closely with one of our many research labs or groups on a demanding, year-long endeavor that culminates in a significant piece of research that is presented at the annual Science Capstone Festival.
+
+#### Foundations of Science (FoS)
+An innovative and integrated program that all Biology, Chemistry and Physics undergraduates are required to take. It fosters inter-disciplinarity and an experimental approach to learning.
+
+#### Global Education
+Global education is an essential component of NYU Abu Dhabi's educational mission and curriculum. It is realized through a careful sequence of interrelated academic and intercultural experiences that provide students with intellectually rigorous, research-focused learning environments to complement and extend their coursework. They include semester-long study away programs, J-Term programs, and course-related study trips in the United Arab Emirates and the broader Middle East that are typically combined with January Term or semester courses.
+
+For more information, please visit our [Global Education Programs](https://intranet.nyuad.nyu.edu/faculty-resources/academics/global-education-programs/) page on the Intranet.
+
+## Our Program Heads
+
+::: people-grid
+::: person
+#### Piergiorgio Percipalle — Biology
+Associate Dean for Research and Graduate Programs; Program Head of Biology; Professor of Biology
+<span class="email">pp69@nyu.edu</span>
+:::
+::: person
+#### Ali Trabolsi — Chemistry
+Program Head of Chemistry; Professor of Chemistry
+<span class="email">at105@nyu.edu</span>
+:::
+::: person
+#### Christina Pöpper — Computer Science
+Program Head of Computer Science; Associate Professor of Computer Science
+<span class="email">cp105@nyu.edu</span>
+:::
+::: person
+#### Pierre Youssef — Mathematics
+Program Head of Mathematics; Associate Professor of Mathematics
+<span class="email">yp27@nyu.edu</span>
+:::
+::: person
+#### Ingyin Zaw — Physics
+Program Head of Physics; Associate Professor of Physics
+<span class="email">iz6@nyu.edu</span>
+:::
+::: person
+#### David Melcher — Psychology
+Program Head of Psychology; Professor of Psychology
+<span class="email">dm93@nyu.edu</span>
+:::
+::: person
+#### Shady Amin — Biology
+Associate Program Head for Undergraduate Studies of Biology; Associate Professor of Biology
+<span class="email">sa132@nyu.edu</span>
+:::
+::: person
+#### Sarah Nadi — Computer Science
+Associate Program Head for Undergraduate Studies of Computer Science; Associate Professor of Computer Science
+<span class="email">sn3635@nyu.edu</span>
+:::
+::: person
+#### Karam Fayad — Mathematics
+Associate Program Head for Undergraduate Studies of Mathematics; Lecturer of Mathematics
+<span class="email">kf2172@nyu.edu</span>
+:::
+::: person
+#### Kartik Sreenivasan — Psychology
+Associate Program Head for Undergraduate Studies of Psychology; Associate Professor of Psychology with an affiliation in Biology
+<span class="email">kks4@nyu.edu</span>
+:::
+:::
+
+## Graduate & Postdoctoral Programs
+
+The Division of Science offers Global PhD Fellowships across multiple programs. The Office of Graduate and Postdoctoral Programs supports graduate academics, student life, and professional development, fostering a vibrant community of nearly 300 postgraduate researchers while partnering across NYU Abu Dhabi to promote excellence in graduate education and postdoctoral training.
+
+Programs typically span 4-5 years and may include a period of study at NYU's New York campus, depending on the specific program. This allows our students to have access to the extensive resources and opportunities available across NYU's network of prestigious graduate schools. Upon successful completion of the program, students are awarded an NYU degree.
+
+For more information on each program, please visit our [Graduate & Postdoctoral Programs](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-provost/graduate-and-postdoctoral-programs.html) page.
 
 ## Research
 
@@ -168,119 +250,49 @@ Service to scholars is the primary mission of the [NYUAD Library](https://nyuad.
 The NYUAD Library is fully connected to NYU Libraries e-resources in New York, providing seamless access for our global scholars. These electronic resources are accessible within the library and remotely. Additionally, if a resource cannot be found in the main collection, eligible borrowers may request it from NYU Bobst Library or other libraries around the world.
 
 #### IT Support
-If you require technological assistance, you can contact the [IT Service Desk](https://www.nyu.edu/life/information-technology/computing-support/help-and-service-status/nyu-it-service-desk.html) 24 hours a day, seven days a week. You can also pay the IT Experience Center a visit on the 2nd floor of the Campus Center (C2-N201) where support staff can assist you in person. You can walk in or make an appointment in advance via email. Contact: nyuad.it@nyu.edu or call 02 628 8888.
+If you require technological assistance, you can contact the [IT Service Desk](https://www.nyu.edu/life/information-technology/computing-support/help-and-service-status/nyu-it-service-desk.html) 24 hours a day, seven days a week. You can also visit the IT Experience Center on the 2nd floor of the Campus Center (C2-N201), where support staff can assist you in person. Walk-ins are welcome, or you can make an appointment in advance (nyuad.it@nyu.edu | 02 628 8888 [option 1]).
 
 For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page on the Intranet.
 
-## Our Associate Deans
+## Our Dean & Associate Deans
 
-::: people-grid
-::: person
+::: dean-feature
+::: dean-copy
+#### Francesco Arneodo
+Interim Dean of Science  
+Professor of Physics
+:::
+::: dean-photo-frame
+![Francesco Arneodo](assets/images/francesco-arneodo.png)
+:::
+:::
+
+::: dean-feature
+::: dean-copy
 #### Piergiorgio Percipalle
-Associate Dean for Research and Graduate Programs; Program Head of Biology; Professor of Biology
-<span class="email">pp69@nyu.edu</span>
+Associate Dean for Research & Graduate Programs  
+Professor of Biology
 :::
-::: person
-#### Diogo Arsénio
-Associate Professor of Mathematics
-<span class="email">dva207@nyu.edu</span>
+::: dean-photo-frame
+![Piergiorgio Percipalle](assets/images/piergiorgio-percipalle.png)
 :::
-::: person
+:::
+
+::: dean-feature
+::: dean-copy
 #### Hisham Sati
-Director, Center for Quantum and Topological Systems (CQTS); Associate Dean for Student Success and Curricular Affairs; Professor of Mathematics; Global Network Professor of Mathematics, Courant Institute of Mathematical Sciences
-<span class="email">ha56@nyu.edu</span>
+Associate Dean for Student Success & Curriculum Affairs  
+Professor of Mathematics
+:::
+::: dean-photo-frame
+![Hisham Sati](assets/images/hisham-sati.png)
 :::
 :::
-
-## Our Programs
-
-
-### Academic Programs
-
-There are six academic programs within the Division of Science: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
-
-### Undergraduate
-
-Though the program structure differs slightly for each of the undergraduate Science majors, there are consistent elements:
-
-#### Foundations of Science
-An innovative and integrated program that all Biology, Chemistry and Physics undergraduates are required to take. It fosters interdisciplinarity and an experimental approach to learning.
-
-#### Global Education
-A careful sequence of interrelated and intercultural experiences over four years, including the opportunity to spend one semester abroad. It encourages greater intercultural understanding towards social responsibility, both locally and globally.
-
-#### Capstone Project
-Every science student completes a Capstone research project in their fourth year. They work closely with one of our many research labs or groups on a demanding, year-long endeavor that culminates in a significant piece of research that is presented at the annual Science Capstone Festival.
-
-### Graduate
-
-The Division of Science offers Global PhD Fellowships across many of its programs. Though the program structures differ, there are some consistent elements.
-
-#### 4–5 Years in Total
-Students carry out their research within the cutting-edge labs and research groups at NYUAD.
-
-#### 1–2 Years in New York
-The programs generally involve classwork in New York. Our students have access to the extraordinary resources available within NYU's network of prestigious Graduate Schools.
-
-### NYU Degree
-Students are awarded an NYU Degree.
-
-::: quote
-Every science student completes a Capstone research project in their fourth year… a demanding, year-long endeavor that culminates in a significant piece of research.
-:::
-
-## Our Program Heads
 
 ::: people-grid
 ::: person
-#### Piergiorgio Percipalle — Biology
-Associate Dean for Research and Graduate Programs; Program Head of Biology; Professor of Biology
-<span class="email">pp69@nyu.edu</span>
-:::
-::: person
-#### Ali Trabolsi — Chemistry
-Program Head of Chemistry; Professor of Chemistry
-<span class="email">at105@nyu.edu</span>
-:::
-::: person
-#### Christina Pöpper — Computer Science
-Program Head of Computer Science; Associate Professor of Computer Science
-<span class="email">cp105@nyu.edu</span>
-:::
-::: person
-#### Pierre Youssef — Mathematics
-Program Head of Mathematics; Associate Professor of Mathematics
-<span class="email">yp27@nyu.edu</span>
-:::
-::: person
-#### Ingyin Zaw — Physics
-Program Head of Physics; Associate Professor of Physics
-<span class="email">iz6@nyu.edu</span>
-:::
-::: person
-#### David Melcher — Psychology
-Program Head of Psychology; Professor of Psychology
-<span class="email">dm93@nyu.edu</span>
-:::
-::: person
-#### Shady Amin — Biology
-Associate Program Head for Undergraduate Studies of Biology; Associate Professor of Biology
-<span class="email">sa132@nyu.edu</span>
-:::
-::: person
-#### Sarah Nadi — Computer Science
-Associate Program Head for Undergraduate Studies of Computer Science; Associate Professor of Computer Science
-<span class="email">sn3635@nyu.edu</span>
-:::
-::: person
-#### Karam Fayad — Mathematics
-Associate Program Head for Undergraduate Studies of Mathematics; Lecturer of Mathematics
-<span class="email">kf2172@nyu.edu</span>
-:::
-::: person
-#### Kartik Sreenivasan — Psychology
-Associate Program Head for Undergraduate Studies of Psychology; Associate Professor of Psychology with an affiliation in Biology
-<span class="email">kks4@nyu.edu</span>
+#### To be announced
+Associate Dean for Faculty Affairs & Advancement
 :::
 :::
 
