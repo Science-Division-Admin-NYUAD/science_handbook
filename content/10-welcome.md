@@ -11,12 +11,12 @@ toc:
   - ["Our Programs", 9]
   - ["Our Program Heads", 11]
   - ["Graduate & Postdoctoral Programs", 12]
-  - ["Research", 13]
-  - ["Facilities and Infrastructure", 15]
-  - ["Our Dean & Associate Deans", 18]
-  - ["PASS Program: Reaching for the Stars", 19]
-  - ["MIDSAI Program", 20]
-  - ["Our Program Administrators", 21]
+  - ["PASS: Reaching for the Stars", 13]
+  - ["MIDSAI", 14]
+  - ["Research", 15]
+  - ["Facilities and Infrastructure", 17]
+  - ["Our Dean & Associate Deans", 20]
+  - ["Our Admin Team", 21]
 ---
 
 ##### Welcome to the Division
@@ -74,56 +74,72 @@ For more information, please visit our [Global Education Programs](https://intra
 
 ## Our Program Heads
 
-::: people-grid
+::: program-heads
+::: program-row
 ::: person
 #### Piergiorgio Percipalle — Biology
 Associate Dean for Research and Graduate Programs; Program Head of Biology; Professor of Biology
 <span class="email">pp69@nyu.edu</span>
 :::
 ::: person
+#### Shady Amin — Biology
+Associate Program Head for Undergraduate Studies of Biology; Associate Professor of Biology
+<span class="email">sa132@nyu.edu</span>
+:::
+:::
+::: program-row
+::: person
 #### Ali Trabolsi — Chemistry
 Program Head of Chemistry; Professor of Chemistry
 <span class="email">at105@nyu.edu</span>
 :::
 ::: person
-#### Christina Pöpper — Computer Science
-Program Head of Computer Science; Associate Professor of Computer Science
-<span class="email">cp105@nyu.edu</span>
+#### Jamie Whelan — Chemistry
+Associate Program Head for Undergraduate Studies for Chemistry; Associate Lecturer in Chemistry
+<span class="email">jjw8@nyu.edu</span>
+:::
+:::
+::: program-row
+::: person
+#### Djellel Difallah — Computer Science
+Program Head of Computer Science; Assistant Professor of Computer Science
+<span class="email">dd115@nyu.edu</span>
 :::
 ::: person
-#### Pierre Youssef — Mathematics
-Program Head of Mathematics; Associate Professor of Mathematics
-<span class="email">yp27@nyu.edu</span>
+#### Moumena Chaqfeh — Computer Science
+Associate Program Head for Undergraduate Studies for Computer Science; Lecturer of Computer Science
+<span class="email">mc7581@nyu.edu</span>
 :::
-::: person
-#### Ingyin Zaw — Physics
-Program Head of Physics; Associate Professor of Physics
-<span class="email">iz6@nyu.edu</span>
 :::
+::: program-row
 ::: person
-#### David Melcher — Psychology
-Program Head of Psychology; Professor of Psychology
-<span class="email">dm93@nyu.edu</span>
-:::
-::: person
-#### Shady Amin — Biology
-Associate Program Head for Undergraduate Studies of Biology; Associate Professor of Biology
-<span class="email">sa132@nyu.edu</span>
-:::
-::: person
-#### Sarah Nadi — Computer Science
-Associate Program Head for Undergraduate Studies of Computer Science; Associate Professor of Computer Science
-<span class="email">sn3635@nyu.edu</span>
+#### Alberto Gandolfi — Mathematics
+Program Head of Mathematics; Professor of Practice in Mathematics
+<span class="email">ag189@nyu.edu</span>
 :::
 ::: person
 #### Karam Fayad — Mathematics
 Associate Program Head for Undergraduate Studies of Mathematics; Lecturer of Mathematics
 <span class="email">kf2172@nyu.edu</span>
 :::
+:::
+::: program-row
 ::: person
-#### Kartik Sreenivasan — Psychology
-Associate Program Head for Undergraduate Studies of Psychology; Associate Professor of Psychology with an affiliation in Biology
-<span class="email">kks4@nyu.edu</span>
+#### Theodore Waters — Psychology
+Program Head of Psychology; Associate Professor of Psychology
+<span class="email">tw57@nyu.edu</span>
+:::
+::: person
+#### Shaalan Farouk — Psychology
+Associate Program Head for Undergraduate Studies for Psychology; Senior Lecturer of Psychology
+<span class="email">sf144@nyu.edu</span>
+:::
+:::
+::: program-row
+::: person
+#### Azam Gholami — Physics
+Program Head of Physics; Associate Professor of Physics
+<span class="email">ag9141@nyu.edu</span>
 :::
 :::
 
@@ -134,6 +150,30 @@ The Division of Science offers Global PhD Fellowships across multiple programs. 
 Programs typically span 4-5 years and may include a period of study at NYU's New York campus, depending on the specific program. This allows our students to have access to the extensive resources and opportunities available across NYU's network of prestigious graduate schools. Upon successful completion of the program, students are awarded an NYU degree.
 
 For more information on each program, please visit our [Graduate & Postdoctoral Programs](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-provost/graduate-and-postdoctoral-programs.html) page.
+
+## PASS: Reaching for the Stars
+
+Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
+
+#### Vision and Impact
+PASS is more than a program. It is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
+
+This program is closely aligned with national priorities and offers opportunities to contribute to cutting-edge scientific efforts in the UAE and beyond. PASS provides a rich environment for publication, international collaboration, and translational research with real-world applications.
+
+#### Strategic Collaborations with the UAE Space Sector
+PASS benefits from longstanding collaborations with the UAE Space Agency and the Mohammed Bin Rashid Space Centre (MBRSC), two cornerstone institutions in the nation's space science ecosystem. These collaborations open doors for PASS students to engage with active research themes and stay informed about the latest developments in UAE-led missions and initiatives. Such partnerships reflect NYUAD's role as a hub for novel research in space-related science and engineering, and they strengthen the practical relevance and national integration of PASS.
+
+For more information on the program, please visit our [PASS](https://nyuad.nyu.edu/en/academics/graduate-and-phd/phd-programs/phd-in-astrophysics-and-space-systems.html) page.
+
+## MIDSAI
+
+The MSc in Interdisciplinary Data Science and Artificial Intelligence (MIDSAI) at NYU Abu Dhabi is a rigorous, research-intensive two-year program designed to develop specialized expertise, advanced data science skills, and artificial intelligence knowledge.
+
+Rooted in an interdisciplinary approach, the program integrates knowledge from Computer Science, Mathematics, Engineering, Social Sciences, and the Arts and Humanities, equipping students to tackle complex, real-world challenges. Students will gain access to exclusive partnerships with government and industry leaders in Abu Dhabi and the Gulf region, offering research collaborations, professional development opportunities, and enhanced career pathways in academia, industry, and the public sector.
+
+Whether advancing cutting-edge AI research or driving data-driven innovation, graduates of this program will shape the future of AI and Data Science on a global scale.
+
+For more information on the program, please visit our [MIDSAI](https://nyuad.nyu.edu/en/academics/graduate-and-phd/msc-interdisciplinary-data-science-and-artificial-intelligence.html) page.
 
 ## Research
 
@@ -296,30 +336,14 @@ Associate Dean for Faculty Affairs & Advancement
 :::
 :::
 
-## PASS Program: Reaching for the Stars
-
-### PhD in Astrophysics and Space Systems at NYU Abu Dhabi
-
-Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
-
-#### Vision and Impact
-PASS is more than a program. It is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
-
-This program is closely aligned with national priorities and offers opportunities to contribute to cutting-edge scientific efforts in the UAE and beyond. PASS provides a rich environment for publication, international collaboration, and translational research with real-world applications.
-
-#### Strategic Collaborations with the UAE Space Sector
-PASS benefits from longstanding collaborations with the UAE Space Agency and the Mohammed Bin Rashid Space Centre (MBRSC), two cornerstone institutions in the nation's space science ecosystem. These collaborations open doors for PASS students to engage with active research themes and stay informed about the latest developments in UAE-led missions and initiatives. Such partnerships reflect NYUAD's role as a hub for novel research in space-related science and engineering, and they strengthen the practical relevance and national integration of PASS.
-
-## MIDSAI Program
-
-## Our Program Administrators
+## Our Admin Team
 
 ::: people-grid
 ::: person
-#### Eve Johnston
-Associate Dean of Administration and Planning
+#### Marta Martinez
+Assistant Manager, Division of Science
 
-<span class="email">ej21@nyu.edu</span>
+<span class="email">mmc826@nyu.edu</span>
 :::
 ::: person
 #### Julie Brookes
@@ -341,27 +365,33 @@ Communications and Outreach
 <span class="email">kls10@nyu.edu</span>
 :::
 ::: person
-#### Marta Martinez
-Assistant Manager, Division of Science
-
-<span class="email">mmc826@nyu.edu</span>
-:::
-::: person
-#### Hend Alhammadi
-Administrative Coordinator
-
-<span class="email">ha2456@nyu.edu</span>
-:::
-::: person
 #### Elie Altenburger
-Administrative Coordinator
+Administrative Coordinator for Chemistry & Mathematics
 
 <span class="email">ea2973@nyu.edu</span>
 :::
 ::: person
-#### Walah Almesmari
-Administrative Coordinator
+#### Walah Al Mesmari
+Administrative Coordinator for Biology & Computer Science
 
 <span class="email">wha224@nyu.edu</span>
+:::
+::: person
+#### Karima Raafat
+Administrative Coordinator for Physics & Psychology
+
+<span class="email">kar618@nyu.edu</span>
+:::
+::: person
+#### Hend Alhammadi
+Administrative Coordinator for PASS
+
+<span class="email">ha2456@nyu.edu</span>
+:::
+::: person
+#### Paola Baba
+Administrative Coordinator, MIDSAI
+
+<span class="email">pb1919@nyu.edu</span>
 :::
 :::

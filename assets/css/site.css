@@ -582,6 +582,18 @@ h1 {
   margin: 20px 0 28px;
 }
 
+.program-heads {
+  display: grid;
+  gap: 14px;
+  margin: 20px 0 28px;
+}
+
+.program-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
 .card,
 .person {
   padding: 16px;
@@ -596,6 +608,8 @@ h1 {
 }
 
 .email {
+  display: block;
+  margin-top: 8px;
   color: var(--teal-dark);
   font-weight: 800;
 }
@@ -852,6 +866,10 @@ h1 {
 
   .article {
     padding: 28px 22px 38px;
+  }
+
+  .program-row {
+    grid-template-columns: 1fr;
   }
 
   .dean-feature {
