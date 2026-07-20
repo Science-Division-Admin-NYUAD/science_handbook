@@ -519,6 +519,61 @@ h1 {
   line-height: 1.34;
 }
 
+.dean-feature {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  max-width: 760px;
+  margin: 16px 0;
+  padding: 18px;
+  border: 1px solid var(--hairline);
+  border-top: 4px solid var(--teal);
+  background: #fbfdfe;
+}
+
+.dean-feature + .people-grid {
+  margin-top: 18px;
+}
+
+.dean-feature h4 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.dean-copy p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.dean-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.dean-photo-frame {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  width: 170px;
+  margin: 0;
+}
+
+.dean-photo-frame p {
+  margin: 0;
+}
+
+.dean-photo-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .cards,
 .people-grid {
   display: grid;
@@ -707,6 +762,16 @@ h1 {
   .page-toc {
     display: none;
   }
+
+  .dean-feature {
+    grid-template-columns: 150px minmax(0, 1fr);
+    max-width: none;
+    gap: 16px;
+  }
+
+  .dean-photo-frame {
+    width: 150px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -789,7 +854,36 @@ h1 {
     padding: 28px 22px 38px;
   }
 
+  .dean-feature {
+    padding: 16px;
+  }
+
+  .dean-feature h4 {
+    font-size: 24px;
+  }
+
+  .dean-photo-frame {
+    width: 128px;
+  }
+
   .article h2 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .dean-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .dean-copy {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .dean-photo-frame {
+    grid-column: 1;
+    grid-row: 1;
+    width: 150px;
   }
 }

@@ -28,6 +28,7 @@ PDF = ASSETS / "handbook.pdf"
 IMAGES = ASSETS / "images"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
+STYLE_VERSION = "20260720-leadership-photos"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
@@ -144,7 +145,7 @@ def render_cover(section: dict, nav: list[dict]) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{SITE_TITLE}</title>
-  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/site.css?v={STYLE_VERSION}">
 </head>
 <body>
 {render_header(nav, None)}
@@ -239,7 +240,7 @@ def render_section(section: dict, nav: list[dict]) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{section['title']} - Division of Science</title>
-  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/site.css?v={STYLE_VERSION}">
 </head>
 <body>
 {render_header(nav, section['slug'])}
