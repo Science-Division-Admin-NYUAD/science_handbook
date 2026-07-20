@@ -40,13 +40,13 @@ All University community members are expected to uphold these values through act
 
 The Division of Science is deeply committed to fostering inclusion, diversity, belonging, and equity across all facets of our operations, from our robust recruitment processes, through to our teaching curriculum, targeted research projects and Global Perspectives in Science Seminar Series. (See section three.)
 
-For more information, please visit our [Global Access and Engagement](https://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page on the intranet.
+For more information, please visit our [Global Access and Engagement](https://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page on the Intranet.
 
 ## NYUAD Shared Governance
 
 
 #### Councils & Forums
-NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement. For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page on the intranet.
+NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement. For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page on the Intranet.
 
 #### Faculty Meetings
 Formal program faculty meetings are planned regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
@@ -130,7 +130,7 @@ Faculty and researchers from the Division of Science lead and/or collaborate in 
 - Sand Hazards and Opportunities for Resilience, Energy, and Sustainability (SHORES)
 - Water Research Center
 
-For more information on each center, please visit our [Centers](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page on the intranet.
+For more information on each center, please visit our [Centers](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page on the Intranet.
 
 ## Facilities and Infrastructure
 
@@ -138,7 +138,7 @@ For more information on each center, please visit our [Centers](https://intranet
 #### Core Technology Platforms (CTP)
 NYUAD has dedicated significant resources to developing one of the premier science and engineering research laboratories in the region. An integral component of the laboratories are the [Core Technology Platforms (CTP)](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/) — shared facilities that support research activities across disciplines.
 
-Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the [CTP equipment](https://docs.google.com/document/d/1mGir5QXeYD_7LmFKFG54DWt5Syf6aRJHkc9ktdWxAZo/edit?tab=t.0#heading=h.gjdgxs) and [contact details](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/ctp-team/) on the intranet.
+Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the [CTP equipment](https://docs.google.com/document/d/1mGir5QXeYD_7LmFKFG54DWt5Syf6aRJHkc9ktdWxAZo/edit?tab=t.0#heading=h.gjdgxs) and [contact details](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/ctp-team/) on the Intranet.
 
 #### Experimental Research Building (ERB)
 The ERB is home to many faculty labs and research groups, each one equipped with state-of-the-art technology and equipment. It also houses many Core Technology Platforms (CTP), including:
@@ -163,16 +163,14 @@ The CRB also houses many faculty labs and research groups, in addition to:
 #### Library and Academic Technology
 
 
-Service to scholars is the primary mission of the NYUAD Library. Members of the NYU community have access to our extensive range of physical and electronic resources, including: over 88,000 physical books; over 6,000 DVDs; over 250,000 e-journals; over 1,400 databases; nearly 3 million e-books; and a wide range of equipment and software to help with research and teaching.
+Service to scholars is the primary mission of the [NYUAD Library](https://nyuad.nyu.edu/en/library.html). Members of the NYU community have access to our extensive range of physical and electronic resources, including: over 88,000 physical books; over 6,000 DVDs; over 250,000 e-journals; over 1,400 databases; nearly 3 million e-books; and a wide range of equipment and software to help with research and teaching.
 
-The NYUAD Library is fully connected to NYU Libraries e-resources in New York, providing seamless access for our global scholars. These electronic resources are accessible within the library and remotely. Additionally, if a resource cannot be found in the main collection, eligible borrowers may request it from NYU Bobst Library or other libraries around the world. Dedicated to your academic needs and to those of your students is Amani Magid, Coordinator of Library Instruction; Associate Academic Librarian for the Sciences and Engineering. Contact: am6087@nyu.edu
+The NYUAD Library is fully connected to NYU Libraries e-resources in New York, providing seamless access for our global scholars. These electronic resources are accessible within the library and remotely. Additionally, if a resource cannot be found in the main collection, eligible borrowers may request it from NYU Bobst Library or other libraries around the world.
 
 #### IT Support
-If you require technological assistance, you can contact the IT Service Desk 24 hours a day, seven days a week. There is also a desk on the ground floor of the Campus Center (C2) where support staff can assist you in person. You can walk in or make an appointment in advance via email. Contact: nyuad.it@nyu.edu or call 02 628 8888.
+If you require technological assistance, you can contact the [IT Service Desk](https://www.nyu.edu/life/information-technology/computing-support/help-and-service-status/nyu-it-service-desk.html) 24 hours a day, seven days a week. You can also pay the IT Experience Center a visit on the 2nd floor of the Campus Center (C2-N201) where support staff can assist you in person. You can walk in or make an appointment in advance via email. Contact: nyuad.it@nyu.edu or call 02 628 8888.
 
-::: quote
-At NYUAD, we pride ourselves on fostering an environment where innovation, collaboration, and inclusivity are at the forefront of everything we do.
-:::
+For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page on the Intranet.
 
 ## Our Associate Deans
 

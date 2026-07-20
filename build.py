@@ -15,6 +15,8 @@ from pathlib import Path
 
 import markdown
 import yaml
+from markdown.extensions import Extension
+from markdown.treeprocessors import Treeprocessor
 
 
 ROOT = Path(__file__).parent
@@ -30,6 +32,28 @@ SITE_TITLE = "Division of Science - New Joiners Handbook"
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
 FENCE_CLOSE_RE = re.compile(r"^:::\s*$")
+
+
+class ExternalLinkTargetTreeprocessor(Treeprocessor):
+    def run(self, root):
+        for link in root.iter("a"):
+            href = link.get("href", "")
+            if not href.startswith(("http://", "https://")):
+                continue
+            link.set("target", "_blank")
+            rel_values = set((link.get("rel") or "").split())
+            rel_values.update({"noopener", "noreferrer"})
+            link.set("rel", " ".join(sorted(rel_values)))
+        return root
+
+
+class ExternalLinkTargetExtension(Extension):
+    def extendMarkdown(self, md):
+        md.treeprocessors.register(
+            ExternalLinkTargetTreeprocessor(md),
+            "external_link_targets",
+            15,
+        )
 
 
 def split_front_matter(text: str) -> tuple[dict, str]:
@@ -63,7 +87,7 @@ def expand_fences(md_text: str) -> str:
 
 def render_markdown(body: str) -> tuple[str, list[dict[str, str]]]:
     md = markdown.Markdown(
-        extensions=["extra", "md_in_html", "sane_lists", "toc"],
+        extensions=["extra", "md_in_html", "sane_lists", "toc", ExternalLinkTargetExtension()],
         extension_configs={"toc": {"toc_depth": "2-3"}},
         output_format="html5",
     )
