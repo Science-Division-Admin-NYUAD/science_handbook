@@ -76,68 +76,86 @@ For more information, please visit our [Global Education Programs](https://intra
 
 ::: program-heads
 ::: program-row
+::: program-label
+Biology
+:::
 ::: person
-#### Piergiorgio Percipalle — Biology
+#### Piergiorgio Percipalle
 Associate Dean for Research and Graduate Programs; Program Head of Biology; Professor of Biology
 <span class="email">pp69@nyu.edu</span>
 :::
 ::: person
-#### Shady Amin — Biology
+#### Shady Amin
 Associate Program Head for Undergraduate Studies of Biology; Associate Professor of Biology
 <span class="email">sa132@nyu.edu</span>
 :::
 :::
 ::: program-row
+::: program-label
+Chemistry
+:::
 ::: person
-#### Ali Trabolsi — Chemistry
+#### Ali Trabolsi
 Program Head of Chemistry; Professor of Chemistry
 <span class="email">at105@nyu.edu</span>
 :::
 ::: person
-#### Jamie Whelan — Chemistry
+#### Jamie Whelan
 Associate Program Head for Undergraduate Studies for Chemistry; Associate Lecturer in Chemistry
 <span class="email">jjw8@nyu.edu</span>
 :::
 :::
 ::: program-row
+::: program-label
+Computer Science
+:::
 ::: person
-#### Djellel Difallah — Computer Science
+#### Djellel Difallah
 Program Head of Computer Science; Assistant Professor of Computer Science
 <span class="email">dd115@nyu.edu</span>
 :::
 ::: person
-#### Moumena Chaqfeh — Computer Science
+#### Moumena Chaqfeh
 Associate Program Head for Undergraduate Studies for Computer Science; Lecturer of Computer Science
 <span class="email">mc7581@nyu.edu</span>
 :::
 :::
 ::: program-row
+::: program-label
+Mathematics
+:::
 ::: person
-#### Alberto Gandolfi — Mathematics
+#### Alberto Gandolfi
 Program Head of Mathematics; Professor of Practice in Mathematics
 <span class="email">ag189@nyu.edu</span>
 :::
 ::: person
-#### Karam Fayad — Mathematics
+#### Karam Fayad
 Associate Program Head for Undergraduate Studies of Mathematics; Lecturer of Mathematics
 <span class="email">kf2172@nyu.edu</span>
 :::
 :::
 ::: program-row
+::: program-label
+Psychology
+:::
 ::: person
-#### Theodore Waters — Psychology
+#### Theodore Waters
 Program Head of Psychology; Associate Professor of Psychology
 <span class="email">tw57@nyu.edu</span>
 :::
 ::: person
-#### Shaalan Farouk — Psychology
+#### Shaalan Farouk
 Associate Program Head for Undergraduate Studies for Psychology; Senior Lecturer of Psychology
 <span class="email">sf144@nyu.edu</span>
 :::
 :::
 ::: program-row
+::: program-label
+Physics
+:::
 ::: person
-#### Azam Gholami — Physics
+#### Azam Gholami
 Program Head of Physics; Associate Professor of Physics
 <span class="email">ag9141@nyu.edu</span>
 :::
