@@ -114,45 +114,51 @@ The NYUAD Research Institute is a world-class center of cutting-edge and innovat
 
 Faculty and researchers from the Division of Science lead and/or collaborate in the following Research Institute Centers:
 
-- Center for Astro Physics and Space Science
-- Center for Astro Physics and Space Systems
-- Center for Brain and Health
+- Mubadala Arabian Center for Climate and Environmental Sciences (ACCESS)
+- Center for Astrophysics and Space Science
+- Center for Artificial Intelligence and Robotics
+- Center for Behavioral Institutional Design
+- Center for Brain and Health (CBH)
 - Center for Cyber Security
 - Center for Genomics and Systems Biology
 - Center for Interacting Urban Networks (CITIES)
 - Center for Quantum and Topological Systems
-- Center for Smart Engineering Materials
-- Center for Stability, Instability, and Turbulence
-- Center for Translational Medical Devices
-- Mubadala Arabian Center for Climate and Environmental Sciences (ACCESS)
+- Center for Smart Engineering Materials (NYUAD-CSEM)
+- Center of Interdisciplinary Data Science and Artificial Intelligence (CIDSAI)
+- Center for Translational Medical Devices (CENTMED)
 - Public Health Research Center
+- Sand Hazards and Opportunities for Resilience, Energy, and Sustainability (SHORES)
 - Water Research Center
+
+For more information on each center, please visit our [Centers](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page on the intranet.
 
 ## Facilities and Infrastructure
 
 
-#### The Experimental Research Building (ERB)
-The ERB is home to many faculty labs and research groups, each one equipped with state-of-the-art technology and equipment. It also houses many Core Technology Platforms, including:
+#### Core Technology Platforms (CTP)
+NYUAD has dedicated significant resources to developing one of the premier science and engineering research laboratories in the region. An integral component of the laboratories are the [Core Technology Platforms (CTP)](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/) — shared facilities that support research activities across disciplines.
 
-- Analytical and Materials Characterization
-- High-Throughput Screening
-- Kinesis
-- Light Microscopy
-- Micro-Fabrication
-- Molecular and Cell Biology
-- Spectrometry and Spectroscopy
-- Sequencing
+Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the [CTP equipment](https://docs.google.com/document/d/1mGir5QXeYD_7LmFKFG54DWt5Syf6aRJHkc9ktdWxAZo/edit?tab=t.0#heading=h.gjdgxs) and [contact details](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/ctp-team/) on the intranet.
+
+#### Experimental Research Building (ERB)
+The ERB is home to many faculty labs and research groups, each one equipped with state-of-the-art technology and equipment. It also houses many Core Technology Platforms (CTP), including:
+
+- [Analytical and Materials Characterization](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/analytical-and-materials-characterization/)
+- [High-Throughput Screening (HTS)](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/high-throughput-screening/)
+- [The Kinesis Lab](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/kinesis/)
+- [Light Microscopy](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/microscopy/)
+- [Marine Sciences](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/marine-sciences/)
+- [Micro-Fabrication](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/micro-fabrication/)
+- [Molecular and Cell Biology](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/molecular-and-cell-biology/)
+- [Photonics](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/photonics/)
+- [Spectrometry and Spectroscopy](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/nmr-and-spectroscopy/)
+- [Sequencing](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/sequencing/)
 
 #### Computational Research Building (CRB)
 The CRB also houses many faculty labs and research groups, in addition to:
 
-- The **Brain Imaging Core Technology Platform** that is equipped with a state-of-the-art 3T Siemens MAGNETOM Prisma MRI scanner.
-- The **Center for Research Computing** that serves our faculty, researchers, and students with High Performance Computing (HPC) and research computing services.
-
-#### The Core Technology Platform (CTP)
-NYUAD has dedicated significant resources to developing one of the premier science and engineering research laboratories in the region. An integral component of the laboratories are the Core Technology Platforms (CTP) — shared facilities that support research activities across disciplines.
-
-Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the CTP equipment and contact details on the Intranet.
+- The [**Brain Imaging Core Technology Platform**](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/biomedical-imaging/) that is equipped with a state-of-the-art 3T Siemens MAGNETOM Prisma MRI scanner.
+- The [**Center for Research Computing**](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/research-computing/) that serves our faculty, researchers, and students with High Performance Computing (HPC) and research computing services.
 
 #### Library and Academic Technology
 
