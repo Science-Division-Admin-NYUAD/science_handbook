@@ -13,10 +13,10 @@ toc:
   - ["Graduate & Postdoctoral Programs", 12]
   - ["PASS: Reaching for the Stars", 13]
   - ["MIDSAI", 14]
-  - ["Research", 15]
-  - ["Facilities and Infrastructure", 17]
-  - ["Our Dean & Associate Deans", 20]
-  - ["Our Admin Team", 21]
+  - ["Our Admin Team", 15]
+  - ["Research", 16]
+  - ["Facilities and Infrastructure", 18]
+  - ["Our Dean & Associate Deans", 21]
 ---
 
 ##### Welcome to the Division
@@ -193,6 +193,66 @@ Whether advancing cutting-edge AI research or driving data-driven innovation, gr
 
 For more information on the program, please visit our [MIDSAI](https://nyuad.nyu.edu/en/academics/graduate-and-phd/msc-interdisciplinary-data-science-and-artificial-intelligence.html) page.
 
+## Our Admin Team
+
+::: people-grid
+::: person
+#### Marta Martinez
+Assistant Manager, Division of Science
+
+<span class="email">mmc826@nyu.edu</span>
+:::
+::: person
+#### Julie Brookes
+Manager of Curriculum Affairs and Special Projects
+
+<span class="email">jcb22@nyu.edu</span>
+:::
+::: person
+#### Emma Baker
+Operations Manager
+
+<span class="email">elb7@nyu.edu</span>
+:::
+::: person
+#### Katie Stanworth
+Manager
+Communications and Outreach
+
+<span class="email">kls10@nyu.edu</span>
+:::
+::: person
+#### Elie Altenburger
+Administrative Coordinator for Chemistry & Mathematics
+
+<span class="email">ea2973@nyu.edu</span>
+:::
+::: person
+#### Walah Al Mesmari
+Administrative Coordinator for Biology & Computer Science
+
+<span class="email">wha224@nyu.edu</span>
+:::
+::: person
+#### Karima Raafat
+Administrative Coordinator for Physics & Psychology
+
+<span class="email">kar618@nyu.edu</span>
+:::
+::: person
+#### Hend Alhammadi
+Administrative Coordinator for PASS
+
+<span class="email">ha2456@nyu.edu</span>
+:::
+::: person
+#### Paola Baba
+Administrative Coordinator, MIDSAI
+
+<span class="email">pb1919@nyu.edu</span>
+:::
+:::
+
 ## Research
 
 ### Disciplinary Research
@@ -351,65 +411,5 @@ Professor of Mathematics
 ::: person
 #### To be announced
 Associate Dean for Faculty Affairs & Advancement
-:::
-:::
-
-## Our Admin Team
-
-::: people-grid
-::: person
-#### Marta Martinez
-Assistant Manager, Division of Science
-
-<span class="email">mmc826@nyu.edu</span>
-:::
-::: person
-#### Julie Brookes
-Manager of Curriculum Affairs and Special Projects
-
-<span class="email">jcb22@nyu.edu</span>
-:::
-::: person
-#### Emma Baker
-Operations Manager
-
-<span class="email">elb7@nyu.edu</span>
-:::
-::: person
-#### Katie Stanworth
-Manager
-Communications and Outreach
-
-<span class="email">kls10@nyu.edu</span>
-:::
-::: person
-#### Elie Altenburger
-Administrative Coordinator for Chemistry & Mathematics
-
-<span class="email">ea2973@nyu.edu</span>
-:::
-::: person
-#### Walah Al Mesmari
-Administrative Coordinator for Biology & Computer Science
-
-<span class="email">wha224@nyu.edu</span>
-:::
-::: person
-#### Karima Raafat
-Administrative Coordinator for Physics & Psychology
-
-<span class="email">kar618@nyu.edu</span>
-:::
-::: person
-#### Hend Alhammadi
-Administrative Coordinator for PASS
-
-<span class="email">ha2456@nyu.edu</span>
-:::
-::: person
-#### Paola Baba
-Administrative Coordinator, MIDSAI
-
-<span class="email">pb1919@nyu.edu</span>
 :::
 :::
