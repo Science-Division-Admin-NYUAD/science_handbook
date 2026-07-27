@@ -19,9 +19,6 @@ toc:
   - ["Our Dean & Associate Deans", 21]
 ---
 
-##### Welcome to the Division
-
-
 ## A note from our Dean
 
 Welcome to the Division of Science at NYU Abu Dhabi. You are joining a global community of scientists and scholars who are not only answering today's questions but asking the ones that will define tomorrow. From quantum breakthroughs and space systems to climate resilience and health innovation, our work spans disciplines, cultures, and continents.

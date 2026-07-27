@@ -1,16 +1,18 @@
 ---
 order: 3
-title: "Communication, Activity Reporting, and Promoting Your Research"
-nav_label: "Communication"
+title: "Communications and Research Reporting"
+nav_label: "Communications and Research Reporting"
 slug: communication
+title_lines:
+  - Communications
+  - and
+  - Research Reporting
 toc:
-  - ["Communication", 44]
-  - ["Activity Reporting", 46]
+  - ["Marketing & Communications", 44]
+  - ["Reporting", 46]
 ---
 
-##### Communication, Activity Reporting, and Promoting Your Research
-
-## Communication
+## Marketing & Communications
 
 
 ### Newsletters
@@ -103,7 +105,7 @@ Announcements: psychology.announcementsgroups@nyu.edu
 :::
 :::
 
-## Activity Reporting
+## Reporting
 
 
 #### Faculty 180

@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import re
 import shutil
+import html
 from pathlib import Path
 
 import markdown
@@ -28,7 +29,7 @@ PDF = ASSETS / "handbook.pdf"
 IMAGES = ASSETS / "images"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260720-leadership-photos"
+STYLE_VERSION = "20260727-active-topics"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
@@ -213,7 +214,7 @@ def render_topic_list(section: dict, limit: int | None = None) -> str:
 
 
 def normalize_heading(text: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+    return re.sub(r"[^a-z0-9]+", " ", html.unescape(text).lower()).strip()
 
 
 def render_section_topic_links(section: dict) -> str:
@@ -225,6 +226,81 @@ def render_section_topic_links(section: dict) -> str:
         if anchor:
             links.append(f'''      <a href="#{anchor}">{label}</a>''')
     return "\n".join(links)
+
+
+def render_section_title(section: dict) -> str:
+    lines = section.get("title_lines")
+    if lines:
+        line_html = "\n".join(
+            f'        <span class="title-line">{html.escape(str(line))}</span>'
+            for line in lines
+        )
+        return f"""      <h1 class="stacked-title">
+{line_html}
+      </h1>"""
+    return f"      <h1>{html.escape(section['title'])}</h1>"
+
+
+def render_active_topic_script(enabled: bool) -> str:
+    if not enabled:
+        return ""
+    return """  <script>
+    (() => {
+      const headings = Array.from(document.querySelectorAll(".article h2[id]"));
+      const links = Array.from(document.querySelectorAll('.page-toc a[href^="#"], .topic-list a[href^="#"]'));
+      if (!headings.length || !links.length) return;
+
+      const groupedLinks = new Map();
+      links.forEach((link) => {
+        const id = decodeURIComponent(link.hash.slice(1));
+        if (!groupedLinks.has(id)) groupedLinks.set(id, []);
+        groupedLinks.get(id).push(link);
+      });
+
+      const setActive = (id) => {
+        links.forEach((link) => {
+          link.classList.remove("is-active");
+          link.removeAttribute("aria-current");
+        });
+        (groupedLinks.get(id) || []).forEach((link) => {
+          link.classList.add("is-active");
+          link.setAttribute("aria-current", "true");
+        });
+      };
+
+      const currentHeadingId = () => {
+        const marker = window.scrollY + 120;
+        let active = headings[0].id;
+        headings.forEach((heading) => {
+          if (heading.offsetTop <= marker) active = heading.id;
+        });
+        return active;
+      };
+
+      let ticking = false;
+      const update = () => {
+        setActive(currentHeadingId());
+        ticking = false;
+      };
+
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+      window.addEventListener("resize", update);
+      links.forEach((link) => {
+        link.addEventListener("click", () => setActive(decodeURIComponent(link.hash.slice(1))));
+      });
+
+      if (window.location.hash) {
+        setActive(decodeURIComponent(window.location.hash.slice(1)));
+      }
+      update();
+    })();
+  </script>
+"""
 
 
 def render_section(section: dict, nav: list[dict]) -> str:
@@ -246,7 +322,7 @@ def render_section(section: dict, nav: list[dict]) -> str:
 {render_header(nav, section['slug'])}
   <main class="page-shell">
     <section class="page-title section-hero">
-      <h1>{section['title']}</h1>
+{render_section_title(section)}
       {render_topic_list(section)}
     </section>
     <div class="content-layout">
@@ -256,6 +332,7 @@ def render_section(section: dict, nav: list[dict]) -> str:
       </article>
     </div>
   </main>
+{render_active_topic_script(bool(toc))}
 </body>
 </html>
 """

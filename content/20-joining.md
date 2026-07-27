@@ -15,8 +15,6 @@ toc:
   - ["Teaching", 40]
 ---
 
-##### Joining the Division
-
 ## Before You Arrive
 
 
