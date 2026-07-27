@@ -8,8 +8,6 @@ toc:
   - ["Community Life", 49]
 ---
 
-##### Life at NYU Abu Dhabi
-
 ## Campus Location and Map
 
 

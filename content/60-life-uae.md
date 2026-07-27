@@ -9,8 +9,6 @@ toc:
   - ["Across the Emirate: Things to See and Do", 58]
 ---
 
-##### Life in Abu Dhabi
-
 ## About
 
 
