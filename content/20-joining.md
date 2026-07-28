@@ -79,7 +79,7 @@ The UAE government mandates that every individual coming to the country for empl
 The legal status and regulation of some medicines prescribed or purchased in one country can be different in another. In the UAE, some prescribed and over-the-counter medicines are considered controlled substances and cannot be brought into the country without prior permission from the UAE Ministry of Health. Apply online via the electronic application form. The UAE authorities advise that applications are normally processed within five working days.
 
 ### Prescriptions
-If you are required to carry a supply of prescription medication with you while you are traveling, it is advisable to also carry a note from your doctor as to what kind of medication it is, your prescribed dosage, and why you need to take it. You should also carry the medication in your carry-on luggage, in its original container. Be sure to follow airport security guidelines, particularly if the medicine is in liquid form, and be mindful that prescription medications mailed internationally may not be received or may be received later than planned due to customs restrictions. For queries, contact the NYUAD Health and Wellness Center at nyuad.healthcenter@nyu.edu.
+If you are required to carry a supply of prescription medication with you while you are traveling, it is advisable to also carry a note from your doctor as to what kind of medication it is, your prescribed dosage, and why you need to take it. You should also carry the medication in your carry-on luggage, in its original container. Be sure to follow airport security guidelines, particularly if the medicine is in liquid form, and be mindful that prescription medications mailed internationally may not be received or may be received later than planned due to customs restrictions. For queries, contact the NYUAD Health Center at nyuad.healthcenter@nyu.edu.
 
 ## Arriving on Campus
 
@@ -94,7 +94,7 @@ If you have any difficulties accessing certain spaces on campus, requests should
 ### Work Spaces
 
 #### Allocated Workstations or Offices
-Prior to your arrival, your Program Administrative Coordinator will arrange for your workstation or office to be set up on campus, in line with NYUAD's policy on space assignments, which establishes the use of shared spaces as and when required. Spaces come equipped with a desk, desk chair, and a stationery pack. Additional office supplies can be requested via facilities and additional furniture requests can be raised via the Intranet.
+Prior to your arrival, your program administrative coordinator will arrange for your workstation or office to be set up on campus, in line with NYUAD's policy on space assignments, which establishes the use of shared spaces as and when required. Spaces come equipped with a desk, desk chair, and a stationery pack. Additional office supplies can be requested via facilities and additional furniture requests can be raised via the Intranet.
 
 #### Your Contact Information
 Please ensure that your contact information is up to date in the Contacts Directory. If your location is incorrect, please fill out the NYUAD Office Location Update form. If you are not listed in the directory, your title is incorrect, or you need to update your office extension number, please contact PeopleLink at nyuad.peoplelink@nyu.edu.
@@ -125,7 +125,7 @@ NYUAD uses Multi-Factor Authentication (MFA) to improve security by ensuring tha
 - Then, you use a physical device, such as your mobile phone or tablet, to confirm your identity.
 
 #### File Management — Google Drive and NYU Box
-Your Program Administrative Coordinators use Google applications to share and request information from you, including docs, sheets, and files. Google Calendar is the primary program and divisional calendar application, and all of your meetings and events will be scheduled through this.
+Your program administrative coordinators use Google applications to share and request information from you, including docs, sheets, and files. Google Calendar is the primary program and divisional calendar application, and all of your meetings and events will be scheduled through this.
 
 Google Drive — a cloud-based service for file storage/sharing and document collaboration — is commonly used at NYUAD; however, Google has announced that it will no longer provide free, unlimited storage to educational institutions. As a result, NYU has introduced new storage limits for Google services for all employees, students, and affiliates. Existing and new files, emails, and photos all count towards your designated storage limit. Please note that this is different from the NYUAD File Share service and is limited to the Google workspace. More information and details about alternative storage solutions, such as NYU Box, are available on the Intranet.
 
@@ -341,10 +341,10 @@ Dive into the wealth of resources and opportunities available within our Divisio
 #### Program Seminar Series
 Each program in the Division of Science hosts a collection of semi-formal weekly talks throughout the academic year. These Seminar Series, or Colloquium Series in the case of Mathematics, build the reputation of the programs, division, and university at large by facilitating networking connections and research collaborations with local and international scholars.
 
-Seminars are open to the NYUAD community, and may be attended by staff, faculty, students, postdocs, and researchers. Seminars are scheduled in accordance with the Registrar and with other program series in mind, thus there is the expectation that the divisional community, including our passionate students, will attend and participate. Speakers are advised that topics should not be too niche, but rather broad enough to be understood by an audience of varied specializations and expertise. Some Programs in the Division of Science also organize informal research talks, as a means of offering PhD graduates and research staff the opportunity to present their work to peers. Please reach out to your Program Head or Program Administrative Coordinators for more information.
+Seminars are open to the NYUAD community, and may be attended by staff, faculty, students, postdocs, and researchers. Seminars are scheduled in accordance with the Registrar and with other program series in mind, thus there is the expectation that the divisional community, including our passionate students, will attend and participate. Speakers are advised that topics should not be too niche, but rather broad enough to be understood by an audience of varied specializations and expertise. Some Programs in the Division of Science also organize informal research talks, as a means of offering PhD graduates and research staff the opportunity to present their work to peers. Please reach out to your Program Head or program administrative coordinators for more information.
 
 #### Seminar Series Planning and Policies
-Your Program Administrative Coordinators will work with you to plan and schedule seminar speakers. Each standing faculty member can usually invite at least one seminar speaker per academic year. Additional speakers may be invited at the discretion of the Program Head and Administrator, on a case-by-case basis.
+Your program administrative coordinators will work with you to plan and schedule seminar speakers. Each standing faculty member can usually invite at least one seminar speaker per academic year. Additional speakers may be invited at the discretion of the Program Head and Administrator, on a case-by-case basis.
 
 NYUAD offers a complimentary economy return ticket, airport ground transfers in the UAE, campus or local hotel accommodation depending on availability, and a visa if required. If a speaker's flight time is more than eight hours, the program budget may cover up to four nights' accommodation. If the flight duration is eight hours or less, the program budget covers three nights.
 

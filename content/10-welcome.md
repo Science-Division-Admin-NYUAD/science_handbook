@@ -44,10 +44,11 @@ For more information, please visit our [Global Access and Engagement](https://in
 
 
 #### Councils & Forums
-NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement. For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page on the Intranet.
+NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement.<br>
+For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page on the Intranet.
 
 #### Faculty Meetings
-Formal program faculty meetings are planned regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated Program Administrative Coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
+Formal program faculty meetings are planned regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated program administrative coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
 
 Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting matters. Voting styles are at the discretion of the program heads.
 

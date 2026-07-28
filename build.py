@@ -29,11 +29,14 @@ PDF = ASSETS / "handbook.pdf"
 IMAGES = ASSETS / "images"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260728-plum-theme"
+STYLE_VERSION = "20260728-mail-option-2"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
 FENCE_CLOSE_RE = re.compile(r"^:::\s*$")
+EMAIL_RE = re.compile(r"(?<![\w.+-])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})(?![\w-])")
+INTRANET_URL = "https://intranet.nyuad.nyu.edu/"
+INTRANET_RE = re.compile(r"(?<![\w-])((?:NYUAD\s+)?Intranet)(?![\w-])", re.IGNORECASE)
 
 class ExternalLinkTargetTreeprocessor(Treeprocessor):
     def run(self, root):
@@ -86,13 +89,83 @@ def expand_fences(md_text: str) -> str:
     return "\n".join(out)
 
 
+def link_email_addresses(html_text: str) -> str:
+    parts = re.split(r"(<[^>]+>)", html_text)
+    linked: list[str] = []
+    in_anchor = False
+
+    for part in parts:
+        if part.startswith("<") and part.endswith(">"):
+            tag = part.lower()
+            if re.match(r"<a\b", tag):
+                in_anchor = True
+            elif re.match(r"</a\s*>", tag):
+                in_anchor = False
+            linked.append(part)
+            continue
+
+        if in_anchor:
+            linked.append(part)
+            continue
+
+        linked.append(
+            EMAIL_RE.sub(
+                lambda match: (
+                    f'<a class="email-copy" href="mailto:{match.group(1)}" '
+                    f'data-email="{match.group(1)}" '
+                    f'aria-label="Copy email address {match.group(1)}">{match.group(1)}</a>'
+                ),
+                part,
+            )
+        )
+
+    return "".join(linked)
+
+
+def link_intranet_mentions(html_text: str) -> str:
+    parts = re.split(r"(<[^>]+>)", html_text)
+    linked: list[str] = []
+    in_anchor = False
+    in_heading = False
+
+    for part in parts:
+        if part.startswith("<") and part.endswith(">"):
+            tag = part.lower()
+            if re.match(r"<a\b", tag):
+                in_anchor = True
+            elif re.match(r"</a\s*>", tag):
+                in_anchor = False
+            elif re.match(r"<h[1-6]\b", tag):
+                in_heading = True
+            elif re.match(r"</h[1-6]\s*>", tag):
+                in_heading = False
+            linked.append(part)
+            continue
+
+        if in_anchor or in_heading:
+            linked.append(part)
+            continue
+
+        linked.append(
+            INTRANET_RE.sub(
+                lambda match: (
+                    f'<a href="{INTRANET_URL}" target="_blank" '
+                    f'rel="noopener noreferrer">{match.group(1)}</a>'
+                ),
+                part,
+            )
+        )
+
+    return "".join(linked)
+
+
 def render_markdown(body: str) -> tuple[str, list[dict[str, str]], list[dict]]:
     md = markdown.Markdown(
         extensions=["extra", "md_in_html", "sane_lists", "toc", ExternalLinkTargetExtension()],
         extension_configs={"toc": {"toc_depth": "2-3"}},
         output_format="html5",
     )
-    html = md.convert(expand_fences(body))
+    html = link_intranet_mentions(link_email_addresses(md.convert(expand_fences(body))))
     toc_tree = clean_toc_tokens(md.toc_tokens)
     subsections = flatten_toc_tokens(toc_tree)
     return html, subsections, toc_tree
@@ -171,7 +244,7 @@ def render_cover(section: dict, nav: list[dict]) -> str:
 {render_header(nav, None)}
   <main class="cover">
     <section class="cover-hero" aria-labelledby="cover-title">
-      <img src="assets/images/cover-page.jpg" alt="" aria-hidden="true">
+      <img src="assets/images/cover-page.jpg?v={STYLE_VERSION}" alt="" aria-hidden="true">
       <div class="cover-title-panel">
         <h1 id="cover-title">Welcome to the Division of Science</h1>
         <p>A handbook for new joiners</p>
@@ -425,6 +498,99 @@ def render_active_topic_script(enabled: bool) -> str:
 """
 
 
+def render_email_copy_script() -> str:
+    return """  <script>
+    (() => {
+      const emailLinks = Array.from(document.querySelectorAll(".email-copy[data-email]"));
+      if (!emailLinks.length) return;
+
+      const toast = document.createElement("div");
+      toast.className = "copy-toast";
+      toast.setAttribute("role", "status");
+      toast.setAttribute("aria-live", "polite");
+      document.body.appendChild(toast);
+
+      let toastTimer = 0;
+
+      const fallbackCopy = (text) => {
+        const field = document.createElement("textarea");
+        field.value = text;
+        field.setAttribute("readonly", "");
+        field.style.position = "fixed";
+        field.style.left = "-9999px";
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand("copy");
+        field.remove();
+      };
+
+      const copyText = async (text) => {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+        fallbackCopy(text);
+      };
+
+      const showToast = (link) => {
+        const rect = link.getBoundingClientRect();
+        toast.textContent = "Copied";
+        toast.classList.add("is-visible");
+
+        const left = Math.min(
+          window.innerWidth - toast.offsetWidth - 12,
+          Math.max(12, rect.left + rect.width / 2 - toast.offsetWidth / 2)
+        );
+        const top = Math.max(12, rect.top - toast.offsetHeight - 8);
+        toast.style.left = `${left}px`;
+        toast.style.top = `${top}px`;
+
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => {
+          toast.classList.remove("is-visible");
+        }, 1200);
+      };
+
+      document.querySelectorAll(".program-card").forEach((card) => {
+        const cardEmails = Array.from(card.querySelectorAll(".email-copy[data-email]"));
+        const emails = cardEmails.map((link) => link.dataset.email).filter(Boolean);
+        if (emails.length < 2) return;
+
+        card.classList.add("has-copy-all");
+        const title = card.querySelector("h4")?.textContent?.trim() || "this program";
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "copy-all-emails";
+        button.title = `Copy all email addresses for ${title}`;
+        button.setAttribute("aria-label", `Copy all email addresses for ${title}`);
+        button.addEventListener("click", async () => {
+          try {
+            await copyText(emails.join("\\n"));
+            showToast(button);
+          } catch {
+            return;
+          }
+        });
+        card.appendChild(button);
+      });
+
+      emailLinks.forEach((link) => {
+        link.addEventListener("click", async (event) => {
+          event.preventDefault();
+          const email = link.dataset.email || link.textContent.trim();
+          try {
+            await copyText(email);
+            showToast(link);
+          } catch {
+            window.location.href = link.href;
+          }
+        });
+      });
+    })();
+  </script>
+"""
+
+
 def render_section(section: dict, nav: list[dict]) -> str:
     toc = render_section_topic_links(section)
     toc_block = f"""    <aside class="page-toc" aria-label="On this page">
@@ -455,6 +621,7 @@ def render_section(section: dict, nav: list[dict]) -> str:
     </div>
   </main>
 {render_active_topic_script(bool(toc))}
+{render_email_copy_script()}
 </body>
 </html>
 """
