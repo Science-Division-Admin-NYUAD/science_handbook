@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --teal: #008fa8;
-  --teal-dark: #00788f;
-  --teal-soft: #e8f6f8;
+  --teal: #4B365C;
+  --teal-dark: #372743;
+  --teal-soft: #f4eff7;
   --ink: #191919;
   --muted: #60646c;
   --line: #1f1f1f;
@@ -285,6 +285,12 @@ h1 {
   text-transform: uppercase;
 }
 
+.contents-copy li.topic-subtopic {
+  padding-left: 18px;
+  color: #555;
+  font-size: 15px;
+}
+
 .contents-copy li span:last-child {
   text-align: right;
 }
@@ -303,6 +309,12 @@ h1 {
 
 .topic-list li + li {
   margin-top: 13px;
+}
+
+.topic-list li.topic-subtopic {
+  padding-left: 18px;
+  font-size: 14px;
+  opacity: 0.92;
 }
 
 .topic-list a {
@@ -332,9 +344,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 430px;
+  min-height: 300px;
   isolation: isolate;
-  padding: 116px 86px 78px;
+  padding: 78px 76px 58px;
   overflow: hidden;
   background: var(--teal);
   color: #fff;
@@ -359,7 +371,7 @@ h1 {
   max-width: 960px;
   margin: 0 auto;
   color: #fff;
-  font-size: clamp(44px, 5.8vw, 72px);
+  font-size: clamp(38px, 4.8vw, 58px);
   font-weight: 500;
   line-height: 1.04;
   text-align: center;
@@ -379,7 +391,7 @@ h1 {
 .stacked-title .title-line:first-child,
 .stacked-title .title-line:nth-child(2),
 .stacked-title .title-line:last-child {
-  font-size: clamp(46px, 6.2vw, 74px);
+  font-size: clamp(38px, 4.8vw, 58px);
   line-height: 0.98;
 }
 
@@ -396,7 +408,7 @@ h1 {
 .page-title .topic-list {
   display: none;
   max-width: 780px;
-  margin: 48px auto 0;
+  margin: 34px auto 0;
   padding: 0 clamp(24px, 3.4vw, 42px);
   color: #fff;
   font-size: 16px;
@@ -416,14 +428,17 @@ h1 {
   top: 76px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 16px 16px 18px;
-  border-left: 4px solid var(--teal);
-  background: linear-gradient(90deg, rgba(0, 143, 168, 0.12), rgba(255, 255, 255, 0));
+  gap: 6px;
+  padding: 14px 14px 16px;
+  border: 1px solid var(--hairline);
+  border-top: 4px solid var(--teal);
+  background: #fff;
 }
 
 .page-toc p {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hairline);
   color: var(--teal-dark);
   font-size: 12px;
   font-weight: 800;
@@ -432,10 +447,16 @@ h1 {
   text-transform: uppercase;
 }
 
+.toc-group {
+  display: grid;
+  gap: 2px;
+}
+
 .page-toc a {
+  position: relative;
   display: block;
-  padding: 3px 0 3px 8px;
-  border-left: 2px solid rgba(0, 143, 168, 0.2);
+  padding: 6px 8px;
+  border-radius: 4px;
   color: var(--ink);
   font-size: 13px;
   font-weight: 700;
@@ -444,15 +465,80 @@ h1 {
 }
 
 .page-toc a:hover {
-  border-left-color: var(--teal);
+  background: #f3f8fa;
   color: var(--teal-dark);
 }
 
-.page-toc a.is-active {
-  border-left-color: var(--teal);
-  background: rgba(0, 143, 168, 0.1);
+.page-toc a.toc-main[aria-expanded] {
+  padding-right: 24px;
+}
+
+.page-toc a.toc-main[aria-expanded]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-65%) rotate(45deg);
+  transition: transform 180ms ease;
+}
+
+.toc-group.is-expanded .toc-main[aria-expanded]::after {
+  transform: translateY(-25%) rotate(225deg);
+}
+
+.toc-group.is-expanded .toc-main:not(.is-active) {
+  background: #f3f8fa;
   color: var(--teal-dark);
+}
+
+.toc-subtopics {
+  display: grid;
+  gap: 2px;
+  max-height: 0;
+  margin: 0 0 0 8px;
+  padding-left: 10px;
+  border-left: 2px solid var(--hairline);
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: max-height 240ms ease, margin 240ms ease, opacity 180ms ease, transform 240ms ease;
+}
+
+.toc-group.is-expanded .toc-subtopics {
+  max-height: 260px;
+  margin: 1px 0 2px 8px;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.page-toc a.toc-subtopic {
+  padding: 5px 8px;
+  color: #4f5960;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.page-toc a.is-active {
+  background: var(--teal);
+  color: #fff;
   font-weight: 800;
+}
+
+.page-toc a.topic-subtopic {
+  margin-left: 10px;
+  padding-left: 12px;
+  border-left: 2px solid var(--hairline);
+  font-size: 12px;
+}
+
+.page-toc a.topic-subtopic.is-active {
+  border-left-color: rgba(255, 255, 255, 0.7);
 }
 
 .article {
@@ -463,13 +549,23 @@ h1 {
 }
 
 .article h2 {
-  margin: 42px 0 16px;
-  color: var(--teal);
-  font-size: 42px;
-  font-weight: 400;
+  display: block;
+  max-width: 800px;
+  margin: 46px 0 18px;
+  color: var(--teal-dark);
+  font-size: clamp(23px, 2.6vw, 30px);
+  font-weight: 800;
   letter-spacing: 0;
-  line-height: 1.08;
+  line-height: 1.16;
   text-transform: uppercase;
+}
+
+.article h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 9px;
+  background: linear-gradient(90deg, rgba(75, 54, 92, 0.55), rgba(75, 54, 92, 0));
 }
 
 .article h2[id],
@@ -483,28 +579,14 @@ h1 {
   margin-top: 0;
 }
 
+.article h2 + h3,
+.article h2 + h4 {
+  margin-top: 0;
+}
+
 @media (min-width: 961px) {
   .article {
     padding-top: 36px;
-  }
-
-  .article h2 {
-    height: 0;
-    margin: 38px 0 0;
-    overflow: hidden;
-    color: transparent;
-    font-size: 0;
-    line-height: 0;
-  }
-
-  .article h2:first-child,
-  .article h5 + h2 {
-    margin-top: 0;
-  }
-
-  .article h2 + h3,
-  .article h2 + h4 {
-    margin-top: 0;
   }
 }
 
@@ -667,6 +749,46 @@ h1 {
   display: grid;
   grid-template-columns: 44px repeat(2, minmax(0, 1fr));
   gap: 14px;
+  --program-color: var(--teal);
+  --program-soft: var(--teal-soft);
+  --program-border: var(--hairline);
+  --program-ink: #111;
+}
+
+.program-biology {
+  --program-color: #3c89a6;
+  --program-soft: #e8f1f4;
+  --program-border: #bbd6e0;
+}
+
+.program-chemistry {
+  --program-color: #ca5542;
+  --program-soft: #f9ebe8;
+  --program-border: #ecc4bd;
+}
+
+.program-computer-science {
+  --program-color: #e1903d;
+  --program-soft: #fbf2e8;
+  --program-border: #f4d8bb;
+}
+
+.program-mathematics {
+  --program-color: #8dbcc4;
+  --program-soft: #f1f7f8;
+  --program-border: #d7e8ea;
+}
+
+.program-physics {
+  --program-color: #a585c2;
+  --program-soft: #f4f0f8;
+  --program-border: #e0d4ea;
+}
+
+.program-psychology {
+  --program-color: #8254aa;
+  --program-soft: #f0eaf5;
+  --program-border: #d3c3e1;
 }
 
 .program-label {
@@ -675,12 +797,12 @@ h1 {
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .program-label p {
   margin: 0;
-  color: var(--teal-dark);
+  color: var(--program-color);
   font-size: 19px;
   font-weight: 800;
   line-height: 1;
@@ -698,6 +820,33 @@ h1 {
   background: #fbfdfe;
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+.program-card {
+  border-color: var(--program-border);
+  border-top-color: var(--program-color);
+  background: #fff;
+}
+
+.program-card h4 {
+  color: var(--program-color);
+}
+
+.program-row .person {
+  border-color: var(--program-border);
+  border-top-color: var(--program-color);
+}
+
+.program-row .program-head-card {
+  background: var(--program-soft);
+}
+
+.program-row .associate-program-head-card {
+  background: #fff;
+}
+
+.program-row .email {
+  color: var(--program-color);
 }
 
 .card h4,
@@ -855,18 +1004,18 @@ h1 {
   }
 
   .page-title {
-    min-height: 380px;
-    padding: 92px 54px 58px;
+    min-height: 300px;
+    padding: 70px 44px 48px;
   }
 
   .page-title h1 {
-    font-size: clamp(40px, 7.4vw, 52px);
+    font-size: clamp(36px, 6.2vw, 46px);
   }
 
   .page-title .topic-list {
     display: block;
     width: min(100%, 780px);
-    margin: 42px auto 0;
+    margin: 30px auto 0;
     padding: 0;
     text-align: left;
   }
@@ -945,24 +1094,24 @@ h1 {
   }
 
   .page-title {
-    min-height: 340px;
-    padding: 76px 28px 42px;
+    min-height: 260px;
+    padding: 54px 24px 36px;
   }
 
   .page-title h1 {
-    font-size: clamp(34px, 8.8vw, 40px);
+    font-size: clamp(32px, 8vw, 38px);
   }
 
   .stacked-title .title-line:first-child,
   .stacked-title .title-line:nth-child(2),
   .stacked-title .title-line:last-child {
-    font-size: clamp(34px, 9vw, 42px);
+    font-size: clamp(32px, 8vw, 38px);
   }
 
   .page-title .topic-list {
     display: block;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 24px;
     padding: 0;
     font-size: 13px;
     text-align: left;
@@ -986,10 +1135,13 @@ h1 {
 
   .program-label {
     min-height: auto;
+    min-width: 0;
+    padding: 0 0 4px;
   }
 
   .program-label p {
     transform: none;
+    white-space: normal;
   }
 
   .dean-feature {
@@ -1005,7 +1157,7 @@ h1 {
   }
 
   .article h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -1020,12 +1172,12 @@ h1 {
   }
 
   .article h2 {
-    height: auto;
     margin: 34px 0 14px;
-    overflow: visible;
-    color: var(--teal);
-    font-size: 30px;
-    line-height: 1.08;
+    font-size: 22px;
+  }
+
+  .article h2::after {
+    width: 100%;
   }
 
   .article h2:first-child,

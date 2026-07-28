@@ -11,8 +11,8 @@ toc:
   - ["Our Programs", 9]
   - ["Our Program Heads", 11]
   - ["Graduate & Postdoctoral Programs", 12]
-  - ["PASS: Reaching for the Stars", 13]
-  - ["MIDSAI", 14]
+  - ["PASS: Reaching for the Stars", 13, "subtopic", "PASS"]
+  - ["MIDSAI", 14, "subtopic"]
   - ["Our Admin Team", 15]
   - ["Research", 16]
   - ["Facilities and Infrastructure", 18]
@@ -72,86 +72,86 @@ For more information, please visit our [Global Education Programs](https://intra
 ## Our Program Heads
 
 ::: program-heads
-::: program-row
+::: program-row program-biology
 ::: program-label
 Biology
 :::
-::: person
+::: person program-head-card
 #### Piergiorgio Percipalle
 Associate Dean for Research and Graduate Programs; Program Head of Biology; Professor of Biology
 <span class="email">pp69@nyu.edu</span>
 :::
-::: person
+::: person associate-program-head-card
 #### Shady Amin
 Associate Program Head for Undergraduate Studies of Biology; Associate Professor of Biology
 <span class="email">sa132@nyu.edu</span>
 :::
 :::
-::: program-row
+::: program-row program-chemistry
 ::: program-label
 Chemistry
 :::
-::: person
+::: person program-head-card
 #### Ali Trabolsi
 Program Head of Chemistry; Professor of Chemistry
 <span class="email">at105@nyu.edu</span>
 :::
-::: person
+::: person associate-program-head-card
 #### Jamie Whelan
 Associate Program Head for Undergraduate Studies for Chemistry; Associate Lecturer in Chemistry
 <span class="email">jjw8@nyu.edu</span>
 :::
 :::
-::: program-row
+::: program-row program-computer-science
 ::: program-label
 Computer Science
 :::
-::: person
+::: person program-head-card
 #### Djellel Difallah
 Program Head of Computer Science; Assistant Professor of Computer Science
 <span class="email">dd115@nyu.edu</span>
 :::
-::: person
+::: person associate-program-head-card
 #### Moumena Chaqfeh
 Associate Program Head for Undergraduate Studies for Computer Science; Lecturer of Computer Science
 <span class="email">mc7581@nyu.edu</span>
 :::
 :::
-::: program-row
+::: program-row program-mathematics
 ::: program-label
 Mathematics
 :::
-::: person
+::: person program-head-card
 #### Alberto Gandolfi
 Program Head of Mathematics; Professor of Practice in Mathematics
 <span class="email">ag189@nyu.edu</span>
 :::
-::: person
+::: person associate-program-head-card
 #### Karam Fayad
 Associate Program Head for Undergraduate Studies of Mathematics; Lecturer of Mathematics
 <span class="email">kf2172@nyu.edu</span>
 :::
 :::
-::: program-row
+::: program-row program-psychology
 ::: program-label
 Psychology
 :::
-::: person
+::: person program-head-card
 #### Theodore Waters
 Program Head of Psychology; Associate Professor of Psychology
 <span class="email">tw57@nyu.edu</span>
 :::
-::: person
+::: person associate-program-head-card
 #### Shaalan Farouk
 Associate Program Head for Undergraduate Studies for Psychology; Senior Lecturer of Psychology
 <span class="email">sf144@nyu.edu</span>
 :::
 :::
-::: program-row
+::: program-row program-physics
 ::: program-label
 Physics
 :::
-::: person
+::: person program-head-card
 #### Azam Gholami
 Program Head of Physics; Associate Professor of Physics
 <span class="email">ag9141@nyu.edu</span>
@@ -166,7 +166,7 @@ Programs typically span 4-5 years and may include a period of study at NYU's New
 
 For more information on each program, please visit our [Graduate & Postdoctoral Programs](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-provost/graduate-and-postdoctoral-programs.html) page.
 
-## PASS: Reaching for the Stars
+### PASS: Reaching for the Stars
 
 Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
 
@@ -180,7 +180,7 @@ PASS benefits from longstanding collaborations with the UAE Space Agency and the
 
 For more information on the program, please visit our [PASS](https://nyuad.nyu.edu/en/academics/graduate-and-phd/phd-programs/phd-in-astrophysics-and-space-systems.html) page.
 
-## MIDSAI
+### MIDSAI
 
 The MSc in Interdisciplinary Data Science and Artificial Intelligence (MIDSAI) at NYU Abu Dhabi is a rigorous, research-intensive two-year program designed to develop specialized expertise, advanced data science skills, and artificial intelligence knowledge.
 
@@ -207,14 +207,13 @@ Manager of Curriculum Affairs and Special Projects
 :::
 ::: person
 #### Emma Baker
-Operations Manager
+Operations Manager, Division of Science
 
 <span class="email">elb7@nyu.edu</span>
 :::
 ::: person
 #### Katie Stanworth
-Manager
-Communications and Outreach
+Communications and Outreach Manager
 
 <span class="email">kls10@nyu.edu</span>
 :::
@@ -232,7 +231,7 @@ Administrative Coordinator for Biology & Computer Science
 :::
 ::: person
 #### Karima Raafat
-Administrative Coordinator for Physics & Psychology
+Administrative Coordinator for Psychology & Physics
 
 <span class="email">kar618@nyu.edu</span>
 :::
@@ -244,7 +243,7 @@ Administrative Coordinator for PASS
 :::
 ::: person
 #### Paola Baba
-Administrative Coordinator, MIDSAI
+Administrative Coordinator for MIDSAI
 
 <span class="email">pb1919@nyu.edu</span>
 :::
@@ -257,46 +256,46 @@ Administrative Coordinator, MIDSAI
 The six divisional programs in science are home to a plethora of disciplinary labs and projects. Some of our divisional research strengths include:
 
 ::: cards
-::: card
+::: card program-card program-biology
 #### Biology
 - Biomedical Research
 - Environmental Biology
 - Genome Science
 - Regenerative Biology
 :::
-::: card
+::: card program-card program-chemistry
 #### Chemistry
 - Chemical Biology
 - Materials Science
 - Soft Matter
 - Structural Biology
 :::
-::: card
+::: card program-card program-computer-science
 #### Computer Science
 - Artificial Intelligence
 - Cyber Security
 - Human Data Interaction
 - Technology for Social Good
 :::
-::: card
+::: card program-card program-mathematics
 #### Mathematics
 - Analysis, PDEs & Applications
 - Geometry, Topology & Algebra
 - Probability Theory & Statistical Mechanics
 :::
-::: card
-#### Physics
-- Astrophysics & Cosmology
-- Biophysics & Soft Matter
-- Cultural Heritage
-- Particle Physics
-:::
-::: card
+::: card program-card program-psychology
 #### Psychology
 - Cognition
 - Developmental
 - Perception
 - Social
+:::
+::: card program-card program-physics
+#### Physics
+- Astrophysics & Cosmology
+- Biophysics & Soft Matter
+- Cultural Heritage
+- Particle Physics
 :::
 :::
 

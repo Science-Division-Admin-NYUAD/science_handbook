@@ -1,18 +1,14 @@
 ---
 order: 3
-title: "Communications and Research Reporting"
-nav_label: "Communications and Research Reporting"
+title: "Communications"
+nav_label: "Communications"
 slug: communication
-title_lines:
-  - Communications
-  - and
-  - Research Reporting
 toc:
-  - ["Marketing & Communications", 44]
-  - ["Reporting", 46]
+  - ["Marketing", 44]
+  - ["Research Reporting", 46]
 ---
 
-## Marketing & Communications
+## Marketing
 
 
 ### Newsletters
@@ -47,7 +43,7 @@ To share announcements via these emails, send the information to your Program Ad
 Each program has a number of important email groups that are maintained by Program Administrative Coordinators. Please reach out to your administrator should you need to make use of one of these groups.
 
 ::: cards
-::: card
+::: card program-card program-biology
 #### Biology
 Faculty: biology-science-faculty-group@nyu.edu
 
@@ -55,7 +51,7 @@ Researchers: biology-researchers-group@nyu.edu
 
 Instructors: nyuad.biology-instructors-group@nyu.edu
 :::
-::: card
+::: card program-card program-chemistry
 #### Chemistry
 Faculty: nyuad.chemistry.faculty@nyu.edu
 
@@ -63,7 +59,7 @@ Instructors: nyuad.chemistry-instructors@nyu.edu
 
 Postdocs: chemistry-postdocs-group@nyu.edu
 :::
-::: card
+::: card program-card program-computer-science
 #### Computer Science
 Faculty: nyuad.csfaculty-group@nyu.edu
 
@@ -73,7 +69,7 @@ Instructors: computer.science.instructors@nyu.edu
 
 Postdocs: nyuad.cs.postdocs@nyu.edu
 :::
-::: card
+::: card program-card program-mathematics
 #### Mathematics
 Faculty: mathematics-science-facultygroup@nyu.edu
 
@@ -83,7 +79,15 @@ Visiting Faculty: mathematics-science-visiting-facultygroup@nyu.edu
 
 Instructors: nyuad.math-instructors@nyu.edu
 :::
-::: card
+::: card program-card program-psychology
+#### Psychology
+Standing Faculty: psychology-science-group@nyu.edu
+
+Labs: nyuad-psy-labs@nyu.edu
+
+Announcements: psychology.announcementsgroups@nyu.edu
+:::
+::: card program-card program-physics
 #### Physics
 Faculty: phys_fac_ad@nyu.edu
 
@@ -95,17 +99,9 @@ PhDs: nyuad.physics-phd@nyu.edu
 
 Postdocs: phys_postdocs_ad@nyu.edu
 :::
-::: card
-#### Psychology
-Standing Faculty: psychology-science-group@nyu.edu
-
-Labs: nyuad-psy-labs@nyu.edu
-
-Announcements: psychology.announcementsgroups@nyu.edu
-:::
 :::
 
-## Reporting
+## Research Reporting
 
 
 #### Faculty 180
