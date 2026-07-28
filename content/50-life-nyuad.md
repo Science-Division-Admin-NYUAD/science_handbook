@@ -11,108 +11,152 @@ toc:
 ## Campus Location and Map
 
 
-The NYUAD campus is located on Saadiyat Island. A place dedicated to innovation, creativity, research, and knowledge, Saadiyat is also home to Louvre Abu Dhabi, Berklee Abu Dhabi, and Manarat Al Saadiyat, and is the future home of Zayed National Museum, Guggenheim Abu Dhabi, Natural History Museum Abu Dhabi, and teamLab Phenomena Abu Dhabi.
+The NYUAD campus is located on Saadiyat Island. A place dedicated to innovation, creativity, research, and knowledge, Saadiyat is also home to the [Louvre Abu Dhabi](https://www.louvreabudhabi.ae/en/whats-on?utm_source=Google&utm_medium=Search&utm_campaign=LouvreAbuDhabi-AlwaysOn2025&utm_content=LouvreAbuDhabi-Google--CrossDevice-Eng-AE-AlwaysOn2025-Traffic-Google-Text--AE-Eng-V1&gclsrc=aw.ds&gad_source=1&gad_campaignid=22078164876&gclid=CjwKCAjwpqHTBhAcEiwAj2AfusTWG5y0t6kPyqEZOhBpBnlMPv5ibZob_YVk6bxr1aYqKwe4ayZxURoCQT8QAvD_BwE), [Abrahamic Family House](https://www.abrahamicfamilyhouse.ae/?lang=en), [Berklee Abu Dhabi](https://berkleeabudhabi.ae/), [Manarat Al Saadiyat](https://manaratalsaadiyat.ae/), [Zayed National Museum](https://zayednationalmuseum.ae/en/), [Natural History Museum Abu Dhabi](https://www.nhmad.ae/en), [teamLab Phenomena Abu Dhabi](https://www.teamlababudhabi.com/?gad_source=1&gad_campaignid=22276101558&gclid=CjwKCAjwpqHTBhAcEiwAj2AfujEMbD7xVnRg5xMyZ2JgVCGluUw4n8xncEQfACssHB5A8MYZlVwNFhoCJo0QAvD_BwE), and [Guggenheim Abu Dhabi](https://www.guggenheim.org/exhibition/site/guggenheim-abu-dhabi).
 
 Adjacent to Abu Dhabi's mainland and surrounded by natural mangroves and beautiful beaches, Saadiyat brings together diverse cultures and fosters knowledge and understanding through its museums, educational, and cultural institutions.
 
-### Safety - On Campus and in Abu Dhabi
+### Safety on Campus and in Abu Dhabi
 
 #### Emergencies
-If you require emergency medical help, you should immediately dial 999. If possible, you should also contact the Security Help Desk at 02 628-7777 so Security Personnel can direct emergency responders to your location.
+If you need emergency medical assistance, dial 999 immediately. If you are on campus and able to do so, also contact the Security Help Desk at 02 628-7777 so Campus Safety can direct emergency responders to your location.
 
 #### Campus Safety
-For non-emergencies, but urgent care, call Campus Safety at 02 628-7777 (87777) and provide them with your contact number. Campus Safety will then notify the transportation dispatcher and secure a vehicle for transport. Campus Safety will notify you when the vehicle is available and will transport you to the medical facility of your choice. The Campus Safety team is available to assist with transportation requests for urgent, non-life threatening medical issues 24 hours a day, 7 days a week. Currently the campus Health and Wellness Center in Campus Center (C2) is for students only.
+For urgent, non-life-threatening medical issues, call Campus Safety at 02 628-7777 (87777) and provide your contact number. Campus Safety can help arrange transportation to the medical facility of your choice and will notify you once the vehicle is available. This service is available 24 hours a day, 7 days a week.
 
-The purpose of the NYUAD Department of Campus Safety is to create, promote, and preserve a safe and secure University environment by delivering high-quality community safety and protection services in a professional and customer-friendly manner. Any incident involving NYUAD premises or community members may be reported to NYUAD Department of Campus Safety via +971 2 628-7777, nyuad.campussafety247@nyu.edu, or via the Safe NYU app.
+The NYUAD Department of Campus Safety supports a safe and secure campus environment for our community. Incidents involving NYUAD premises or community members can be reported to Campus Safety at +971 2 628-7777, nyuad.campussafety247@nyu.edu, or through the Safe NYU app.
 
-To download the app or to read more about Campus Safety's Emergency Procedures and Resources, please refer to the Intranet.
+To download the app or read more about our emergency procedures and resources, please visit our [Campus Safety page](https://intranet.nyuad.nyu.edu/administrative-services/safety/campus-safety/).
+
+*Please note that the Health Center in Campus Center (C2) is currently for students only.*
 
 ## Community Life
 
+NYUAD offers a vibrant community life shaped by campus events, shared spaces, cultural programming, wellness resources, and opportunities to connect across the university. Whether you are looking for practical campus information or ways to get involved, the NYUAD Life resources can help you settle into the community.
 
-::: cards
-::: card
-#### Internet and WiFi
-The Wireless (NYU Roam) service provides secure, wireless access to NYU-NET throughout the Saadiyat campus. Wireless Internet is available to community members with an active NYU NetID and password, including administrators, faculty, staff, students, and selected partners.
+For more information on NYUAD life, please visit our [Community Life page](https://intranet.nyuad.nyu.edu/nyuad-life/community-life/).
+
+### Campus Essentials
+
+::: campus-essentials
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19h.01"/></svg></div>
+
+#### Internet & WiFi
+NYU Roam provides secure wireless access to NYU-NET across the Saadiyat campus for community members with an active NYU NetID and password, including administrators, faculty, staff, students, and selected partners.
 :::
-::: card
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg></div>
+
 #### eduRoam
-Eduroam is a secure WiFi network service that allows users to connect to the Internet using their educational institution's credentials at other participating institutions. NYUAD students, faculty, and staff can access this network when visiting other eduroam universities, and visitors from these universities can use the "eduroam" network at NYUAD. To connect, NYUAD users should use their NYU email YourNetID@nyu.edu and password at participating institutions.
+Eduroam lets users connect to secure WiFi at participating institutions using their home institution credentials. NYUAD students, faculty, and staff can use it when visiting other eduroam universities; visitors from those universities can connect to "eduroam" at NYUAD. NYUAD users should log in with their NYU email, YourNetID@nyu.edu, and password.
 :::
-::: card
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v8"/><path d="M5 3v8"/><path d="M9 3v8"/><path d="M5 11h4"/><path d="M7 11v10"/><path d="M17 3v18"/><path d="M14 3c0 5 3 7 3 7"/></svg></div>
+
 #### Dining
-There are several dining options on campus for the university community. Refer to the Intranet for more information about campus dining options and outlet opening times. In addition, several outlets located along the front of campus are open to community members and the general public, including Blacksmith Coffee Company, Mysk, and Sushi Counter.
+Campus dining options are available for the university community. For options and outlet opening times, please visit our [Campus Dining page](https://intranet.nyuad.nyu.edu/administrative-services/dining/). Additional outlets along the front of campus are open to community members and the public, including Blacksmith Coffee Company, Mysk, and Sushi Counter.
 :::
-::: card
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 13H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div>
+
 #### Convenience Store
-The campus convenience store sells a range of groceries, fresh produce, baked items, frozen foods, ice-cream, toiletries, and other daily necessities. It is open daily, located on the first floor of the Campus Center building (C2).
+The campus convenience store sells groceries, fresh produce, baked items, frozen foods, ice-cream, toiletries, and daily necessities. It is open daily on the first floor of the Campus Center (C2).<br>
+For more information, please visit our [Convenience Store page](https://intranet.nyuad.nyu.edu/administrative-services/dining/places-to-eat/convenience-store-fresh-market/).
 :::
-::: card
-#### ATM
-There is an Abu Dhabi Commercial Bank (ADCB) ATM machine located on the ground floor of the Campus Center building (C2), near the West Forum.
-:::
-::: card
-#### Al Manara Pharmacy
-Al Manara Pharmacy is located on the ground level of the Arts and Humanities Building (A6), facing the street. The pharmacy sells both prescription and over-the-counter remedies.
-:::
-::: card
-#### Taxis
-There are often taxis waiting at the main entrance of the Welcome Center on campus. All taxis in Abu Dhabi run on a monitored fare meter and accept cash or card payment. Transport apps Uber and Careem are also in operation across the city.
-:::
-::: card
-#### Health and Wellness Center
-The NYUAD Health Center, located in the Campus Center (C2), offers healthcare services to students only. Staff and faculty in need of healthcare can contact the Health Center for referrals to clinics and hospitals in Abu Dhabi.
-:::
-:::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7v10"/><path d="M18 7v10"/><path d="M3 10v4"/><path d="M21 10v4"/><path d="M6 12h12"/></svg></div>
 
-::: quote
-The NYUAD campus is located on Saadiyat Island, a place dedicated to innovation, creativity, research, and knowledge.
+#### Athletics
+The NYUAD Fitness Center supports students, faculty, and staff with a full gym, women's-only gym, group exercise classes, recreational and intramural sports facilities, trainers, tennis and squash courts with equipment rental, and an Olympic-size pool available during scheduled swim times.<br>
+For more information on facilities and opening times, please visit our [Athletics page](https://intranet.nyuad.nyu.edu/nyuad-life/athletics/).
 :::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h10a3 3 0 0 1 3 3v11H7a3 3 0 0 0-3-3Z"/><path d="M20 7.5v12h-3"/><path d="M7 9h6"/><path d="M7 12h5"/></svg></div>
 
-#### Employee Well-being Program
-The NYUAD Employee Well-Being Program (EWP) is a professional well-being and health advisory support service offered to all NYUAD employees and their family members. Part of NYUAD's mission is to provide a nurturing and stimulating environment that helps develop a culture of openness and mutual support. Helping to support the health and well-being of employees is an important element in creating and sustaining this environment.
-
-#### Fitness Center and Women's Only Gym
-The NYUAD Fitness Center is a modern facility supporting the health and wellness of students, faculty, and staff. It includes a state-of-the-art gymnasium and women's only gym, offering a wide range of fitness equipment to accommodate preferences and levels. Group exercise classes like yoga, Pilates, spinning, and body-conditioning are held in dedicated spaces. The center also provides facilities for recreational sports and intramural activities, fostering community engagement and physical activity. Professional trainers and staff are available to provide guidance and support, promoting a holistic approach to well-being and encouraging active lifestyles. Additional amenities include tennis and squash courts, with equipment available for rent. An Olympic-size pool is available for recreational and training swims at scheduled times.
-
-#### NYUAD Bookstore
-Located on the ground floor of the Humanities Building (A6), the NYUAD Bookstore sells a wide variety of fiction, non-fiction, and children's books, as well as textbooks, NYUAD-branded merchandise, Etisalat and du recharge cards, class materials and supplies. It also offers local mail and international courier services for students, faculty, and staff.
+#### Bookstore
+Located on the ground floor of the Humanities Building (A6), the NYUAD Bookstore sells fiction, non-fiction, children's books, textbooks, NYUAD merchandise, Etisalat and du recharge cards, class materials, and supplies. It also offers local mail and international courier services for students, faculty, and staff.<br>
+For more information, please visit our [NYUAD Bookstore page](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/bookstore/).
+:::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 7V5h6v2"/><path d="M4 12h16"/><path d="M10 12v2h4v-2"/></svg></div>
 
 #### Career Development Center
-The Career Development Center (CDC) plays an integral role in the undergraduate experience at NYUAD, providing guidance, advice, programs, and resources to students during their time at the University, and beyond. Students are supported in an iterative process of discovering and refining their strengths, choosing a major, and gaining professional experience, from developing a solid CV, to meeting industry insiders, to applying to graduate school or global awards.
+The Career Development Center (CDC) supports undergraduates with advising, programs, and resources during their time at NYUAD and beyond, including choosing a major, building a CV, meeting industry professionals, and applying to graduate school or global awards.<br>
+For more information, please visit our [CDC page](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-vice-chancellor/student-affairs/career-development.html).
+:::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7.5c0 5-8 10.5-8 10.5S4 12.5 4 7.5A4.5 4.5 0 0 1 12 5a4.5 4.5 0 0 1 8 2.5Z"/></svg></div>
+
+#### Health Center
+The NYUAD Health Center in the Campus Center (C2) offers healthcare services to students only; however, staff and faculty can contact the Health Center for referrals to clinics and hospitals in Abu Dhabi.
+:::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v10"/><path d="M7 12h10"/></svg></div>
+
+#### Al Manara Pharmacy
+Al Manara Pharmacy is on the ground level of the Arts and Humanities Building (A6), facing the street, and sells prescription and over-the-counter remedies.
+:::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
+
+#### ATM
+An Abu Dhabi Commercial Bank (ADCB) ATM is located on the ground floor of the Campus Center (C2), near the West Forum.
+:::
+::: campus-essential
+<div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 12l2-5h8l2 5"/><path d="M5 12h14v6H5z"/><path d="M8 18v2"/><path d="M16 18v2"/><path d="M8 15h.01"/><path d="M16 15h.01"/></svg></div>
+
+#### Taxis
+Taxis often wait at the main entrance of the Welcome Center. Abu Dhabi taxis use monitored fare meters and accept cash or card payment. Uber and Careem also operate across the city.
+:::
+:::
 
 #### Mail Services
-Incoming or outgoing University business or personal mail must meet all UAE guidelines for mail handling to and from the UAE. For more information on the guidelines, please refer to the UAE government official portal.
+Incoming or outgoing University business or personal mail must meet all UAE guidelines for mail handling to and from the UAE.<br>
+For more information on mail services and postal guidelines in the UAE, please visit the [UAE Government's Mail Services page](https://u.ae/en/information-and-services/infrastructure/mail-services).
 
-The mailing address for standard mail and items sent via international courier, such as FedEx or UPS, is:
+Use the relevant address below for mail and courier deliveries:
 
-> New York University Abu Dhabi (NYUAD)  
-> YOUR NAME  
-> Contact Number  
-> Office Location or Apartment Number  
-> Saadiyat Island  
-> Abu Dhabi, UAE
+::: mail-table
+::: mail-row
+<div class="mail-label">Standard mail and courier</div>
+
+<div class="mail-address">
+New York University Abu Dhabi (NYUAD)<br>
+YOUR NAME<br>
+Contact Number<br>
+Office Location or Apartment Number<br>
+Saadiyat Island<br>
+Abu Dhabi, UAE
+</div>
+:::
+::: mail-row
+<div class="mail-label">USA business mail</div>
+
+<div class="mail-address">
+YOUR NAME<br>
+NYU Abu Dhabi NYU Logistics & Distribution<br>
+547 LaGuardia Place<br>
+New York, NY 10012-1402, US<br>
+Contact Number/email
+</div>
+:::
+::: mail-row
+<div class="mail-label">USA personal mail</div>
+
+<div class="mail-address">
+YOUR NAME<br>
+PO Box 903<br>
+New York, NY 10276<br>
+Contact Number/Email
+</div>
+:::
+:::
 
 All packages sent via courier should also include the recipient's local phone number. If you are expecting to receive mail, the NYUAD Mail Room will receive it on your behalf and will email you when your package has arrived.
 
-#### Mail from the USA - Business
-All incoming business mail and printed academic material from the USA can be sent from a US address or vendor to the following postal address:
-
-> YOUR NAME  
-> NYU Abu Dhabi NYU Logistics & Distribution  
-> 547 LaGuardia Place  
-> New York, NY 10012-1402, US  
-> Contact Number/email
-
-#### Mail from the USA - Personal
-All incoming personal bills and letters from the USA can be sent from a US address or vendor to the following postal address:
-
-> YOUR NAME  
-> PO Box 903  
-> New York, NY 10276  
-> Contact Number/Email
-
 Incoming personal shipments, other than those specified above, are the employee's responsibility and should be sent directly to the employee's physical address in Abu Dhabi or to the NYUAD address listed above, and not to PO Box 903.
+
+For more information, please visit our [Logistics & Mail Services page](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/logistics-and-mail-services/).
 
 ### Campus Sustainability
 
