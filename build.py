@@ -29,12 +29,11 @@ PDF = ASSETS / "handbook.pdf"
 IMAGES = ASSETS / "images"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260727-active-topics"
+STYLE_VERSION = "20260728-plum-theme"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
 FENCE_CLOSE_RE = re.compile(r"^:::\s*$")
-
 
 class ExternalLinkTargetTreeprocessor(Treeprocessor):
     def run(self, root):
@@ -87,15 +86,35 @@ def expand_fences(md_text: str) -> str:
     return "\n".join(out)
 
 
-def render_markdown(body: str) -> tuple[str, list[dict[str, str]]]:
+def render_markdown(body: str) -> tuple[str, list[dict[str, str]], list[dict]]:
     md = markdown.Markdown(
         extensions=["extra", "md_in_html", "sane_lists", "toc", ExternalLinkTargetExtension()],
         extension_configs={"toc": {"toc_depth": "2-3"}},
         output_format="html5",
     )
     html = md.convert(expand_fences(body))
-    subsections = [{"id": token["id"], "name": token["name"]} for token in md.toc_tokens]
-    return html, subsections
+    toc_tree = clean_toc_tokens(md.toc_tokens)
+    subsections = flatten_toc_tokens(toc_tree)
+    return html, subsections, toc_tree
+
+
+def clean_toc_tokens(tokens: list[dict]) -> list[dict]:
+    return [
+        {
+            "id": token["id"],
+            "name": token["name"],
+            "children": clean_toc_tokens(token.get("children", [])),
+        }
+        for token in tokens
+    ]
+
+
+def flatten_toc_tokens(tokens: list[dict]) -> list[dict[str, str]]:
+    items = []
+    for token in tokens:
+        items.append({"id": token["id"], "name": token["name"]})
+        items.extend(flatten_toc_tokens(token.get("children", [])))
+    return items
 
 
 def load_sections() -> list[dict]:
@@ -105,7 +124,7 @@ def load_sections() -> list[dict]:
         meta.setdefault("order", 999)
         meta.setdefault("slug", path.stem)
         meta["source"] = path.name
-        meta["html"], meta["subsections"] = render_markdown(body)
+        meta["html"], meta["subsections"], meta["toc_tree"] = render_markdown(body)
         sections.append(meta)
     return sorted(sections, key=lambda item: item["order"])
 
@@ -173,7 +192,7 @@ def render_contents_row(section: dict) -> str:
     image = f"assets/images/contents-{section['slug']}.jpg"
     contents_title = section.get("contents_title") or section["title"]
     topics = "\n".join(
-        f'''            <li><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
+        f'''            <li{topic_class_attr(topic)}><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
         for topic in section.get("toc", [])
     )
     return f"""      <a class="contents-row" href="{section['slug']}.html">
@@ -206,7 +225,7 @@ def render_topic_list(section: dict, limit: int | None = None) -> str:
         label = topic[0]
         anchor = anchors.get(normalize_heading(label))
         label_html = f'<a href="#{anchor}">{label}</a>' if anchor else label
-        items.append(f"          <li>{label_html}</li>")
+        items.append(f"          <li{topic_class_attr(topic)}>{label_html}</li>")
     items_html = "\n".join(items)
     return f"""        <ul class="topic-list">
 {items_html}
@@ -217,15 +236,60 @@ def normalize_heading(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", html.unescape(text).lower()).strip()
 
 
+def topic_class_name(topic: list) -> str:
+    if len(topic) < 3:
+        return ""
+    kind = re.sub(r"[^a-z0-9_-]+", "-", str(topic[2]).lower()).strip("-")
+    return f"topic-{kind}" if kind else ""
+
+
+def topic_class_attr(topic: list) -> str:
+    class_name = topic_class_name(topic)
+    return f' class="{class_name}"' if class_name else ""
+
+
 def render_section_topic_links(section: dict) -> str:
     subsection_ids = topic_anchor_lookup(section)
-    links = []
+    heading_tree = topic_heading_tree_lookup(section)
+    subtopic_labels = subtopic_display_label_lookup(section)
+    groups = []
     for topic in section.get("toc", []):
+        if topic_class_name(topic) == "topic-subtopic":
+            continue
         label = topic[0]
         anchor = subsection_ids.get(normalize_heading(label))
-        if anchor:
-            links.append(f'''      <a href="#{anchor}">{label}</a>''')
-    return "\n".join(links)
+        if not anchor:
+            continue
+        children = heading_tree.get(normalize_heading(label), {}).get("children", [])
+        subtopic_links = "\n".join(
+            f'''        <a class="toc-subtopic" href="#{html.escape(child["id"], quote=True)}">{html.escape(subtopic_labels.get(normalize_heading(child["name"]), html.unescape(child["name"])))}</a>'''
+            for child in children
+        )
+        has_subtopics = bool(subtopic_links)
+        expanded_attr = ' aria-expanded="false"' if has_subtopics else ""
+        subtopics = f"""
+      <div class="toc-subtopics">
+{subtopic_links}
+      </div>""" if has_subtopics else ""
+        groups.append(f'''      <div class="toc-group">
+        <a class="toc-main" href="#{html.escape(anchor, quote=True)}"{expanded_attr}>{html.escape(label)}</a>{subtopics}
+      </div>''')
+    return "\n".join(groups)
+
+
+def topic_heading_tree_lookup(section: dict) -> dict[str, dict]:
+    return {
+        normalize_heading(item["name"]): item
+        for item in section.get("toc_tree", [])
+    }
+
+
+def subtopic_display_label_lookup(section: dict) -> dict[str, str]:
+    return {
+        normalize_heading(topic[0]): str(topic[3])
+        for topic in section.get("toc", [])
+        if topic_class_name(topic) == "topic-subtopic" and len(topic) >= 4
+    }
 
 
 def render_section_title(section: dict) -> str:
@@ -246,9 +310,13 @@ def render_active_topic_script(enabled: bool) -> str:
         return ""
     return """  <script>
     (() => {
-      const headings = Array.from(document.querySelectorAll(".article h2[id]"));
+      const headings = Array.from(document.querySelectorAll(".article h2[id], .article h3[id]"));
       const links = Array.from(document.querySelectorAll('.page-toc a[href^="#"], .topic-list a[href^="#"]'));
+      const groups = Array.from(document.querySelectorAll(".page-toc .toc-group"));
       if (!headings.length || !links.length) return;
+      const manuallyClosed = new Set();
+      let lockedTarget = "";
+      let releaseTimer = 0;
 
       const groupedLinks = new Map();
       links.forEach((link) => {
@@ -257,15 +325,38 @@ def render_active_topic_script(enabled: bool) -> str:
         groupedLinks.get(id).push(link);
       });
 
+      const groupKey = (group) => {
+        const mainLink = group && group.querySelector(".toc-main[href]");
+        return mainLink ? decodeURIComponent(mainLink.hash.slice(1)) : "";
+      };
+
+      const setGroupExpanded = (group, expanded) => {
+        if (!group) return;
+        group.classList.toggle("is-expanded", expanded);
+        const toggle = group.querySelector(".toc-main[aria-expanded]");
+        if (toggle) toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+      };
+
       const setActive = (id) => {
         links.forEach((link) => {
           link.classList.remove("is-active");
           link.removeAttribute("aria-current");
         });
-        (groupedLinks.get(id) || []).forEach((link) => {
+        groups.forEach((group) => {
+          setGroupExpanded(group, false);
+        });
+
+        const activeLinks = groupedLinks.get(id) || [];
+        activeLinks.forEach((link) => {
           link.classList.add("is-active");
           link.setAttribute("aria-current", "true");
         });
+
+        const sidebarLink = activeLinks.find((link) => link.closest(".page-toc"));
+        const activeGroup = sidebarLink && sidebarLink.closest(".toc-group");
+        if (activeGroup && !manuallyClosed.has(groupKey(activeGroup))) {
+          setGroupExpanded(activeGroup, true);
+        }
       };
 
       const currentHeadingId = () => {
@@ -279,11 +370,18 @@ def render_active_topic_script(enabled: bool) -> str:
 
       let ticking = false;
       const update = () => {
-        setActive(currentHeadingId());
+        setActive(lockedTarget || currentHeadingId());
         ticking = false;
       };
 
       window.addEventListener("scroll", () => {
+        if (lockedTarget) {
+          window.clearTimeout(releaseTimer);
+          releaseTimer = window.setTimeout(() => {
+            lockedTarget = "";
+            update();
+          }, 180);
+        }
         if (!ticking) {
           window.requestAnimationFrame(update);
           ticking = true;
@@ -291,7 +389,31 @@ def render_active_topic_script(enabled: bool) -> str:
       }, { passive: true });
       window.addEventListener("resize", update);
       links.forEach((link) => {
-        link.addEventListener("click", () => setActive(decodeURIComponent(link.hash.slice(1))));
+        link.addEventListener("click", (event) => {
+          const id = decodeURIComponent(link.hash.slice(1));
+          const sidebarGroup = link.closest(".page-toc .toc-group");
+          const isMainToggle = link.classList.contains("toc-main") && link.hasAttribute("aria-expanded");
+
+          if (isMainToggle && sidebarGroup && sidebarGroup.classList.contains("is-expanded")) {
+            event.preventDefault();
+            lockedTarget = "";
+            window.clearTimeout(releaseTimer);
+            manuallyClosed.add(groupKey(sidebarGroup));
+            setGroupExpanded(sidebarGroup, false);
+            link.classList.add("is-active");
+            link.setAttribute("aria-current", "true");
+            return;
+          }
+
+          if (sidebarGroup) manuallyClosed.delete(groupKey(sidebarGroup));
+          lockedTarget = id;
+          window.clearTimeout(releaseTimer);
+          releaseTimer = window.setTimeout(() => {
+            lockedTarget = "";
+            update();
+          }, 900);
+          setActive(id);
+        });
       });
 
       if (window.location.hash) {
