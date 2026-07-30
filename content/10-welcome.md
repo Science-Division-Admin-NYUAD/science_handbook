@@ -8,7 +8,7 @@ toc:
   - ["A note from our Dean", 5]
   - ["IDBE at NYUAD", 7]
   - ["NYUAD Shared Governance", 8]
-  - ["Our Programs", 9]
+  - ["Undergraduate Programs", 9]
   - ["Our Program Heads", 11]
   - ["Graduate & Postdoctoral Programs", 12]
   - ["PASS: Reaching for the Stars", 13, "subtopic", "PASS"]
@@ -16,7 +16,8 @@ toc:
   - ["Our Admin Team", 15]
   - ["Research", 16]
   - ["Facilities and Infrastructure", 18]
-  - ["Our Dean & Associate Deans", 21]
+  - ["Our Dean", 21]
+  - ["Our Associate Deans", 21]
 ---
 
 ## A note from our Dean
@@ -34,41 +35,39 @@ Let us redefine what is possible, together.
 
 The values of inclusion, diversity, belonging, and equity (IDBE) have been fundamental to NYUAD since its inception, and are reflected in our mission and values.
 
-All University community members are expected to uphold these values through active work and the ongoing pursuit of education, engagement, self-reflection, and a willingness to advance practices that lead to a more inclusive institution.
+All community members are expected to uphold these values through active work and the ongoing pursuit of education, engagement, self-reflection, and a willingness to advance practices that lead to a more inclusive institution.
 
-The Division of Science is deeply committed to fostering inclusion, diversity, belonging, and equity across all facets of our operations, from our robust recruitment processes, through to our teaching curriculum, targeted research projects and Global Perspectives in Science Seminar Series. (See section three.)
+The Division of Science is deeply committed to fostering IDBE values across all facets of our operations, from our robust recruitment processes through to our teaching curriculum, targeted research projects, and interdisciplinary seminar series.
 
-For more information, please visit our [Global Access and Engagement](https://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page on the Intranet.
+For more information, please visit our [Global Access and Engagement](https://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page.
 
 ## NYUAD Shared Governance
 
 
 #### Councils & Forums
-NYUAD faculty, staff, students (undergraduate and graduate), and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement.<br>
-For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page on the Intranet.
+NYUAD faculty, staff, as well as undergraduate and graduate students, and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement.
+
+For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page.
 
 #### Faculty Meetings
-Formal program faculty meetings are planned regularly throughout the semester, with schedules and frequencies varying between academic programs. Your dedicated program administrative coordinator will schedule these meetings on your program calendar and will record and file the meeting minutes.
+Formal program faculty meetings take place regularly throughout the semester, with schedules and frequency varying by academic program. Your program administrative coordinator will add these meetings to your program calendar and will record and file the meeting minutes.
 
-Standing faculty are required to attend all meetings. Visiting faculty are invited to attend but may be asked to depart during certain confidential discussions relating to recruitment and voting matters. Voting styles are at the discretion of the program heads.
+Standing faculty are expected to attend all faculty meetings. Visiting faculty are welcome to attend but may be asked to step out for confidential discussions related to recruitment and voting matters. Voting procedures are determined by the program heads.
 
-## Our Programs
+## Undergraduate Programs
 
+Our division is home to six academic programs: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
 
-### Undergraduate Programs
+#### Capstone Projects
+Every science student completes a fourth-year research project, working closely with one of our many research labs or groups throughout the year. Their work culminates in a significant piece of research, which is presented at the annual Science Capstone Festival.
 
-There are six academic programs within the Division of Science: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
-
-#### Capstone Project
-Every science student completes a Capstone research project in their fourth year. They work closely with one of our many research labs or groups on a demanding, year-long endeavor that culminates in a significant piece of research that is presented at the annual Science Capstone Festival.
-
-#### Foundations of Science (FoS)
-An innovative and integrated program that all Biology, Chemistry and Physics undergraduates are required to take. It fosters inter-disciplinarity and an experimental approach to learning.
+#### Foundations of Science
+Foundations of Science (FoS) is a required integrated program for Biology, Chemistry, and Physics undergraduates, designed to encourage interdisciplinary thinking and experimental learning.
 
 #### Global Education
-Global education is an essential component of NYU Abu Dhabi's educational mission and curriculum. It is realized through a careful sequence of interrelated academic and intercultural experiences that provide students with intellectually rigorous, research-focused learning environments to complement and extend their coursework. They include semester-long study away programs, J-Term programs, and course-related study trips in the United Arab Emirates and the broader Middle East that are typically combined with January Term or semester courses.
+Global education is central to NYU Abu Dhabi's academic mission. Through study away programs, J-Term courses, and course-related trips in the UAE and broader Middle East, students gain rigorous academic and intercultural experiences that extend their learning beyond the classroom.
 
-For more information, please visit our [Global Education Programs](https://intranet.nyuad.nyu.edu/faculty-resources/academics/global-education-programs/) page on the Intranet.
+For more information, please visit our [Global Education Programs](https://intranet.nyuad.nyu.edu/faculty-resources/academics/global-education-programs/) page.
 
 ## Our Program Heads
 
@@ -161,18 +160,20 @@ Program Head of Physics; Associate Professor of Physics
 
 ## Graduate & Postdoctoral Programs
 
-The Division of Science offers Global PhD Fellowships across multiple programs. The Office of Graduate and Postdoctoral Programs supports graduate academics, student life, and professional development, fostering a vibrant community of nearly 300 postgraduate researchers while partnering across NYU Abu Dhabi to promote excellence in graduate education and postdoctoral training.
+Our division offers Global PhD Fellowships across multiple programs. The Office of Graduate and Postdoctoral Programs supports graduate academics, student life, and professional development, fostering a vibrant community of nearly 300 postgraduate researchers while partnering across NYU Abu Dhabi to promote excellence in graduate education and postdoctoral training.
 
 Programs typically span 4-5 years and may include a period of study at NYU's New York campus, depending on the specific program. This allows our students to have access to the extensive resources and opportunities available across NYU's network of prestigious graduate schools. Upon successful completion of the program, students are awarded an NYU degree.
 
 For more information on each program, please visit our [Graduate & Postdoctoral Programs](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-provost/graduate-and-postdoctoral-programs.html) page.
+
+Alongside NYU Abu Dhabi’s established graduate pathways, the Division of Science is also home to two additional graduate programs: PASS and MIDSAI.
 
 ### PASS: Reaching for the Stars
 
 Welcome to the forefront of space science and discovery. The PhD in Astrophysics and Space Systems (PASS) at NYU Abu Dhabi offers a bold academic path for students eager to explore the universe and contribute to the UAE's growing role in global space research. As a research-focused doctoral program with minimal coursework, PASS is designed to empower independent inquiry, cross-disciplinary collaboration, and impactful scientific advancement.
 
 #### Vision and Impact
-PASS is more than a program. It is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
+PASS is more than a program - it is a launchpad for innovation. Rooted in the UAE's vision for space exploration and scientific excellence, the program supports original research in astrophysics and space systems, while bridging physics and engineering in novel ways. Students are encouraged to investigate topics ranging from cosmic structure formation to satellite design and mission planning, using both theoretical and applied approaches.
 
 This program is closely aligned with national priorities and offers opportunities to contribute to cutting-edge scientific efforts in the UAE and beyond. PASS provides a rich environment for publication, international collaboration, and translational research with real-world applications.
 
@@ -252,9 +253,9 @@ Administrative Coordinator for MIDSAI
 
 ## Research
 
-### Disciplinary Research
+#### Disciplinary Research
 
-The six divisional programs in science are home to a plethora of disciplinary labs and projects. Some of our divisional research strengths include:
+Our six academic programs support a wide range of disciplinary labs and research projects. Areas of research strength include:
 
 ::: cards
 ::: card program-card program-biology
@@ -300,34 +301,35 @@ The six divisional programs in science are home to a plethora of disciplinary la
 :::
 :::
 
-### Multidisciplinary Research
+#### Multidisciplinary Research
 
-In addition to our disciplinary labs and projects, NYUAD has identified and established areas of excellence in the form of conceptual multidisciplinary research clusters. Collaborating faculty with relevant expertise from a range of disciplines engage with one another, and with our state-of-the-art core technology platforms and facilities, to ask questions and tackle problems from a multidisciplinary perspective. The clusters also infuse and engage with our Research Institute Centers and Graduate Programs.
+NYUAD also supports several multidisciplinary research clusters that bring faculty from different fields together around shared areas of strength. These clusters connect researchers with one another, with our Core Technology Platforms and facilities, and with Research Institute Centers and graduate programs to address complex questions from multiple perspectives.
 
-The NYUAD **Research Clusters** include: Neuroscience, Brain & Social Behavior; Applied Math, Theoretical Science, Computational & Advanced Data Science; Artificial Intelligence & Scalable Systems; Bioinnovation & Health; Complex Biological Systems; Environment; Material Science & Applied Science; Renewable & Sustainable Energy; Network Science; Lifespan & Development; Space Science; Science, Culture, Art & Society; and the Quantum Initiative.
+NYUAD research clusters include: Neuroscience, Brain & Social Behavior; Applied Math, Theoretical Science, Computational & Advanced Data Science; Artificial Intelligence & Scalable Systems; Bioinnovation & Health; Complex Biological Systems; Environment; Material Science & Applied Science; Renewable & Sustainable Energy; Network Science; Lifespan & Development; Space Science; Science, Culture, Art & Society; and the Quantum Initiative.
 
 #### Research Institute Centers
 The NYUAD Research Institute is a world-class center of cutting-edge and innovative research, scholarship, and cultural activity. It supports centers that address questions of global significance and local relevance and allows leading faculty members from across the disciplines to carry out creative scholarship and high-level research on a range of complex issues with depth, scale, and longevity that otherwise would not be possible.
 
 Faculty and researchers from the Division of Science lead and/or collaborate in the following Research Institute Centers:
 
-- Mubadala Arabian Center for Climate and Environmental Sciences (ACCESS)
-- Center for Astrophysics and Space Science
-- Center for Artificial Intelligence and Robotics
-- Center for Behavioral Institutional Design
-- Center for Brain and Health (CBH)
-- Center for Cyber Security
-- Center for Genomics and Systems Biology
-- Center for Interacting Urban Networks (CITIES)
-- Center for Quantum and Topological Systems
-- Center for Smart Engineering Materials (NYUAD-CSEM)
-- Center of Interdisciplinary Data Science and Artificial Intelligence (CIDSAI)
-- Center for Translational Medical Devices (CENTMED)
-- Public Health Research Center
-- Sand Hazards and Opportunities for Resilience, Energy, and Sustainability (SHORES)
-- Water Research Center
+- [Mubadala Arabian Center for Climate and Environmental Sciences (ACCESS)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/access.html)
+- [Center for Astrophysics and Space Science](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/center-for-astrophysics-and-space-science.html)
+- [Center for Artificial Intelligence and Robotics](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/center-for-artificial-intelligence-and-robotics.html)
+- [Center for Behavioral Institutional Design](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/center-for-behavioral-institutional-design-C-BID.html)
+- [Center for Brain and Health (CBH)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/center-for-brain-and-health.html)
+- [Center for Cyber Security](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-ccs.html)
+- [Center for Genomics and Systems Biology](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-cgsb.html)
+- [Center for Interacting Urban Networks (CITIES)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/center-for-interacting-urban-networks.html)
+- [Center for Quantum and Topological Systems](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/cqts.html)
+- [Center for Smart Engineering Materials (NYUAD-CSEM)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/center-for-smart-engineering-materials.html)
+- [Center of Interdisciplinary Data Science and Artificial Intelligence (CIDSAI)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/cidsai.html)
+- [NYUAD Wireless](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-wireless.html)
+- [Public Health Research Center](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/public-health-research-center.html)
+- [Center for Translational Medical Devices (CENTMED)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/centmed.html)
+- [Sand Hazards and Opportunities for Resilience, Energy, and Sustainability (SHORES)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/shores.html)
+- [Water Research Center](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/water-research-center.html)
 
-For more information on each center, please visit our [Centers](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page on the Intranet.
+For more information, please visit our [Centers](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page.
 
 ## Facilities and Infrastructure
 
@@ -367,9 +369,9 @@ The NYUAD Library is fully connected to NYU Libraries e-resources in New York, p
 #### IT Support
 If you require technological assistance, you can contact the [IT Service Desk](https://www.nyu.edu/life/information-technology/computing-support/help-and-service-status/nyu-it-service-desk.html) 24 hours a day, seven days a week. You can also visit the IT Experience Center on the 2nd floor of the Campus Center (C2-N201), where support staff can assist you in person. Walk-ins are welcome, or you can make an appointment in advance (nyuad.it@nyu.edu | 02 628 8888 [option 1]).
 
-For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page on the Intranet.
+For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page.
 
-## Our Dean & Associate Deans
+## Our Dean
 
 ::: dean-feature
 ::: dean-copy
@@ -382,7 +384,9 @@ Professor of Physics
 :::
 :::
 
-::: dean-feature
+## Our Associate Deans
+
+::: dean-feature associate-dean-feature
 ::: dean-copy
 #### Piergiorgio Percipalle
 Associate Dean for Research & Graduate Programs  
@@ -393,7 +397,7 @@ Professor of Biology
 :::
 :::
 
-::: dean-feature
+::: dean-feature associate-dean-feature
 ::: dean-copy
 #### Hisham Sati
 Associate Dean for Student Success & Curriculum Affairs  
@@ -404,7 +408,7 @@ Professor of Mathematics
 :::
 :::
 
-::: people-grid
+::: people-grid associate-deans-grid
 ::: person
 #### To be announced
 Associate Dean for Faculty Affairs & Advancement
