@@ -211,10 +211,12 @@ def page_filename(section: dict) -> str:
 
 
 def render_header(nav: list[dict], active_slug: str | None) -> str:
-    links = "\n".join(
+    contents_link = f'''        <a href="index.html"{" class=\"active\"" if active_slug is None else ""}>Contents</a>'''
+    section_links = "\n".join(
         f'''        <a href="{section['slug']}.html"{" class=\"active\"" if section["slug"] == active_slug else ""}>{section.get("nav_label") or section["title"]}</a>'''
         for section in nav
     )
+    links = "\n".join([contents_link, section_links])
     return f"""  <header class="topbar">
     <input class="menu-toggle" type="checkbox" id="main-menu-toggle" aria-hidden="true">
     <label class="menu-button" for="main-menu-toggle" aria-label="Open main menu">
