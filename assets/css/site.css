@@ -640,7 +640,7 @@ h1 {
 }
 
 .article h2 + h4 {
-  margin-top: -14px;
+  margin-top: 6px;
 }
 
 @media (min-width: 961px) {
