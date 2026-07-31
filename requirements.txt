@@ -1,2 +1,4 @@
 Markdown==3.7
 PyYAML==6.0.2
+Pillow==10.4.0
+WeasyPrint==62.3

@@ -674,7 +674,31 @@ h1 {
 
 .article h3 + p,
 .article h4 + p {
-  margin-top: -4px;
+  margin-top: 6px;
+}
+
+.article h3 + ul,
+.article h3 + ol,
+.article h4 + ul,
+.article h4 + ol {
+  margin-top: 6px;
+}
+
+.article h3 + .cards,
+.article h3 + .people-grid,
+.article h3 + .campus-essentials,
+.article h3 + .quote,
+.article h3 + blockquote,
+.article h3 + .note,
+.article h3 + table,
+.article h4 + .cards,
+.article h4 + .people-grid,
+.article h4 + .campus-essentials,
+.article h4 + .quote,
+.article h4 + blockquote,
+.article h4 + .note,
+.article h4 + table {
+  margin-top: 10px;
 }
 
 .article p + h2 {

@@ -3,16 +3,16 @@
 This repository publishes the NYU Abu Dhabi Division of Science New Joiners
 Handbook as an editable website.
 
-The website source is the Markdown in `content/*.md`. Each major handbook
-section has its own file, so future edits can be made by changing normal text
-instead of replacing PDF page images.
+The website and downloadable PDF are both generated from the Markdown in
+`content/*.md`. Each major handbook section has its own file, so future edits
+can be made by changing normal text instead of replacing PDF page images.
 
 ## Main Files
 
 - `content/*.md` - editable handbook text.
 - `assets/css/site.css` - website styling.
-- `build.py` - turns the Markdown files into the static website in `site/`.
-- `assets/handbook.pdf` - reference copy of the June 2025 PDF.
+- `build.py` - turns the Markdown files into the static website and current PDF in `site/`.
+- `assets/handbook.pdf` - old reference copy of the June 2025 PDF; it is not used for the download button.
 
 ## Build
 
@@ -22,7 +22,8 @@ Run:
 python build.py
 ```
 
-The output appears in `site/`.
+The website output appears in `site/`, and the current downloadable PDF appears
+at `site/handbook.pdf`.
 
 ## Editing
 
@@ -33,5 +34,5 @@ To update the handbook later:
 3. Run `python build.py` to preview.
 4. Commit the change and open a Pull Request.
 
-The website is now the master copy. The reference PDF is kept only for download
-and comparison unless a future PDF-generation step is added.
+The website is now the master copy. The PDF download is regenerated from the
+same editable content each time `python build.py` runs.

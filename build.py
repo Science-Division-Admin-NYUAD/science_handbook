@@ -2,13 +2,13 @@
 """
 Build the editable Division of Science handbook website.
 
-The source of truth is the Markdown in content/*.md. The PDF in assets/ is kept
-as a reference download, but the website itself is real text that can be edited,
-linked, styled, and republished from these content files.
+The source of truth is the Markdown in content/*.md. The website and downloadable
+PDF are both generated from those same files, so edits stay in sync.
 """
 
 from __future__ import annotations
 
+from html.parser import HTMLParser
 import re
 import shutil
 import html
@@ -25,8 +25,8 @@ CONTENT = ROOT / "content"
 ASSETS = ROOT / "assets"
 SITE = ROOT / "site"
 CSS = ASSETS / "css" / "site.css"
-PDF = ASSETS / "handbook.pdf"
 IMAGES = ASSETS / "images"
+PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
 STYLE_VERSION = "20260728-mail-option-2"
@@ -645,6 +645,384 @@ def render_redirect() -> str:
 """
 
 
+def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
+    contents = "\n".join(
+        f'''        <li><a href="#pdf-section-{html.escape(section["slug"], quote=True)}">{html.escape(section.get("nav_label") or section["title"])}</a></li>'''
+        for section in nav
+    )
+    section_blocks = "\n".join(
+        f"""    <section class="pdf-section" id="pdf-section-{html.escape(section['slug'], quote=True)}">
+      <h1>{html.escape(section['title'])}</h1>
+      <article class="article">
+{section['html']}
+      </article>
+    </section>"""
+        for section in nav
+    )
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{SITE_TITLE}</title>
+  <style>
+    @page {{
+      size: A4;
+      margin: 16mm 15mm 18mm;
+      @bottom-right {{
+        content: counter(page);
+        color: #777;
+        font-size: 9pt;
+      }}
+    }}
+
+    * {{
+      box-sizing: border-box;
+    }}
+
+    body {{
+      margin: 0;
+      color: #191919;
+      font-family: "Nunito", "DejaVu Sans", Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+    }}
+
+    a {{
+      color: #8b5d82;
+      text-decoration: none;
+    }}
+
+    .pdf-cover {{
+      page-break-after: always;
+      min-height: 245mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top: 10pt solid #4B365C;
+    }}
+
+    .pdf-cover h1 {{
+      max-width: 150mm;
+      margin: 0 0 8pt;
+      color: #372743;
+      font-size: 30pt;
+      line-height: 1.08;
+      text-transform: uppercase;
+    }}
+
+    .pdf-cover p {{
+      margin: 0;
+      font-size: 16pt;
+      font-weight: 700;
+    }}
+
+    .pdf-contents {{
+      page-break-after: always;
+    }}
+
+    .pdf-contents h1,
+    .pdf-section > h1 {{
+      margin: 0 0 14pt;
+      color: #372743;
+      font-size: 24pt;
+      line-height: 1.12;
+      text-transform: uppercase;
+      page-break-after: avoid;
+    }}
+
+    .pdf-contents ol {{
+      margin: 0;
+      padding-left: 18pt;
+      font-size: 13pt;
+      font-weight: 700;
+    }}
+
+    .pdf-contents li + li {{
+      margin-top: 6pt;
+    }}
+
+    .pdf-section {{
+      page-break-before: always;
+    }}
+
+    .article {{
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      background: #fff;
+    }}
+
+    .article h2 {{
+      margin: 18pt 0 9pt;
+      color: #372743;
+      font-size: 19pt;
+      line-height: 1.15;
+      text-transform: uppercase;
+      page-break-after: avoid;
+    }}
+
+    .article h2::after {{
+      content: "";
+      display: block;
+      height: 1.2pt;
+      margin-top: 5pt;
+      background: #b7a8bd;
+    }}
+
+    .article h3 {{
+      margin: 13pt 0 5pt;
+      color: #372743;
+      font-size: 13pt;
+      line-height: 1.2;
+      text-transform: uppercase;
+      page-break-after: avoid;
+    }}
+
+    .article h4 {{
+      margin: 10pt 0 4pt;
+      color: #191919;
+      font-size: 11.5pt;
+      line-height: 1.22;
+      page-break-after: avoid;
+    }}
+
+    .article p {{
+      margin: 0 0 8pt;
+    }}
+
+    .article ul,
+    .article ol {{
+      margin: 0 0 8pt;
+      padding-left: 16pt;
+    }}
+
+    .article li + li {{
+      margin-top: 2.5pt;
+    }}
+
+    .cards,
+    .people-grid,
+    .program-heads,
+    .campus-essentials {{
+      display: block;
+      margin: 8pt 0 12pt;
+    }}
+
+    .card,
+    .person,
+    .dean-feature,
+    .program-row,
+    .campus-essential,
+    .note,
+    .quote {{
+      display: block;
+      margin: 7pt 0;
+      padding: 8pt 9pt;
+      border: 0.75pt solid #d7e0e4;
+      border-top: 2.5pt solid #4B365C;
+      background: #fbfdfe;
+      page-break-inside: avoid;
+    }}
+
+    .program-label p {{
+      margin: 0 0 5pt;
+      color: #4B365C;
+      font-weight: 800;
+      text-transform: uppercase;
+      transform: none;
+    }}
+
+    .dean-photo-frame img {{
+      width: 28mm;
+      height: auto;
+      border-radius: 4pt;
+    }}
+
+    .email,
+    .email-copy {{
+      color: #4B365C;
+      font-weight: 700;
+    }}
+
+    table {{
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8pt 0;
+      font-size: 9.5pt;
+    }}
+
+    th,
+    td {{
+      padding: 5pt;
+      border: 0.75pt solid #d7e0e4;
+      vertical-align: top;
+    }}
+  </style>
+</head>
+<body>
+  <section class="pdf-cover">
+    <h1>Welcome to the Division of Science</h1>
+    <p>A handbook for new joiners</p>
+  </section>
+  <section class="pdf-contents">
+    <h1>Contents</h1>
+    <ol>
+{contents}
+    </ol>
+  </section>
+{section_blocks}
+</body>
+</html>
+"""
+
+
+class PlainTextExtractor(HTMLParser):
+    BLOCK_TAGS = {
+        "address", "article", "aside", "blockquote", "br", "div", "h1", "h2",
+        "h3", "h4", "h5", "h6", "li", "ol", "p", "section", "table", "tr",
+        "ul",
+    }
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in {"h1", "h2", "h3", "h4"}:
+            self.parts.append("\n\n")
+        elif tag == "li":
+            self.parts.append("\n- ")
+        elif tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+
+    def handle_data(self, data: str) -> None:
+        text = re.sub(r"\s+", " ", data).strip()
+        if text:
+            self.parts.append(text + " ")
+
+    def text(self) -> str:
+        collapsed = re.sub(r"[ \t]+\n", "\n", "".join(self.parts))
+        collapsed = re.sub(r"\n{3,}", "\n\n", collapsed)
+        return collapsed.strip()
+
+
+def plain_text_from_html(html_text: str) -> str:
+    parser = PlainTextExtractor()
+    parser.feed(html_text)
+    return parser.text()
+
+
+def load_pdf_font(size: int, bold: bool = False):
+    from PIL import ImageFont
+
+    candidates = [
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "/Library/Fonts/Arial Bold.ttf" if bold else "/Library/Fonts/Arial.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    ]
+    for candidate in candidates:
+        try:
+            return ImageFont.truetype(candidate, size=size)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def wrapped_lines(text: str, font, max_width: int, draw) -> list[str]:
+    lines: list[str] = []
+    for paragraph in text.splitlines():
+        paragraph = paragraph.strip()
+        if not paragraph:
+            lines.append("")
+            continue
+        words = paragraph.split()
+        current = ""
+        for word in words:
+            trial = f"{current} {word}".strip()
+            if draw.textlength(trial, font=font) <= max_width or not current:
+                current = trial
+            else:
+                lines.append(current)
+                current = word
+        if current:
+            lines.append(current)
+    return lines
+
+
+def write_plain_text_pdf(sections: list[dict], output_path: Path) -> None:
+    from PIL import Image, ImageDraw
+
+    page_size = (1240, 1754)
+    margin_x = 90
+    margin_y = 90
+    max_width = page_size[0] - (margin_x * 2)
+    max_y = page_size[1] - margin_y
+    title_font = load_pdf_font(48, bold=True)
+    heading_font = load_pdf_font(34, bold=True)
+    body_font = load_pdf_font(27)
+    small_font = load_pdf_font(22)
+
+    pages = []
+    page = Image.new("RGB", page_size, "white")
+    draw = ImageDraw.Draw(page)
+    y = margin_y
+
+    def new_page() -> None:
+        nonlocal page, draw, y
+        pages.append(page)
+        page = Image.new("RGB", page_size, "white")
+        draw = ImageDraw.Draw(page)
+        y = margin_y
+
+    def add_text(text: str, font, fill=(25, 25, 25), gap: int = 12) -> None:
+        nonlocal y
+        font_size = getattr(font, "size", 22)
+        for line in wrapped_lines(text, font, max_width, draw):
+            if y > max_y:
+                new_page()
+            if line:
+                draw.text((margin_x, y), line, font=font, fill=fill)
+                y += int(font_size * 1.35)
+            else:
+                y += int(font_size * 0.7)
+        y += gap
+
+    add_text("Welcome to the Division of Science", title_font, fill=(75, 54, 92), gap=16)
+    add_text("A handbook for new joiners", heading_font, gap=28)
+    add_text("Contents", heading_font, fill=(75, 54, 92), gap=8)
+    for section in sections:
+        if section.get("cover"):
+            continue
+        add_text(section.get("nav_label") or section["title"], body_font, gap=2)
+
+    for section in sections:
+        if section.get("cover"):
+            continue
+        new_page()
+        add_text(section["title"], heading_font, fill=(75, 54, 92), gap=14)
+        add_text(plain_text_from_html(section["html"]), small_font, gap=8)
+
+    pages.append(page)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    pages[0].save(output_path, save_all=True, append_images=pages[1:])
+
+
+def build_pdf(sections: list[dict], nav: list[dict]) -> None:
+    try:
+        from weasyprint import HTML
+
+        HTML(string=render_pdf_html(sections, nav), base_url=str(SITE)).write_pdf(PDF_OUTPUT)
+        return
+    except Exception as error:
+        print(f"  pdf : styled PDF unavailable; generated a plain current PDF instead ({error.__class__.__name__})")
+
+    write_plain_text_pdf(sections, PDF_OUTPUT)
+
+
 def build_site() -> None:
     sections = load_sections()
     nav = nav_items(sections)
@@ -656,17 +1034,15 @@ def build_site() -> None:
     shutil.copy2(CSS, SITE / "assets" / "css" / "site.css")
     if IMAGES.exists():
         shutil.copytree(IMAGES, SITE / "assets" / "images")
-    if PDF.exists():
-        shutil.copy2(PDF, SITE / "handbook.pdf")
 
     for section in sections:
         html = render_cover(section, nav) if section.get("cover") else render_section(section, nav)
         (SITE / page_filename(section)).write_text(html, encoding="utf-8")
     (SITE / "404.html").write_text(render_redirect(), encoding="utf-8")
+    build_pdf(sections, nav)
 
     print(f"  site: {len(sections)} pages -> {SITE}")
-    if PDF.exists():
-        print(f"  pdf : {SITE / 'handbook.pdf'}")
+    print(f"  pdf : {PDF_OUTPUT}")
 
 
 if __name__ == "__main__":
