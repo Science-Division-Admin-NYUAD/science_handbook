@@ -71,63 +71,46 @@ Post-Award Research Administration: nyuad.postaward-researchadmin@nyu.edu
 
 
 ### Passport and Visa
-The Employee Mobility Services team will arrange your relocation travel with a representative from one of the NYUAD-approved travel agencies, who will contact you with a proposed travel itinerary. Upon confirmation of your travel choice, the agent will book your relocation flight to Abu Dhabi and provide you with a detailed itinerary/e-ticket. You will need a passport valid for more than seven months with at least two blank pages at the time of your travel to Abu Dhabi. Also remember to carry a copy of your travel itinerary.
+Employee Mobility Services will arrange your relocation travel through an NYUAD-approved travel agency. The agency will share a proposed itinerary, book your flight once confirmed, and provide your e-ticket. At the time of travel, your passport must be valid for more than seven months and have at least two blank pages. Please also carry a copy of your travel itinerary.
 
-The UAE government mandates that every individual coming to the country for employment purposes should be legally sponsored by their employers. NYUAD's Immigration Team is here to actively serve employees on behalf of the University, liaising with various government departments in the UAE, and completing the visa sponsorship process for employees and their family members.
+Anyone coming to the UAE for employment must be legally sponsored by their employer. NYUAD's Immigration Team handles visa sponsorship for employees and their family members, liaising with UAE government departments on NYUAD's behalf.
 
 ### Traveling with Medication
-The legal status and regulation of some medicines prescribed or purchased in one country can be different in another. In the UAE, some prescribed and over-the-counter medicines are considered controlled substances and cannot be brought into the country without prior permission from the UAE Ministry of Health. Apply online via the electronic application form. The UAE authorities advise that applications are normally processed within five working days.
+Medication rules vary by country. In the UAE, some prescription and over-the-counter medicines are considered controlled substances and require prior approval from the UAE Ministry of Health before you travel. Applications should be submitted online via the electronic application form and are normally processed within five working days.
+
+For more information, please check out the [UAE's governmental portal](https://u.ae/en/information-and-services/health-and-fitness/drugs-and-controlled-medicines%20).
 
 ### Prescriptions
-If you are required to carry a supply of prescription medication with you while you are traveling, it is advisable to also carry a note from your doctor as to what kind of medication it is, your prescribed dosage, and why you need to take it. You should also carry the medication in your carry-on luggage, in its original container. Be sure to follow airport security guidelines, particularly if the medicine is in liquid form, and be mindful that prescription medications mailed internationally may not be received or may be received later than planned due to customs restrictions. For queries, contact the NYUAD Health Center at nyuad.healthcenter@nyu.edu.
+If you are traveling with prescription medication, keep it in your carry-on luggage and in its original container. You should also carry a doctor's note listing the medication, dosage, and reason for use. Please follow airport security guidelines, especially for liquids, and note that medication sent by international mail may be delayed or blocked by customs restrictions. For questions, contact <a class="email-copy" href="mailto:nyuad.healthcenter@nyu.edu" data-email="nyuad.healthcenter@nyu.edu" aria-label="Copy email address nyuad.healthcenter@nyu.edu">NYUAD Health Center</a>.
 
 ## Arriving on Campus
 
 
 ### Campus Access
 
-#### Your NYU ID Card
-Your NYU ID Card will be available for collection upon arrival at the NYUAD Welcome Center and will provide you with access to most spaces on campus, including your workspace, research space, the Library, Fitness Center, and the dining spaces. To receive your NYU ID card, you will need to have activated your NYU-issued NetID.
+Your NYU ID Card will be available for collection when you arrive at the NYUAD Welcome Center. It provides access to most campus spaces, including your workspace, research space, the Library, Fitness Center, and dining spaces. To collect your card, you must first activate your NYU-issued NetID.
 
-If you have any difficulties accessing certain spaces on campus, requests should be submitted to Public Safety. Requests will be approved based on the expectation that a person has already, or will as soon as possible, complete all OSHMS and EHS training requirements. Non-compliance will result in access being revoked. For any queries, email Public Safety at NYUAD.PublicSafetyIDAccess@nyu.edu or call 02 628 7777.
+If you have difficulty accessing certain campus spaces, please submit a request to Public Safety. Access is approved with the expectation that all required OSHMS and EHS training has been completed, or will be completed as soon as possible. Non-compliance may result in access being revoked. For questions, contact <a class="email-copy" href="mailto:NYUAD.PublicSafetyIDAccess@nyu.edu" data-email="NYUAD.PublicSafetyIDAccess@nyu.edu" aria-label="Copy email address NYUAD.PublicSafetyIDAccess@nyu.edu">Public Safety</a> or call 02 628 7777.
 
 ### Work Spaces
 
-#### Allocated Workstations or Offices
-Prior to your arrival, your program administrative coordinator will arrange for your workstation or office to be set up on campus, in line with NYUAD's policy on space assignments, which establishes the use of shared spaces as and when required. Spaces come equipped with a desk, desk chair, and a stationery pack. Additional office supplies can be requested via facilities and additional furniture requests can be raised via the Intranet.
+Your program administrative coordinator will arrange your workstation or office before you arrive, in line with NYUAD's space assignment policy. Workspaces include a desk, chair, and stationery pack; additional supplies or furniture can be requested through Facilities and the Intranet.
 
-#### Your Contact Information
-Please ensure that your contact information is up to date in the Contacts Directory. If your location is incorrect, please fill out the NYUAD Office Location Update form. If you are not listed in the directory, your title is incorrect, or you need to update your office extension number, please contact PeopleLink at nyuad.peoplelink@nyu.edu.
-
-#### Email Signature Set Up
-NYUAD encourages the use of standardized, auto-generated email signatures. Please check that your information on PeopleSync is correct before requesting your signature. If the details on PeopleSync are incorrect, contact nyuad.peoplelink@nyu.edu for assistance.
-
-::: quote
-We strive for excellence in teaching and a multidisciplinary approach to research that enriches our individual scientific endeavors.
-:::
+Please keep your details updated in the [Contacts Directory](https://intranet.nyuad.nyu.edu/contacts/). Use the NYUAD Office Location Update form for location changes, and contact <a class="email-copy" href="mailto:nyuad.peoplelink@nyu.edu" data-email="nyuad.peoplelink@nyu.edu" aria-label="Copy email address nyuad.peoplelink@nyu.edu">PeopleLink</a> for directory listing, title, office extension, or PeopleSync/signature issues.
 
 ## Information Technology
 
+NYUAD Technology Services supports the main tools and systems you will use when joining, including your computer setup, standard and academic software, MFA, VPN, email, file storage, and other digital services. Some access and equipment requests may be arranged before you arrive, while others can be completed once your NetID and account access are active.
 
-### Hardware Requests
-Eligible NYUAD employees are issued with a computer when joining NYUAD. The computer will be issued in line with the NYUAD Computer Distribution Policy and requested prior to your arrival or start date.
+### Multifactor Authentication
+NYUAD uses Multi-Factor Authentication (MFA) to help protect your account when accessing online services. After entering your NetID and password, you will confirm your identity using a registered device, such as your phone or tablet.
 
-### Software Requests & Tools
-IT provides a variety of desktop software for Windows and Mac environments. The following standard software will be pre-installed on your computer: Microsoft Office, Adobe Acrobat Reader, Trend Micro (Anti-virus), an email client (either Apple Mail or Microsoft Outlook 2016), the communication tool Cisco AnyConnect VPN, and Google Chrome.
+For setup guidance, please visit NYU's [Multi-Factor Authentication](https://www.nyu.edu/life/information-technology/accounts-and-access/access/mfa.html?challenge=d06e90d7-4d8f-4b88-9d8c-10b73beb60f1) page.
 
-#### Research and Teaching
-NYUAD provides support for the procurement, licensing, installation, and troubleshooting of academic software that supports the curriculum and/or research. The Center for Academic Technology provides a range of academic software, and troubleshooting services available through site or network licenses. Software lists, links and user guides can be found on the Intranet. If the software you require is not listed, email NYUAD at academictech@nyu.edu with the name of the software, anticipated usage (curriculum or research), and any other relevant information. Installation of academic software on computers not located at the Library is normally provided via TeamViewer, a secure remote service for license distribution.
+### File Management: Google Drive and NYU Box
+Your program administrative coordinator may use Google Drive, Docs, Sheets, and Calendar to share files, request information, and schedule meetings and events. Google Drive is commonly used at NYUAD, but storage limits apply; NYU Box and other storage options may be used when needed.
 
-#### Multifactor Authentication
-NYUAD uses Multi-Factor Authentication (MFA) to improve security by ensuring that only you can access your account when logging in to an online service. This is accomplished using two types of authentication to verify your identity at system log-in:
-
-- First, you log in with your password — something you know — and username (usually your NYU NetID).
-- Then, you use a physical device, such as your mobile phone or tablet, to confirm your identity.
-
-#### File Management — Google Drive and NYU Box
-Your program administrative coordinators use Google applications to share and request information from you, including docs, sheets, and files. Google Calendar is the primary program and divisional calendar application, and all of your meetings and events will be scheduled through this.
-
-Google Drive — a cloud-based service for file storage/sharing and document collaboration — is commonly used at NYUAD; however, Google has announced that it will no longer provide free, unlimited storage to educational institutions. As a result, NYU has introduced new storage limits for Google services for all employees, students, and affiliates. Existing and new files, emails, and photos all count towards your designated storage limit. Please note that this is different from the NYUAD File Share service and is limited to the Google workspace. More information and details about alternative storage solutions, such as NYU Box, are available on the Intranet.
+For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page.
 
 ## Software for Administrative Tasks
 
@@ -136,43 +119,39 @@ During your time at NYUAD, you will use various platforms to assist with necessa
 ::: cards
 ::: card
 #### AssessNet
-The EHS software used to complete Risk Assessments, record safety inspections and audits, and report incidents. Risk Assessments are a vital aspect of the University's Risk Management Program and are a requirement as per Abu Dhabi Occupational Safety & Health regulations. Reach out to nyuad.ehs@nyu.edu to obtain your login credentials and for training on risk assessments if required.
+Used for risk assessments, safety inspections, audits, and incident reporting. Contact nyuad.ehs@nyu.edu for login credentials or training.
 :::
 ::: card
 #### CAaRs
-The Course Archive and Reporting (CAaR) system serves as a repository for the syllabus, grading rubrics, exam keys, student work samples, assessment documents, and other materials used in the delivery of a course. An archive record is kept for each semester in which a course is taught. It is required by the UAE's Commission on Academic Accreditation (CAA).
+Course archive for syllabi, rubrics, exam keys, student work, and assessment materials. A record is kept for each semester a course is taught, in line with UAE CAA requirements.
 :::
 ::: card
 #### Cayuse
-A research administration software platform used by NYU to streamline and manage the pre-award and post-award processes of sponsored research projects, facilitating proposal development, submission, compliance management, and grant administration. Faculty wishing to submit a proposal will need a Cayuse account and must initiate a Cayuse SP record for each proposal.
+NYU's sponsored-research platform for proposal development, submission, compliance, and grant administration. Faculty need a [Cayuse](https://signin.app.cayuse.com/login?tenant_id=052d9c3e-d2b4-4ed0-81cc-ba2a1e4568f7&redirect_uri=https://hhrin.app.cayuse.com/&response_type=TOKEN&state&nonce&auth_error=false) account and SP record for each proposal.
 :::
 ::: card
-#### Chemtracker
-The EHS software used to manage the inventory of chemicals on campus. Purchased chemicals are inputted and tracked across the system by the Logistics Team, from arrival through to disposal. Typically, when new postdocs or students join, the Lab Manager adds them to the appropriate lab. For help, reach out to nyuad.ehs@nyu.edu.
+#### ChemTracker
+Tracks campus chemical inventory from arrival through disposal. Logistics records purchased chemicals, and lab managers add new lab members. For help, contact nyuad.ehs@nyu.edu. For more info, visit [ChemTracker](https://www.nyu.edu/life/safety-health-wellness/research-and-laboratory-safety/chemical-safety/chemical-inventory0.html?challenge=d06e90d7-4d8f-4b88-9d8c-10b73beb60f1).
 :::
 ::: card
 #### Concur
-The travel and expense management system used by NYU to automate and streamline processes related to travel booking, expense reporting, and reimbursement for faculty, staff, and students. Concur has been customized to meet the needs of NYUAD and built in compliance with the NYUAD Travel & Reimbursement Policy.
+NYU's travel and expense system for booking, expense reports, and reimbursements, customized for NYUAD policy. Access Concur through your bookmarks on the [Intranet](https://intranet.nyuad.nyu.edu/).
 :::
 ::: card
 #### ePro
-ePro, short for 'eProcurement', is NYUAD's predominant solution to procuring goods and services. It is an online tool for the creation and submission of purchase requisitions, and electronically routes requests to the appropriate budget holder(s) for review and approval. Access will be requested on your behalf and a brief training session will be set up.
-:::
-::: card
-#### Faculty 180
-Each year, all NYU faculty report on their activities: teaching, research, and service. NYU uses this centralized system to generate reports, celebrate successes and awards, and minimize information requests. You will submit your report using Interfolio Faculty 180 (F180).
+NYUAD's eProcurement system for purchase requisitions. Requests route to budget holders for approval; access and brief training will be arranged. Access ePro through your bookmarks on the [Intranet](https://intranet.nyuad.nyu.edu/).
 :::
 ::: card
 #### Interfolio
-An online platform used by NYU to streamline the faculty hiring process, manage academic workflows, facilitate the promotion and tenure process, and enable the collection and organization of scholarly materials such as letters of recommendation and CVs. Access Interfolio with your NYU Net ID.
+Platform for faculty hiring, academic workflows, promotion and tenure, and scholarly materials. Access [Interfolio](https://account.interfolio.com/login) with your NYU NetID.
 :::
 ::: card
 #### Research Central Store
-NYUAD Central Store stocks approximately 2,000 laboratory and other consumables used for campus research and teaching. Orders can be placed through the in-person "WALK-IN" service or the online ordering system. To gain access, a form must be completed and signed by the budget holder (PI) and requested from Ahmed Ansari, Manager of Research Materials and Chemical Store, at aa141@nyu.edu.
+Stocks research and teaching consumables. Orders can be placed through the walk-in or online service. For inquiries, please email <a class="email-copy" href="mailto:nyuad.researchstores@nyu.edu" data-email="nyuad.researchstores@nyu.edu" aria-label="Copy email address nyuad.researchstores@nyu.edu">nyuad.researchstores@nyu.edu</a>.
 :::
 ::: card
-#### Workday
-A cloud-based enterprise resource planning (ERP) system used by NYU for managing administrative tasks related to human resources, finance, payroll, and procurement — providing a unified platform for employees to access and manage their work-related information and processes.
+#### Workday/PeopleSync
+NYU's system for HR, finance, payroll, procurement, and employee work information. Access through the PeopleSync bookmark on the [Intranet](https://intranet.nyuad.nyu.edu/).
 :::
 :::
 

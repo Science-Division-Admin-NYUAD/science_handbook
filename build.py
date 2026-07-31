@@ -30,7 +30,7 @@ FILES = ASSETS / "files"
 PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260728-mail-option-2"
+STYLE_VERSION = "20260731-onboarding-checklist-nunito"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
@@ -510,7 +510,8 @@ def render_email_copy_script() -> str:
     return """  <script>
     (() => {
       const emailLinks = Array.from(document.querySelectorAll(".email-copy[data-email]"));
-      if (!emailLinks.length) return;
+      const orientationHeading = document.querySelector("#orientation");
+      if (!emailLinks.length && !orientationHeading) return;
 
       const toast = document.createElement("div");
       toast.className = "copy-toast";
@@ -540,6 +541,27 @@ def render_email_copy_script() -> str:
         fallbackCopy(text);
       };
 
+      const escapeHtml = (text) => text.replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[character]));
+
+      const copyRichText = async (plainText, htmlText) => {
+        if (navigator.clipboard && window.isSecureContext && window.ClipboardItem) {
+          await navigator.clipboard.write([
+            new ClipboardItem({
+              "text/plain": new Blob([plainText], { type: "text/plain" }),
+              "text/html": new Blob([htmlText], { type: "text/html" })
+            })
+          ]);
+          return;
+        }
+        await copyText(plainText);
+      };
+
       const showToast = (link) => {
         const rect = link.getBoundingClientRect();
         toast.textContent = "Copied";
@@ -558,6 +580,61 @@ def render_email_copy_script() -> str:
           toast.classList.remove("is-visible");
         }, 1200);
       };
+
+      if (orientationHeading) {
+        const intro = orientationHeading.nextElementSibling;
+        const firstList = intro?.nextElementSibling;
+        const facultyNote = firstList?.nextElementSibling;
+        const facultyList = facultyNote?.nextElementSibling;
+
+        if (intro && firstList?.matches("ol")) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "copy-todo-list";
+          button.textContent = "Copy to-do list";
+          button.setAttribute("aria-label", "Copy orientation to-do list");
+
+          const collectItems = (list) => {
+            if (!list?.matches("ol")) return [];
+            return Array.from(list.children)
+              .filter((item) => item.tagName === "LI")
+              .map((item) => item.textContent.replace(/\\s+/g, " ").trim())
+              .filter(Boolean);
+          };
+
+          button.addEventListener("click", async () => {
+            const mainItems = collectItems(firstList);
+            const facultyItems = collectItems(facultyList);
+            if (!mainItems.length && !facultyItems.length) return;
+
+            const title = "NYUAD Onboarding Checklist";
+            const facultyTitle = "Additional steps for faculty only:";
+            const plainParts = [
+              title,
+              "",
+              ...mainItems.map((text) => `☐ ${text}`)
+            ];
+            if (facultyItems.length) {
+              plainParts.push("", facultyTitle, "", ...facultyItems.map((text) => `☐ ${text}`));
+            }
+            const plainText = plainParts.join("\\n");
+            const fontStack = "'Nunito', Arial, sans-serif";
+            const renderChecklist = (items) => `<ul style="margin:0;padding-left:0;list-style:none;font-family:${fontStack};font-size:11pt;font-weight:400;">${items
+              .map((text) => `<li style="margin:0 0 6px 0;font-weight:400;"><span style="font-size:18px;line-height:1;font-weight:400;">☐</span>&nbsp;${escapeHtml(text)}</li>`)
+              .join("")}</ul>`;
+            const htmlText = `<p style="margin:0 0 10px 0;font-family:${fontStack};font-size:11pt;font-weight:700;"><strong>${title}</strong></p>${renderChecklist(mainItems)}${facultyItems.length ? `<p style="margin:12px 0 8px 0;font-family:${fontStack};font-size:11pt;font-weight:700;"><strong>${facultyTitle}</strong></p>${renderChecklist(facultyItems)}` : ""}`;
+
+            try {
+              await copyRichText(plainText, htmlText);
+              showToast(button);
+            } catch {
+              return;
+            }
+          });
+
+          intro.insertAdjacentElement("afterend", button);
+        }
+      }
 
       document.querySelectorAll(".program-card").forEach((card) => {
         const cardEmails = Array.from(card.querySelectorAll(".email-copy[data-email]"));
@@ -696,7 +773,8 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .page-toc,
     .topic-list,
     .copy-toast,
-    .copy-all-emails {{
+    .copy-all-emails,
+    .copy-todo-list {{
       display: none !important;
     }}
 

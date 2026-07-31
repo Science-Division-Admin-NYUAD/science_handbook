@@ -1665,3 +1665,179 @@ h1 {
   padding-top: 7px;
   border-top: 1px solid rgba(75, 54, 92, 0.12);
 }
+
+/* Joining Key Contacts: match Admin Team cards */
+#key-contacts + .cards {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+#key-contacts + .cards .card {
+  padding: 16px 18px;
+  border: 1px solid rgba(75, 54, 92, 0.14);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+#key-contacts + .cards .card h4 {
+  margin-bottom: 7px;
+  color: var(--teal);
+}
+
+#key-contacts + .cards .card p {
+  margin: 0 0 8px;
+}
+
+#key-contacts + .cards .card p + p {
+  margin-top: 10px;
+}
+
+/* Orientation: guided timeline */
+#orientation + p + ol,
+#orientation + p + .copy-todo-list + ol,
+#orientation + p + ol + p + ol,
+#orientation + p + .copy-todo-list + ol + p + ol {
+  position: relative;
+  margin: 16px 0 22px;
+  padding: 0 0 0 8px;
+  list-style: none;
+}
+
+#orientation + p + ol::before,
+#orientation + p + .copy-todo-list + ol::before,
+#orientation + p + ol + p + ol::before,
+#orientation + p + .copy-todo-list + ol + p + ol::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 21px;
+  width: 2px;
+  background: rgba(75, 54, 92, 0.16);
+}
+
+#orientation + p + ol > li,
+#orientation + p + .copy-todo-list + ol > li,
+#orientation + p + ol + p + ol > li,
+#orientation + p + .copy-todo-list + ol + p + ol > li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 18px 52px;
+  line-height: 1.48;
+}
+
+#orientation + p + ol > li::before,
+#orientation + p + .copy-todo-list + ol > li::before,
+#orientation + p + ol + p + ol > li::before,
+#orientation + p + .copy-todo-list + ol + p + ol > li::before {
+  content: counter(list-item);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: var(--teal);
+  color: #fff;
+  box-shadow: 0 0 0 1px rgba(75, 54, 92, 0.2);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+#orientation + p + ol + p,
+#orientation + p + .copy-todo-list + ol + p {
+  margin: 10px 0 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(75, 54, 92, 0.15);
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.copy-todo-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 8px 0 4px;
+  padding: 7px 12px;
+  border: 1px solid rgba(75, 54, 92, 0.18);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--link);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.1;
+  cursor: copy;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.copy-todo-list::before {
+  content: "";
+  display: inline-block;
+  width: 0.95em;
+  height: 0.95em;
+  background: currentColor;
+  opacity: 0.72;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='14' height='14' x='8' y='8' rx='2' ry='2'/%3E%3Cpath d='M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='14' height='14' x='8' y='8' rx='2' ry='2'/%3E%3Cpath d='M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.copy-todo-list:hover,
+.copy-todo-list:focus-visible {
+  border-color: rgba(75, 54, 92, 0.34);
+  background: var(--teal-soft);
+  color: var(--link-hover);
+}
+
+@media print {
+  .copy-todo-list {
+    display: none !important;
+  }
+}
+
+/* Administrative software: compact directory rows */
+#software-for-administrative-tasks + p + .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 14px;
+  border-top: 1px solid rgba(75, 54, 92, 0.16);
+}
+
+#software-for-administrative-tasks + p + .cards .card {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  padding: 14px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(75, 54, 92, 0.16);
+  background: transparent;
+}
+
+#software-for-administrative-tasks + p + .cards .card h4 {
+  margin: 0;
+  color: var(--teal);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+#software-for-administrative-tasks + p + .cards .card p {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  #software-for-administrative-tasks + p + .cards .card {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

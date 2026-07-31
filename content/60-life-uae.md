@@ -1,12 +1,11 @@
 ---
 order: 5
-title: "Life in Abu Dhabi"
+title: "Life in the UAE"
 nav_label: "Life in the UAE"
 slug: life-uae
 toc:
   - ["About", 54]
-  - ["Working Week and Weekend", 55]
-  - ["Official Language", 56]
+  - ["Working Week & Weekend in Abu Dhabi", 56]
   - ["Exploring Abu Dhabi", 57]
 ---
 
@@ -14,13 +13,12 @@ toc:
 
 The United Arab Emirates (UAE) is a federation of seven emirates: Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah, and Fujairah. Abu Dhabi is the capital city and home to NYUAD's Saadiyat Island campus.
 
-Although NYUAD is an international community, faculty and staff should be mindful of local customs and cultural norms while living and working in the UAE.
+Although NYUAD is an international community, faculty and staff should be mindful of local customs and cultural norms while living and working in Abu Dhabi and across the UAE.
 
-#### Working Week and Weekend
-The work and school week in Abu Dhabi is Monday through Friday, with the weekend falling on Saturday and Sunday. NYUAD maintains a full working day on Friday; however, 12:00-2:20pm is prayer time, so meetings and events should not be scheduled during this period.
+For practical guidance, please visit our [Living in Abu Dhabi](https://intranet.nyuad.nyu.edu/nyuad-life/living-in-abu-dhabi/) page.
 
-#### Official Language
-Arabic is the official language of the UAE, but English is widely spoken. Most signs, including road signs, store signs, and restaurant information, are available in English or in both English and Arabic.
+#### Working Week & Weekend in Abu Dhabi
+The work and school week in Abu Dhabi is Monday through Friday. NYUAD maintains a full working day on Friday; however, 12:00-2:20pm is reserved for prayer time, so meetings and events should not be scheduled during this period.
 
 ## Exploring Abu Dhabi
 
@@ -28,4 +26,4 @@ NYUAD's Saadiyat Island location places you close to Abu Dhabi's cultural distri
 
 Across the emirate, Abu Dhabi also offers cultural landmarks, waterfront spaces, and leisure destinations, including Sheikh Zayed Grand Mosque, Qasr Al Hosn, Abu Dhabi Corniche, Qasr Al Watan, Emirates Palace Mandarin Oriental, Observation Deck at 300, Jubail Mangrove Park, and Yas Island.
 
-For more information on Saadiyat Island and things to do in Abu Dhabi, along with some additional campus basics, please refer to our [NYUAD Welcome Brochure](assets/files/nyuad-welcome-brochure-2026.pdf).
+For more information on Saadiyat Island and things to do in the city, along with some additional campus basics, please refer to our [NYUAD Welcome Brochure](assets/files/nyuad-welcome-brochure-2026.pdf).
