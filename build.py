@@ -30,7 +30,7 @@ FILES = ASSETS / "files"
 PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260731-orientation-copy"
+STYLE_VERSION = "20260731-onboarding-checklist-nunito"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
@@ -541,6 +541,27 @@ def render_email_copy_script() -> str:
         fallbackCopy(text);
       };
 
+      const escapeHtml = (text) => text.replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[character]));
+
+      const copyRichText = async (plainText, htmlText) => {
+        if (navigator.clipboard && window.isSecureContext && window.ClipboardItem) {
+          await navigator.clipboard.write([
+            new ClipboardItem({
+              "text/plain": new Blob([plainText], { type: "text/plain" }),
+              "text/html": new Blob([htmlText], { type: "text/html" })
+            })
+          ]);
+          return;
+        }
+        await copyText(plainText);
+      };
+
       const showToast = (link) => {
         const rect = link.getBoundingClientRect();
         toast.textContent = "Copied";
@@ -573,24 +594,38 @@ def render_email_copy_script() -> str:
           button.textContent = "Copy to-do list";
           button.setAttribute("aria-label", "Copy orientation to-do list");
 
-          const collectItems = (list, prefix = "") => {
+          const collectItems = (list) => {
             if (!list?.matches("ol")) return [];
             return Array.from(list.children)
               .filter((item) => item.tagName === "LI")
               .map((item) => item.textContent.replace(/\\s+/g, " ").trim())
-              .filter(Boolean)
-              .map((text) => `- [ ] ${prefix}${text}`);
+              .filter(Boolean);
           };
 
           button.addEventListener("click", async () => {
-            const todoItems = [
-              ...collectItems(firstList),
-              ...collectItems(facultyList, "Faculty only: ")
+            const mainItems = collectItems(firstList);
+            const facultyItems = collectItems(facultyList);
+            if (!mainItems.length && !facultyItems.length) return;
+
+            const title = "NYUAD Onboarding Checklist";
+            const facultyTitle = "Additional steps for faculty only:";
+            const plainParts = [
+              title,
+              "",
+              ...mainItems.map((text) => `☐ ${text}`)
             ];
-            if (!todoItems.length) return;
+            if (facultyItems.length) {
+              plainParts.push("", facultyTitle, "", ...facultyItems.map((text) => `☐ ${text}`));
+            }
+            const plainText = plainParts.join("\\n");
+            const fontStack = "'Nunito', Arial, sans-serif";
+            const renderChecklist = (items) => `<ul style="margin:0;padding-left:0;list-style:none;font-family:${fontStack};font-size:11pt;font-weight:400;">${items
+              .map((text) => `<li style="margin:0 0 6px 0;font-weight:400;"><span style="font-size:18px;line-height:1;font-weight:400;">☐</span>&nbsp;${escapeHtml(text)}</li>`)
+              .join("")}</ul>`;
+            const htmlText = `<p style="margin:0 0 10px 0;font-family:${fontStack};font-size:11pt;font-weight:700;"><strong>${title}</strong></p>${renderChecklist(mainItems)}${facultyItems.length ? `<p style="margin:12px 0 8px 0;font-family:${fontStack};font-size:11pt;font-weight:700;"><strong>${facultyTitle}</strong></p>${renderChecklist(facultyItems)}` : ""}`;
 
             try {
-              await copyText(todoItems.join("\\n"));
+              await copyRichText(plainText, htmlText);
               showToast(button);
             } catch {
               return;
