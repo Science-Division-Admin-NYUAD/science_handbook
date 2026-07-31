@@ -96,7 +96,7 @@ If you have difficulty accessing certain campus spaces, please submit a request 
 
 Your program administrative coordinator will arrange your workstation or office before you arrive, in line with NYUAD's space assignment policy. Workspaces include a desk, chair, and stationery pack; additional supplies or furniture can be requested through Facilities and the Intranet.
 
-Please keep your details updated in the [Contacts Directory](https://intranet.nyuad.nyu.edu/contacts/). Use the NYUAD Office Location Update form for location changes, and contact <a class="email-copy" href="mailto:nyuad.peoplelink@nyu.edu" data-email="nyuad.peoplelink@nyu.edu" aria-label="Copy email address nyuad.peoplelink@nyu.edu">PeopleLink</a> for directory listing, title, office extension, or PeopleSync/signature issues.
+Please keep your details updated in the [Contacts Directory](http://intranet.nyuad.nyu.edu/contacts/). Use the NYUAD Office Location Update form for location changes, and contact <a class="email-copy" href="mailto:nyuad.peoplelink@nyu.edu" data-email="nyuad.peoplelink@nyu.edu" aria-label="Copy email address nyuad.peoplelink@nyu.edu">PeopleLink</a> for directory listing, title, office extension, or PeopleSync/signature issues.
 
 ## Information Technology
 
@@ -110,7 +110,7 @@ For setup guidance, please visit NYU's [Multi-Factor Authentication](https://www
 ### File Management: Google Drive and NYU Box
 Your program administrative coordinator may use Google Drive, Docs, Sheets, and Calendar to share files, request information, and schedule meetings and events. Google Drive is commonly used at NYUAD, but storage limits apply; NYU Box and other storage options may be used when needed.
 
-For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page.
+For more information, please visit our [Technology Services](http://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page.
 
 ## Software for Administrative Tasks
 
@@ -135,11 +135,11 @@ Tracks campus chemical inventory from arrival through disposal. Logistics record
 :::
 ::: card
 #### Concur
-NYU's travel and expense system for booking, expense reports, and reimbursements, customized for NYUAD policy. Access Concur through your bookmarks on the [Intranet](https://intranet.nyuad.nyu.edu/).
+NYU's travel and expense system for booking, expense reports, and reimbursements, customized for NYUAD policy. Access Concur through your bookmarks on the [Intranet](http://intranet.nyuad.nyu.edu/).
 :::
 ::: card
 #### ePro
-NYUAD's eProcurement system for purchase requisitions. Requests route to budget holders for approval; access and brief training will be arranged. Access ePro through your bookmarks on the [Intranet](https://intranet.nyuad.nyu.edu/).
+NYUAD's eProcurement system for purchase requisitions. Requests route to budget holders for approval; access and brief training will be arranged. Access ePro through your bookmarks on the [Intranet](http://intranet.nyuad.nyu.edu/).
 :::
 ::: card
 #### Interfolio
@@ -151,7 +151,7 @@ Stocks research and teaching consumables. Orders can be placed through the walk-
 :::
 ::: card
 #### Workday/PeopleSync
-NYU's system for HR, finance, payroll, procurement, and employee work information. Access through the PeopleSync bookmark on the [Intranet](https://intranet.nyuad.nyu.edu/).
+NYU's system for HR, finance, payroll, procurement, and employee work information. Access through the PeopleSync bookmark on the [Intranet](http://intranet.nyuad.nyu.edu/).
 :::
 :::
 
@@ -160,10 +160,12 @@ NYU's system for HR, finance, payroll, procurement, and employee work informatio
 
 It is essential that you know where to find and refer to NYUAD policies, procedures, and guidelines. They are available on the Intranet in the Policies & Governance section. As a minimum, all faculty and research staff should ensure they are familiar with the following frequently-used policies:
 
-- Travel and Travel-Related Expense Reimbursement Policy
-- Research Accounts Spending Guidelines
-- Extended Research Travel Guidelines — Faculty and/or Principal Investigators
-- Extended Research Travel Guidelines — Researchers
+- [Travel and Travel-Related Expense Reimbursement Policy](http://intranet.nyuad.nyu.edu/administrative-services/financial-services/travel/travel-reimbursement/)
+- [Research Accounts Spending Guidelines](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-administration/post-award/research-account-guide/)
+- [Extended Research Travel Guidelines — Faculty and/or Principal Investigators](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-administration/post-award/research-account-guide/)
+- [Extended Research Travel Guidelines — Researchers](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-administration/post-award/research-account-guide/)
+
+For more information on research account spending and extended research travel guidelines, please visit our [Research Account Spending Guidelines](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-administration/post-award/research-account-guide/) page.
 
 ## Academic and Research Essentials
 

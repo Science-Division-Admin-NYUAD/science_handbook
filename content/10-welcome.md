@@ -39,7 +39,7 @@ All community members are expected to uphold these values through active work an
 
 The Division of Science is deeply committed to fostering IDBE values across all facets of our operations, from our robust recruitment processes through to our teaching curriculum, targeted research projects, and interdisciplinary seminar series.
 
-For more information, please visit our [Global Access and Engagement](https://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page.
+For more information, please visit our [Global Access and Engagement](http://intranet.nyuad.nyu.edu/faculty-resources/global-access-and-engagement/) page.
 
 ## NYUAD Shared Governance
 
@@ -47,7 +47,7 @@ For more information, please visit our [Global Access and Engagement](https://in
 #### Councils & Forums
 NYUAD faculty, staff, as well as undergraduate and graduate students, and postdoctoral associates each run their own shared governance councils. Faculty also have their own forums for discussion and engagement.
 
-For more information on each council and our faculty forums, please visit our [Shared Governance](https://intranet.nyuad.nyu.edu/governance/shared-governance/) page.
+For more information on each council and our faculty forums, please visit our [Shared Governance](http://intranet.nyuad.nyu.edu/governance/shared-governance/) page.
 
 #### Faculty Meetings
 Formal program faculty meetings take place regularly throughout the semester, with schedules and frequency varying by academic program. Your program administrative coordinator will add these meetings to your program calendar and will record and file the meeting minutes.
@@ -67,7 +67,7 @@ Foundations of Science (FoS) is a required integrated program for Biology, Chemi
 #### Global Education
 Global education is central to NYU Abu Dhabi's academic mission. Through study away programs, J-Term courses, and course-related trips in the UAE and broader Middle East, students gain rigorous academic and intercultural experiences that extend their learning beyond the classroom.
 
-For more information, please visit our [Global Education Programs](https://intranet.nyuad.nyu.edu/faculty-resources/academics/global-education-programs/) page.
+For more information, please visit our [Global Education Programs](http://intranet.nyuad.nyu.edu/faculty-resources/academics/global-education-programs/) page.
 
 ## Our Program Heads
 
@@ -330,35 +330,35 @@ Faculty and researchers from the Division of Science lead and/or collaborate in 
 - [Sand Hazards and Opportunities for Resilience, Energy, and Sustainability (SHORES)](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/shores.html)
 - [Water Research Center](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/water-research-center.html)
 
-For more information, please visit our [Centers](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page.
+For more information, please visit our [Centers](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page.
 
 ## Facilities and Infrastructure
 
 
 #### Core Technology Platforms (CTP)
-NYUAD has dedicated significant resources to developing one of the premier science and engineering research laboratories in the region. An integral component of the laboratories are the [Core Technology Platforms (CTP)](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/) — shared facilities that support research activities across disciplines.
+NYUAD has dedicated significant resources to developing one of the premier science and engineering research laboratories in the region. An integral component of the laboratories are the [Core Technology Platforms (CTP)](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/) — shared facilities that support research activities across disciplines.
 
-Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the [CTP equipment](https://docs.google.com/document/d/1mGir5QXeYD_7LmFKFG54DWt5Syf6aRJHkc9ktdWxAZo/edit?tab=t.0#heading=h.gjdgxs) and [contact details](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/ctp-team/) on the Intranet.
+Support is provided by a team of highly-qualified specialists who maintain and upgrade the equipment, define standards for operational performance, and provide service across the CTPs. You can find a list of all the [CTP equipment](https://docs.google.com/document/d/1mGir5QXeYD_7LmFKFG54DWt5Syf6aRJHkc9ktdWxAZo/edit?tab=t.0#heading=h.gjdgxs) and [contact details](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/ctp-team/) on the Intranet.
 
 #### Experimental Research Building (ERB)
 The ERB is home to many faculty labs and research groups, each one equipped with state-of-the-art technology and equipment. It also houses many Core Technology Platforms (CTP), including:
 
-- [Analytical and Materials Characterization](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/analytical-and-materials-characterization/)
-- [High-Throughput Screening (HTS)](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/high-throughput-screening/)
-- [The Kinesis Lab](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/kinesis/)
-- [Light Microscopy](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/microscopy/)
-- [Marine Sciences](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/marine-sciences/)
-- [Micro-Fabrication](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/micro-fabrication/)
-- [Molecular and Cell Biology](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/molecular-and-cell-biology/)
-- [Photonics](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/photonics/)
-- [Spectrometry and Spectroscopy](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/nmr-and-spectroscopy/)
-- [Sequencing](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/sequencing/)
+- [Analytical and Materials Characterization](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/analytical-and-materials-characterization/)
+- [High-Throughput Screening (HTS)](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/high-throughput-screening/)
+- [The Kinesis Lab](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/kinesis/)
+- [Light Microscopy](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/microscopy/)
+- [Marine Sciences](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/marine-sciences/)
+- [Micro-Fabrication](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/micro-fabrication/)
+- [Molecular and Cell Biology](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/molecular-and-cell-biology/)
+- [Photonics](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/photonics/)
+- [Spectrometry and Spectroscopy](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/nmr-and-spectroscopy/)
+- [Sequencing](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/sequencing/)
 
 #### Computational Research Building (CRB)
 The CRB also houses many faculty labs and research groups, in addition to:
 
-- The [**Brain Imaging Core Technology Platform**](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/biomedical-imaging/) that is equipped with a state-of-the-art 3T Siemens MAGNETOM Prisma MRI scanner.
-- The [**Center for Research Computing**](https://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/research-computing/) that serves our faculty, researchers, and students with High Performance Computing (HPC) and research computing services.
+- The [**Brain Imaging Core Technology Platform**](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/core-technology-platforms/biomedical-imaging/) that is equipped with a state-of-the-art 3T Siemens MAGNETOM Prisma MRI scanner.
+- The [**Center for Research Computing**](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-resources-and-support/research-computing/) that serves our faculty, researchers, and students with High Performance Computing (HPC) and research computing services.
 
 #### Library and Academic Technology
 
@@ -370,7 +370,7 @@ The NYUAD Library is fully connected to NYU Libraries e-resources in New York, p
 #### IT Support
 If you require technological assistance, you can contact the [IT Service Desk](https://www.nyu.edu/life/information-technology/computing-support/help-and-service-status/nyu-it-service-desk.html) 24 hours a day, seven days a week. You can also visit the IT Experience Center on the 2nd floor of the Campus Center (C2-N201), where support staff can assist you in person. Walk-ins are welcome, or you can make an appointment in advance (nyuad.it@nyu.edu | 02 628 8888 [option 1]).
 
-For more information, please visit our [Technology Services](https://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page.
+For more information, please visit our [Technology Services](http://intranet.nyuad.nyu.edu/administrative-services/technology-services/) page.
 
 ## Our Dean
 

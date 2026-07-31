@@ -25,7 +25,7 @@ For urgent, non-life-threatening medical issues, call Campus Safety at 02 628-77
 
 The NYUAD Department of Campus Safety supports a safe and secure campus environment for our community. Incidents involving NYUAD premises or community members can be reported to Campus Safety at +971 2 628-7777, nyuad.campussafety247@nyu.edu, or through the Safe NYU app.
 
-To download the app or read more about our emergency procedures and resources, please visit our [Campus Safety](https://intranet.nyuad.nyu.edu/administrative-services/safety/campus-safety/) page.
+To download the app or read more about our emergency procedures and resources, please visit our [Campus Safety](http://intranet.nyuad.nyu.edu/administrative-services/safety/campus-safety/) page.
 
 *Please note that the Health Center in Campus Center (C2) is currently for students only.*
 
@@ -33,7 +33,7 @@ To download the app or read more about our emergency procedures and resources, p
 
 NYUAD offers a vibrant community life shaped by campus events, shared spaces, cultural programming, wellness resources, and opportunities to connect across the university. Whether you are looking for practical campus information or ways to get involved, the NYUAD Life resources can help you settle into the community.
 
-For more information on NYUAD life, please visit our [Community Life](https://intranet.nyuad.nyu.edu/nyuad-life/community-life/) page.
+For more information on NYUAD life, please visit our [Community Life](http://intranet.nyuad.nyu.edu/nyuad-life/community-life/) page.
 
 ### Campus Essentials
 
@@ -54,28 +54,28 @@ Eduroam lets users connect to secure WiFi at participating institutions using th
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v8"/><path d="M5 3v8"/><path d="M9 3v8"/><path d="M5 11h4"/><path d="M7 11v10"/><path d="M17 3v18"/><path d="M14 3c0 5 3 7 3 7"/></svg></div>
 
 #### Dining
-Campus dining options are available for the university community. For options and outlet opening times, please visit our [Campus Dining](https://intranet.nyuad.nyu.edu/administrative-services/dining/) page. Additional outlets along the front of campus are open to community members and the public, including Blacksmith Coffee Company, Mysk, and Sushi Counter.
+Campus dining options are available for the university community. For options and outlet opening times, please visit our [Campus Dining](http://intranet.nyuad.nyu.edu/administrative-services/dining/) page. Additional outlets along the front of campus are open to community members and the public, including Blacksmith Coffee Company, Mysk, and Sushi Counter.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 13H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div>
 
 #### Convenience Store
 The campus convenience store sells groceries, fresh produce, baked items, frozen foods, ice-cream, toiletries, and daily necessities. It is open daily on the first floor of the Campus Center (C2).<br>
-For more information, please visit our [Convenience Store](https://intranet.nyuad.nyu.edu/administrative-services/dining/places-to-eat/convenience-store-fresh-market/) page.
+For more information, please visit our [Convenience Store](http://intranet.nyuad.nyu.edu/administrative-services/dining/places-to-eat/convenience-store-fresh-market/) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7v10"/><path d="M18 7v10"/><path d="M3 10v4"/><path d="M21 10v4"/><path d="M6 12h12"/></svg></div>
 
 #### Athletics
 The NYUAD Fitness Center supports students, faculty, and staff with a full gym, women's-only gym, group exercise classes, recreational and intramural sports facilities, trainers, tennis and squash courts with equipment rental, and an Olympic-size pool available during scheduled swim times.<br>
-For more information on facilities and opening times, please visit our [Athletics](https://intranet.nyuad.nyu.edu/nyuad-life/athletics/) page.
+For more information on facilities and opening times, please visit our [Athletics](http://intranet.nyuad.nyu.edu/nyuad-life/athletics/) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h10a3 3 0 0 1 3 3v11H7a3 3 0 0 0-3-3Z"/><path d="M20 7.5v12h-3"/><path d="M7 9h6"/><path d="M7 12h5"/></svg></div>
 
 #### Bookstore
 Located on the ground floor of the Humanities Building (A6), the NYUAD Bookstore sells fiction, non-fiction, children's books, textbooks, NYUAD merchandise, Etisalat and du recharge cards, class materials, and supplies. It also offers local mail and international courier services for students, faculty, and staff.<br>
-For more information, please visit our [NYUAD Bookstore](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/bookstore/) page.
+For more information, please visit our [NYUAD Bookstore](http://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/bookstore/) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 7V5h6v2"/><path d="M4 12h16"/><path d="M10 12v2h4v-2"/></svg></div>
@@ -157,7 +157,7 @@ All courier packages should include the recipient's local phone number. If you a
 
 Personal shipments, other than those specified above, are the employee's responsibility. They should be sent directly to the employee's physical address in Abu Dhabi or to the NYUAD address listed above, not to PO Box 903.
 
-For more information, please visit our [Logistics & Mail Services](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/logistics-and-mail-services/) page.
+For more information, please visit our [Logistics & Mail Services](http://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/logistics-and-mail-services/) page.
 
 ### Campus Sustainability
 
@@ -165,7 +165,7 @@ Inspired by Sheikh Zayed's vision and legacy, NYUAD is committed to building a c
 
 This commitment includes reducing greenhouse gas emissions, advancing sustainability through teaching and research, and embedding sustainable practices across university life. NYUAD aims to achieve carbon neutrality by 2050, in line with NYU's broader goals and the UAE Net Zero by 2050 strategy.
 
-For more information, please visit our [Sustainability on Campus](https://nyuad.nyu.edu/en/about/sustainability-and-stewardship/sustainability-on-campus.html) and [Sustainable Living](https://intranet.nyuad.nyu.edu/nyuad-life/residential/sustainable-living-guide/) pages.
+For more information, please visit our [Sustainability on Campus](https://nyuad.nyu.edu/en/about/sustainability-and-stewardship/sustainability-on-campus.html) and [Sustainable Living](http://intranet.nyuad.nyu.edu/nyuad-life/residential/sustainable-living-guide/) pages.
 
 ### NYUAD Public Programs
 

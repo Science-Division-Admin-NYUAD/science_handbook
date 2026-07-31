@@ -36,7 +36,7 @@ FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
 FENCE_CLOSE_RE = re.compile(r"^:::\s*$")
 EMAIL_RE = re.compile(r"(?<![\w.+-])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})(?![\w-])")
-INTRANET_URL = "https://intranet.nyuad.nyu.edu/"
+INTRANET_URL = "http://intranet.nyuad.nyu.edu/"
 INTRANET_RE = re.compile(r"(?<![\w-])((?:NYUAD\s+)?Intranet)(?![\w-])", re.IGNORECASE)
 
 class ExternalLinkTargetTreeprocessor(Treeprocessor):
