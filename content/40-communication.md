@@ -32,54 +32,48 @@ During onboarding, your program administrative coordinator will add you to the C
 Faculty members are also automatically added to the Science Faculty group, science-faculty-group@nyu.edu, which is used for updates from the Dean's Office. ERB researchers are added to the ERB Researchers group (erb-researchers-group@nyu.edu), where researchers and staff can share lab-based research questions and updates. Depending on your program and affiliation, your program administrative coordinator will add you to additional program-specific distribution groups.
 
 ### Program-specific Groups
-Each program has a number of important email groups that are maintained by program administrative coordinators. Please reach out to your administrator should you need to make use of one of these groups.
+Each program has several email groups maintained by its administrative coordinator. Some groups may not be listed here, so please reach out if you need access or think you may be missing important updates.
 
 ::: cards
 ::: card program-card program-biology
 #### Biology
 **Standing Faculty:** biology-standing-faculty@nyu.edu
 
-**All Faculty:** biology-science-faculty-group@nyu.edu
+**Standing & Visiting Faculty:** biology-science-faculty-group@nyu.edu
 
-**Instructors:** nyuad.biology-instructors-group@nyu.edu
+**Instructors:** nyuad.bio-instructors@nyu.edu
 
-**Researchers:** biology-researchers-group@nyu.edu
+**Researchers & Postdocs:** biology-researchers-group@nyu.edu
 :::
 ::: card program-card program-chemistry
 #### Chemistry
-**nyuad.chemistry.faculty@nyu.edu**
+**Standing Faculty:** nyuad.chemistry.standingfaculty@nyu.edu
+
+**Standing & Visiting Faculty:** nyuad.chemistry.faculty@nyu.edu
 
 **Instructors:** nyuad.chemistry-instructors@nyu.edu
 
-**Postdocs:** chemistry-postdocs-group@nyu.edu
-
-**Students:** nyuad.chemistry-majors@nyu.edu
-
-**Program-wide:** chemistry-program-group@nyu.edu
+**Researchers & Postdocs:** chemistry-postdocs-group@nyu.edu
 :::
 ::: card program-card program-computer-science
 #### Computer Science
-**All Faculty:** nyuad.csfaculty.all@nyu.edu
+**Standing Faculty:** nyuad.csfaculty-group@nyu.edu
 
-**Visiting Faculty:** nyuad.CSvisitingfaculty@nyu.edu
+**Standing & Visiting Faculty:** nyuad.csfaculty.all@nyu.edu
 
 **Instructors:** computer.science.instructors@nyu.edu
 
-**Postdocs:** nyuad.cs.postdocs@nyu.edu
-
-**Students:** nyuad.csmajors@nyu.edu
+**Researchers & Postdocs:** nyuad.cs.postdocs@nyu.edu
 :::
 ::: card program-card program-mathematics
 #### Mathematics
-**mathematics-science-faculty-group@nyu.edu**
+**Standing Faculty:** mathematics-science-faculty-group@nyu.edu
 
-**mathematics-science-visiting-faculty-group@nyu.edu**
+**Visiting Faculty:** mathematics-science-visiting-faculty-group@nyu.edu
 
 **Instructors:** nyuad.math-instructors@nyu.edu
 
-**Postdocs & Researchers:** nyuad.math.postdoc.research@nyu.edu
-
-**Students:** nyuad.math-majors@nyu.edu
+**Researchers & Postdocs:** nyuad.math.postdoc.research@nyu.edu
 :::
 ::: card program-card program-psychology
 #### Psychology
@@ -87,38 +81,34 @@ Each program has a number of important email groups that are maintained by progr
 
 **Visiting Faculty:** Psych.Visiting-Faculty@nyu.edu
 
-**Instructors:** nyuad.psychology-instructors@nyu.edu
-
 **Instructors:** psychology.instructors@nyu.edu
 
-**Postdocs & Researchers:** Psychology-Researcher-Group@nyu.edu
-
-**Students:** nyuad.psychology.students@nyu.edu
-
-**Program-wide:** psychology.announcements@nyu.edu
+**Researchers & Postdocs:** Psychology-Researcher-Group@nyu.edu
 :::
 ::: card program-card program-physics
 #### Physics
 **Standing Faculty:** nyuad.physics-faculty@nyu.edu
 
-**All Faculty:** phys_fac_ad@nyu.edu
+**Standing & Visiting Faculty:** phys_fac_ad@nyu.edu
 
 **Instructors:** nyuad.physics-instructors@nyu.edu
 
-**Postdocs:** phys_postdocs_ad@nyu.edu
+**Researchers & Postdocs:** phys_postdocs_ad@nyu.edu
+:::
+::: card program-card
+#### PASS
+**Faculty:** Nyuad.Pass-Pi@nyu.edu
 
-**PhD Students:** nyuad.physics-phd@nyu.edu
+**Board Members:** Nyuad.Pass-Board@nyu.edu
 
-**Students:** phys_majors_ad@nyu.edu
-
-**Program-wide:** nyuad.physics-program@nyu.edu
+**General Information:** Nyuad.Pass@nyu.edu
 :::
 :::
 
 ### Additional Channels
 
 #### Intranet Announcements
-You can use the [NYUAD Intranet](https://intranet.nyuad.nyu.edu/) to post and promote announcements, events, and other updates relevant to our community. You are also advised to check it regularly for announcements and upcoming events shared by others.
+You can use the [NYUAD Intranet](https://intranet.nyuad.nyu.edu/) to post and promote announcements, events, and other updates relevant to our community. Make sure to also check it regularly for announcements and upcoming events from across the community.
 
 ## Research Reporting
 
