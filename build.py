@@ -710,7 +710,29 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .cover-hero {{
       min-height: 150mm;
       margin: 0 0 10mm;
+      overflow: hidden;
       page-break-inside: avoid;
+    }}
+
+    .pdf-cover-page .cover-title-panel {{
+      left: 3.4%;
+      top: 33.5%;
+      width: 78%;
+      min-height: 78mm;
+      padding: 8mm 11mm 7mm;
+      background: rgba(255, 255, 255, 0.99);
+      border-radius: 18mm;
+    }}
+
+    .pdf-cover-page .cover-title-panel h1 {{
+      font-size: 30pt;
+      line-height: 1.04;
+    }}
+
+    .pdf-cover-page .cover-title-panel p {{
+      margin-top: 5mm;
+      font-size: 13pt;
+      line-height: 1.12;
     }}
 
     .contents-page {{
@@ -740,15 +762,18 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .page-title {{
       width: 100%;
       max-width: none;
-      min-height: 44mm;
-      margin: 0 0 8mm;
-      padding: 14mm 12mm;
+      min-height: 0;
+      margin: 0 0 7mm;
+      padding: 11mm 12mm;
       border-radius: 0;
+      overflow: visible;
       page-break-after: avoid;
     }}
 
     .page-title h1 {{
-      font-size: 28pt;
+      max-width: 100%;
+      font-size: 25pt;
+      line-height: 1.08;
     }}
 
     .content-layout {{
@@ -766,6 +791,76 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       box-shadow: none;
       background: #fff;
       page-break-before: avoid;
+    }}
+
+    .article h2 {{
+      margin: 26px 0 13px;
+      font-size: 22pt;
+      line-height: 1.16;
+    }}
+
+    .article h2::after {{
+      margin-top: 7px;
+    }}
+
+    .article h2:first-child,
+    .article h5 + h2 {{
+      margin-top: 0;
+    }}
+
+    .article h2 + h3,
+    .article h2 + h4 {{
+      margin-top: 10px;
+    }}
+
+    .article h3 {{
+      margin: 17px 0 6px;
+      font-size: 15pt;
+      line-height: 1.2;
+    }}
+
+    .article h4 {{
+      margin: 13px 0 5px;
+      font-size: 12.5pt;
+      line-height: 1.22;
+    }}
+
+    .article h3 + p,
+    .article h4 + p,
+    .article h3 + ul,
+    .article h3 + ol,
+    .article h4 + ul,
+    .article h4 + ol {{
+      margin-top: 5px;
+    }}
+
+    .article h3 + .cards,
+    .article h3 + .people-grid,
+    .article h3 + .campus-essentials,
+    .article h3 + .quote,
+    .article h3 + blockquote,
+    .article h3 + .note,
+    .article h3 + table,
+    .article h4 + .cards,
+    .article h4 + .people-grid,
+    .article h4 + .campus-essentials,
+    .article h4 + .quote,
+    .article h4 + blockquote,
+    .article h4 + .note,
+    .article h4 + table {{
+      margin-top: 8px;
+    }}
+
+    .article p + h2 {{
+      margin-top: 28px;
+    }}
+
+    .article p + h3 {{
+      margin-top: 17px;
+    }}
+
+    .article p + h4 {{
+      margin-top: 12px;
     }}
 
     .article h2,
@@ -792,8 +887,22 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     }}
 
     .program-row {{
-      grid-template-columns: 42px repeat(2, minmax(0, 1fr));
-      margin-bottom: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 12px;
+      margin-bottom: 12px;
+    }}
+
+    .program-label {{
+      grid-column: 1 / -1;
+      justify-content: flex-start;
+      min-height: 0;
+      padding: 0;
+    }}
+
+    .program-label p {{
+      transform: none;
+      font-size: 14pt;
+      line-height: 1;
     }}
 
     .dean-feature {{
@@ -816,10 +925,9 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       grid-template-columns: 34px minmax(110px, 0.3fr) minmax(0, 1fr);
     }}
 
-    @media print {{
-      .article h2 {{
-        font-size: 22pt;
-      }}
+    .person,
+    .card {{
+      padding: 12px;
     }}
   </style>
 </head>
