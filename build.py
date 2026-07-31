@@ -30,7 +30,7 @@ FILES = ASSETS / "files"
 PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260728-mail-option-2"
+STYLE_VERSION = "20260731-orientation-copy"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
@@ -510,7 +510,8 @@ def render_email_copy_script() -> str:
     return """  <script>
     (() => {
       const emailLinks = Array.from(document.querySelectorAll(".email-copy[data-email]"));
-      if (!emailLinks.length) return;
+      const orientationHeading = document.querySelector("#orientation");
+      if (!emailLinks.length && !orientationHeading) return;
 
       const toast = document.createElement("div");
       toast.className = "copy-toast";
@@ -558,6 +559,47 @@ def render_email_copy_script() -> str:
           toast.classList.remove("is-visible");
         }, 1200);
       };
+
+      if (orientationHeading) {
+        const intro = orientationHeading.nextElementSibling;
+        const firstList = intro?.nextElementSibling;
+        const facultyNote = firstList?.nextElementSibling;
+        const facultyList = facultyNote?.nextElementSibling;
+
+        if (intro && firstList?.matches("ol")) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "copy-todo-list";
+          button.textContent = "Copy to-do list";
+          button.setAttribute("aria-label", "Copy orientation to-do list");
+
+          const collectItems = (list, prefix = "") => {
+            if (!list?.matches("ol")) return [];
+            return Array.from(list.children)
+              .filter((item) => item.tagName === "LI")
+              .map((item) => item.textContent.replace(/\\s+/g, " ").trim())
+              .filter(Boolean)
+              .map((text) => `- [ ] ${prefix}${text}`);
+          };
+
+          button.addEventListener("click", async () => {
+            const todoItems = [
+              ...collectItems(firstList),
+              ...collectItems(facultyList, "Faculty only: ")
+            ];
+            if (!todoItems.length) return;
+
+            try {
+              await copyText(todoItems.join("\\n"));
+              showToast(button);
+            } catch {
+              return;
+            }
+          });
+
+          intro.insertAdjacentElement("afterend", button);
+        }
+      }
 
       document.querySelectorAll(".program-card").forEach((card) => {
         const cardEmails = Array.from(card.querySelectorAll(".email-copy[data-email]"));
@@ -696,7 +738,8 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .page-toc,
     .topic-list,
     .copy-toast,
-    .copy-all-emails {{
+    .copy-all-emails,
+    .copy-todo-list {{
       display: none !important;
     }}
 
