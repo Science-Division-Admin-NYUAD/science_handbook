@@ -30,7 +30,7 @@ FILES = ASSETS / "files"
 PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260731-onboarding-checklist-nunito"
+STYLE_VERSION = "20260731-pdf-layout-polish"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
@@ -756,16 +756,12 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     @page {{
       size: A4;
       margin: 10mm;
-      @bottom-right {{
-        content: counter(page);
-        color: #6f6475;
-        font-size: 8pt;
-      }}
+      background: #f4f0f5;
     }}
 
     body {{
       margin: 0;
-      background: #fff;
+      background: #f4f0f5;
     }}
 
     .topbar,
@@ -783,7 +779,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
-      background: #fff;
+      background: #f4f0f5;
     }}
 
     .pdf-cover-page {{
@@ -803,6 +799,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       padding: 0;
       border: 0;
       box-shadow: none;
+      background: #f4f0f5;
       page-break-before: always;
     }}
 
@@ -816,8 +813,14 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
+      break-before: auto;
+      page-break-before: auto;
+      background: #f4f0f5;
+    }}
+
+    .cover + .pdf-section {{
+      break-before: page;
       page-break-before: always;
-      background: #fff;
     }}
 
     .page-title {{
@@ -843,13 +846,16 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       width: 100%;
       max-width: none;
       margin: 0;
+      padding: 0 6mm 8mm;
+      background: transparent;
     }}
 
     .article {{
       width: 100%;
       max-width: none;
-      padding: 12mm;
-      border-top: 2pt solid var(--teal);
+      padding: 10mm;
+      border: 1px solid rgba(75, 54, 92, 0.12);
+      border-top: 2pt solid rgba(75, 54, 92, 0.54);
       box-shadow: none;
       background: #fff;
       page-break-before: avoid;
@@ -858,11 +864,29 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .article h2,
     .article h3,
     .article h4 {{
+      break-after: avoid-page;
       page-break-after: avoid;
     }}
 
+    .article h2 + *,
+    .article h3 + *,
+    .article h4 + * {{
+      break-before: avoid-page;
+      page-break-before: avoid;
+    }}
+
+    .article p,
+    .article li {{
+      orphans: 3;
+      widows: 3;
+    }}
+
     .cards,
-    .people-grid,
+    .people-grid {{
+      break-inside: auto;
+      page-break-inside: auto;
+    }}
+
     .program-row,
     .card,
     .person,
@@ -870,17 +894,79 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .campus-essential,
     .quote,
     .note {{
-      break-inside: avoid;
+      break-inside: avoid-page;
       page-break-inside: avoid;
     }}
 
     .program-heads {{
-      display: block;
+      display: grid;
+      gap: 4mm;
+      margin: 5mm 0 7mm;
     }}
 
     .program-row {{
-      grid-template-columns: 42px repeat(2, minmax(0, 1fr));
-      margin-bottom: 10px;
+      display: grid !important;
+      grid-template-columns: 17mm repeat(2, minmax(0, 1fr)) !important;
+      gap: 4mm;
+      align-items: stretch;
+      margin: 0;
+      padding: 3.5mm 0;
+      border-top: 0.5pt solid var(--program-border);
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+    }}
+
+    #our-program-heads + .program-heads .program-row:last-child {{
+      border-bottom: 0.5pt solid var(--hairline);
+    }}
+
+    #our-program-heads + .program-heads .program-label {{
+      justify-content: center;
+      padding: 0 1mm;
+      border-right: 2pt solid var(--program-color);
+      border-bottom: 0 !important;
+    }}
+
+    #our-program-heads + .program-heads .program-label p {{
+      width: max-content;
+      font-size: 8.8pt;
+      line-height: 1;
+      white-space: nowrap !important;
+      transform: rotate(-90deg) !important;
+    }}
+
+    #our-program-heads + .program-heads .person {{
+      padding: 3.5mm;
+      border: 0.5pt solid var(--program-border);
+      border-top: 2pt solid var(--program-color);
+      background: #fff;
+    }}
+
+    #our-program-heads + .program-heads .program-head-card {{
+      background: var(--program-soft);
+    }}
+
+    #our-program-heads + .program-heads .person h4 {{
+      margin: 0 0 1.5mm;
+      font-size: 12pt;
+      line-height: 1.15;
+    }}
+
+    #our-program-heads + .program-heads .person h4::after {{
+      margin-top: 1mm;
+      font-size: 6.8pt;
+      line-height: 1.1;
+    }}
+
+    #our-program-heads + .program-heads .person p {{
+      margin: 1.5mm 0 0;
+      font-size: 9.2pt;
+      line-height: 1.35;
+    }}
+
+    #our-program-heads + .program-heads .email {{
+      margin-top: 2mm;
+      font-size: 9pt;
     }}
 
     .dean-feature {{
