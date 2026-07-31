@@ -108,7 +108,7 @@ Each program has several email groups maintained by its administrative coordinat
 ### Additional Channels
 
 #### Intranet Announcements
-You can use the [NYUAD Intranet](https://intranet.nyuad.nyu.edu/) to post and promote announcements, events, and other updates relevant to our community. Make sure to also check it regularly for announcements and upcoming events from across the community.
+You can use the [NYUAD Intranet](http://intranet.nyuad.nyu.edu/) to post and promote announcements, events, and other updates relevant to our community. Make sure to also check it regularly for announcements and upcoming events from across the community.
 
 ## Research Reporting
 

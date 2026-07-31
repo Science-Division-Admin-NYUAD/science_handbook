@@ -15,7 +15,7 @@ The United Arab Emirates (UAE) is a federation of seven emirates: Abu Dhabi, Dub
 
 Although NYUAD is an international community, faculty and staff should be mindful of local customs and cultural norms while living and working in Abu Dhabi and across the UAE.
 
-For practical guidance, please visit our [Living in Abu Dhabi](https://intranet.nyuad.nyu.edu/nyuad-life/living-in-abu-dhabi/) page.
+For practical guidance, please visit our [Living in Abu Dhabi](http://intranet.nyuad.nyu.edu/nyuad-life/living-in-abu-dhabi/) page.
 
 #### Working Week & Weekend in Abu Dhabi
 The work and school week in Abu Dhabi is Monday through Friday. NYUAD maintains a full working day on Friday; however, 12:00-2:20pm is reserved for prayer time, so meetings and events should not be scheduled during this period.
