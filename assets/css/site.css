@@ -976,6 +976,11 @@ h1 {
   text-decoration: none;
 }
 
+.program-card p strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
 .program-card .email-copy:hover,
 .program-card .email-copy:focus-visible {
   text-decoration: none;
@@ -983,6 +988,59 @@ h1 {
 
 .program-card h4 {
   color: var(--program-color);
+}
+
+#program-specific-groups + p + .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+#program-specific-groups + p + .cards .program-card:not(.program-biology):not(.program-chemistry):not(.program-computer-science):not(.program-mathematics):not(.program-physics):not(.program-psychology) {
+  --program-color: var(--teal);
+  --program-soft: var(--teal-soft);
+  --program-border: var(--hairline);
+}
+
+#program-specific-groups + p + .cards .program-card {
+  padding: 14px 0 12px;
+  border: 0;
+  border-top: 1px solid var(--program-border);
+  background: transparent;
+}
+
+#program-specific-groups + p + .cards .program-card:last-child {
+  border-bottom: 1px solid var(--hairline);
+}
+
+#program-specific-groups + p + .cards .program-card h4 {
+  margin: 0 0 8px;
+  color: var(--program-color);
+  font-size: 20px;
+}
+
+#program-specific-groups + p + .cards .program-card p {
+  display: grid;
+  grid-template-columns: minmax(160px, 210px) minmax(0, 1fr);
+  gap: 14px;
+  margin: 0;
+  padding: 6px 0;
+}
+
+#program-specific-groups + p + .cards .program-card p strong {
+  display: block;
+  margin: 0;
+  color: var(--teal-dark);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  #program-specific-groups + p + .cards .program-card p {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
 }
 
 .copy-all-emails {
@@ -1125,6 +1183,10 @@ h1 {
   letter-spacing: 0.03em;
   line-height: 1.35;
   text-transform: uppercase;
+}
+
+.mail-label span {
+  display: block;
 }
 
 .mail-address {
@@ -1422,6 +1484,14 @@ h1 {
     gap: 6px;
   }
 
+  .mail-label span {
+    display: inline;
+  }
+
+  .mail-label span + span::before {
+    content: " ";
+  }
+
   .program-label {
     min-height: auto;
     min-width: 0;
@@ -1488,4 +1558,110 @@ h1 {
     grid-row: 1;
     width: 150px;
   }
+}
+
+/* Program heads: airy directory rows */
+#our-program-heads + .program-heads {
+  gap: 10px;
+}
+
+#our-program-heads + .program-heads .program-row {
+  grid-template-columns: 58px repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 12px 0 16px;
+  border-top: 1px solid var(--program-border);
+}
+
+#our-program-heads + .program-heads .program-row:last-child {
+  border-bottom: 1px solid var(--hairline);
+}
+
+#our-program-heads + .program-heads .program-label {
+  border-right: 4px solid var(--program-color);
+}
+
+#our-program-heads + .program-heads .program-label p {
+  font-size: 18px;
+}
+
+#our-program-heads + .program-heads .person {
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+}
+
+#our-program-heads + .program-heads .person h4 {
+  color: var(--program-color);
+}
+
+#our-program-heads + .program-heads .program-head-card h4::after {
+  content: "Program Head";
+}
+
+#our-program-heads + .program-heads .associate-program-head-card h4::after {
+  content: "Associate Program Head";
+}
+
+#our-program-heads + .program-heads .person h4::after {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+#our-program-heads + .program-heads .email {
+  margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+  #our-program-heads + .program-heads .program-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  #our-program-heads + .program-heads .program-label {
+    justify-content: flex-start;
+    padding: 0 0 6px;
+    border-right: 0;
+    border-bottom: 4px solid var(--program-color);
+  }
+
+  #our-program-heads + .program-heads .program-label p {
+    transform: none;
+    white-space: normal;
+  }
+}
+
+/* Admin Team: quiet split cards */
+#our-admin-team + .people-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+#our-admin-team + .people-grid .person {
+  padding: 16px 18px;
+  border: 1px solid rgba(75, 54, 92, 0.14);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+#our-admin-team + .people-grid .person h4 {
+  margin-bottom: 7px;
+  color: var(--teal);
+}
+
+#our-admin-team + .people-grid .person p {
+  margin: 0 0 6px;
+}
+
+#our-admin-team + .people-grid .email {
+  display: inline-block;
+  margin-top: 6px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(75, 54, 92, 0.12);
 }

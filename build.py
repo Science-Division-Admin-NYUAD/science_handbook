@@ -26,6 +26,7 @@ ASSETS = ROOT / "assets"
 SITE = ROOT / "site"
 CSS = ASSETS / "css" / "site.css"
 IMAGES = ASSETS / "images"
+FILES = ASSETS / "files"
 PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
@@ -42,7 +43,7 @@ class ExternalLinkTargetTreeprocessor(Treeprocessor):
     def run(self, root):
         for link in root.iter("a"):
             href = link.get("href", "")
-            if not href.startswith(("http://", "https://")):
+            if not href.startswith(("http://", "https://")) and not href.lower().endswith(".pdf"):
                 continue
             link.set("target", "_blank")
             rel_values = set((link.get("rel") or "").split())
@@ -300,8 +301,12 @@ def render_topic_list(section: dict, limit: int | None = None) -> str:
     for topic in topics:
         label = topic[0]
         anchor = anchors.get(normalize_heading(label))
-        label_html = f'<a href="#{anchor}">{label}</a>' if anchor else label
+        if not anchor:
+            continue
+        label_html = f'<a href="#{anchor}">{label}</a>'
         items.append(f"          <li{topic_class_attr(topic)}>{label_html}</li>")
+    if not items:
+        return ""
     items_html = "\n".join(items)
     return f"""        <ul class="topic-list">
 {items_html}
@@ -921,6 +926,8 @@ def build_site() -> None:
     shutil.copy2(CSS, SITE / "assets" / "css" / "site.css")
     if IMAGES.exists():
         shutil.copytree(IMAGES, SITE / "assets" / "images")
+    if FILES.exists():
+        shutil.copytree(FILES, SITE / "assets" / "files")
 
     for section in sections:
         html = render_cover(section, nav) if section.get("cover") else render_section(section, nav)

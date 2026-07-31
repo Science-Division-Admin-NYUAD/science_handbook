@@ -25,7 +25,7 @@ For urgent, non-life-threatening medical issues, call Campus Safety at 02 628-77
 
 The NYUAD Department of Campus Safety supports a safe and secure campus environment for our community. Incidents involving NYUAD premises or community members can be reported to Campus Safety at +971 2 628-7777, nyuad.campussafety247@nyu.edu, or through the Safe NYU app.
 
-To download the app or read more about our emergency procedures and resources, please visit our [Campus Safety page](https://intranet.nyuad.nyu.edu/administrative-services/safety/campus-safety/).
+To download the app or read more about our emergency procedures and resources, please visit our [Campus Safety](https://intranet.nyuad.nyu.edu/administrative-services/safety/campus-safety/) page.
 
 *Please note that the Health Center in Campus Center (C2) is currently for students only.*
 
@@ -33,7 +33,7 @@ To download the app or read more about our emergency procedures and resources, p
 
 NYUAD offers a vibrant community life shaped by campus events, shared spaces, cultural programming, wellness resources, and opportunities to connect across the university. Whether you are looking for practical campus information or ways to get involved, the NYUAD Life resources can help you settle into the community.
 
-For more information on NYUAD life, please visit our [Community Life page](https://intranet.nyuad.nyu.edu/nyuad-life/community-life/).
+For more information on NYUAD life, please visit our [Community Life](https://intranet.nyuad.nyu.edu/nyuad-life/community-life/) page.
 
 ### Campus Essentials
 
@@ -54,35 +54,35 @@ Eduroam lets users connect to secure WiFi at participating institutions using th
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v8"/><path d="M5 3v8"/><path d="M9 3v8"/><path d="M5 11h4"/><path d="M7 11v10"/><path d="M17 3v18"/><path d="M14 3c0 5 3 7 3 7"/></svg></div>
 
 #### Dining
-Campus dining options are available for the university community. For options and outlet opening times, please visit our [Campus Dining page](https://intranet.nyuad.nyu.edu/administrative-services/dining/). Additional outlets along the front of campus are open to community members and the public, including Blacksmith Coffee Company, Mysk, and Sushi Counter.
+Campus dining options are available for the university community. For options and outlet opening times, please visit our [Campus Dining](https://intranet.nyuad.nyu.edu/administrative-services/dining/) page. Additional outlets along the front of campus are open to community members and the public, including Blacksmith Coffee Company, Mysk, and Sushi Counter.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 13H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div>
 
 #### Convenience Store
 The campus convenience store sells groceries, fresh produce, baked items, frozen foods, ice-cream, toiletries, and daily necessities. It is open daily on the first floor of the Campus Center (C2).<br>
-For more information, please visit our [Convenience Store page](https://intranet.nyuad.nyu.edu/administrative-services/dining/places-to-eat/convenience-store-fresh-market/).
+For more information, please visit our [Convenience Store](https://intranet.nyuad.nyu.edu/administrative-services/dining/places-to-eat/convenience-store-fresh-market/) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7v10"/><path d="M18 7v10"/><path d="M3 10v4"/><path d="M21 10v4"/><path d="M6 12h12"/></svg></div>
 
 #### Athletics
 The NYUAD Fitness Center supports students, faculty, and staff with a full gym, women's-only gym, group exercise classes, recreational and intramural sports facilities, trainers, tennis and squash courts with equipment rental, and an Olympic-size pool available during scheduled swim times.<br>
-For more information on facilities and opening times, please visit our [Athletics page](https://intranet.nyuad.nyu.edu/nyuad-life/athletics/).
+For more information on facilities and opening times, please visit our [Athletics](https://intranet.nyuad.nyu.edu/nyuad-life/athletics/) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h10a3 3 0 0 1 3 3v11H7a3 3 0 0 0-3-3Z"/><path d="M20 7.5v12h-3"/><path d="M7 9h6"/><path d="M7 12h5"/></svg></div>
 
 #### Bookstore
 Located on the ground floor of the Humanities Building (A6), the NYUAD Bookstore sells fiction, non-fiction, children's books, textbooks, NYUAD merchandise, Etisalat and du recharge cards, class materials, and supplies. It also offers local mail and international courier services for students, faculty, and staff.<br>
-For more information, please visit our [NYUAD Bookstore page](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/bookstore/).
+For more information, please visit our [NYUAD Bookstore](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/bookstore/) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 7V5h6v2"/><path d="M4 12h16"/><path d="M10 12v2h4v-2"/></svg></div>
 
 #### Career Development Center
 The Career Development Center (CDC) supports undergraduates with advising, programs, and resources during their time at NYUAD and beyond, including choosing a major, building a CV, meeting industry professionals, and applying to graduate school or global awards.<br>
-For more information, please visit our [CDC page](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-vice-chancellor/student-affairs/career-development.html).
+For more information, please visit our [CDC](https://nyuad.nyu.edu/en/about/leadership-and-people/office-of-the-vice-chancellor/student-affairs/career-development.html) page.
 :::
 ::: campus-essential
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7.5c0 5-8 10.5-8 10.5S4 12.5 4 7.5A4.5 4.5 0 0 1 12 5a4.5 4.5 0 0 1 8 2.5Z"/></svg></div>
@@ -111,14 +111,15 @@ Taxis often wait at the main entrance of the Welcome Center. Abu Dhabi taxis use
 :::
 
 #### Mail Services
-Incoming or outgoing University business or personal mail must meet all UAE guidelines for mail handling to and from the UAE.<br>
-For more information on mail services and postal guidelines in the UAE, please visit the [UAE Government's Mail Services page](https://u.ae/en/information-and-services/infrastructure/mail-services).
+Incoming or outgoing University business or personal mail must meet all UAE guidelines for mail handling to and from the UAE.
 
-Use the relevant address below for mail and courier deliveries:
+For more information on mail services and postal guidelines in the UAE, please visit the [UAE Government's Mail Services](https://u.ae/en/information-and-services/infrastructure/mail-services) page.
+
+For mail and courier deliveries, please use the relevant address below.
 
 ::: mail-table
 ::: mail-row
-<div class="mail-label">Standard mail and courier</div>
+<div class="mail-label"><span>Standard mail</span><span>& courier</span></div>
 
 <div class="mail-address">
 New York University Abu Dhabi (NYUAD)<br>
@@ -152,30 +153,28 @@ Contact Number/Email
 :::
 :::
 
-All packages sent via courier should also include the recipient's local phone number. If you are expecting to receive mail, the NYUAD Mail Room will receive it on your behalf and will email you when your package has arrived.
+All courier packages should include the recipient's local phone number. If you are expecting mail, the NYUAD Mail Room will receive it on your behalf and email you when it arrives.
 
-Incoming personal shipments, other than those specified above, are the employee's responsibility and should be sent directly to the employee's physical address in Abu Dhabi or to the NYUAD address listed above, and not to PO Box 903.
+Personal shipments, other than those specified above, are the employee's responsibility. They should be sent directly to the employee's physical address in Abu Dhabi or to the NYUAD address listed above, not to PO Box 903.
 
-For more information, please visit our [Logistics & Mail Services page](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/logistics-and-mail-services/).
+For more information, please visit our [Logistics & Mail Services](https://intranet.nyuad.nyu.edu/administrative-services/operations-facilities-transportation/logistics-and-mail-services/) page.
 
 ### Campus Sustainability
 
-Inspired by Sheikh Zayed's vision and legacy, NYUAD is dedicated to fostering a culture of sustainability. Under the leadership of the Office of Sustainability and Stewardship and through research and outreach initiatives, in alignment with the UN's Sustainable Development Goals (SDGs), we empower students, faculty, and staff to address regional and global challenges. Our commitment includes reducing greenhouse gas emissions, advancing teaching and research, and promoting sustainability across all aspects of university life. NYUAD aims to achieve carbon neutrality by 2050, aligning with NYU's broader goals and the UAE's Net Zero by 2050 strategy.
+Inspired by Sheikh Zayed's vision and legacy, NYUAD is committed to building a culture of sustainability. Led by the Office of Sustainability and Stewardship, and supported by research and outreach initiatives aligned with the UN Sustainable Development Goals (SDGs), NYUAD empowers students, faculty, and staff to address regional and global challenges.
 
-#### Sustainable Policies and Standards
-- **Discontinuation of 500ml bottled water:** In February 2017, small 500ml plastic water bottles were removed from campus and are no longer available for purchase.
-- In March 2020, water dispensers and 5-gallon plastic water jugs were removed from campus.
-- **Green Events Standard:** Community members are encouraged to follow guidelines to make campus events more sustainable.
-- **Green Workplace Certification:** NYUAD recognizes efforts to improve the sustainability of the workplace.
+This commitment includes reducing greenhouse gas emissions, advancing sustainability through teaching and research, and embedding sustainable practices across university life. NYUAD aims to achieve carbon neutrality by 2050, in line with NYU's broader goals and the UAE Net Zero by 2050 strategy.
+
+For more information, please visit our [Sustainability on Campus](https://nyuad.nyu.edu/en/about/sustainability-and-stewardship/sustainability-on-campus.html) and [Sustainable Living](https://intranet.nyuad.nyu.edu/nyuad-life/residential/sustainable-living-guide/) pages.
 
 ### NYUAD Public Programs
 
 
 #### The NYUAD Institute
-A center of advanced research, scholarly, and creative activity, the NYU Abu Dhabi Institute was established in 2008 for Abu Dhabi, the UAE, and the world. A cornerstone of academic excellence, the Institute brings together academics, professionals, and leaders from around the world to its academic conferences and public programs to discuss research areas and topics of local and global significance. Institute talks, conferences, research workshops, public lectures, film screenings, and exhibitions explore topics central to NYUAD academic and research pursuits, including sustainability, urban planning, climate change, peace, genomics, and world finance.
+The NYU Abu Dhabi Institute is a platform for advanced research, scholarship, and public dialogue. Through conferences, talks, workshops, lectures, screenings, and exhibitions, it brings together local and global perspectives on topics central to NYUAD's academic and research life.
 
 #### The NYUAD Arts Center
-The NYU Abu Dhabi Arts Center is a vibrant hub for cultural and artistic expression, located at the heart of the University's campus. It serves as a dynamic platform for a diverse range of interdisciplinary performances, exhibitions, and events, fostering a rich cultural dialogue between the University community and the broader Abu Dhabi public. The Arts Center features state-of-the-art facilities, including a theater, gallery spaces, and rehearsal studios, and presents distinguished professional artists from around the world alongside student, faculty, and community productions.
+The NYU Abu Dhabi Arts Center is a campus hub for performance, culture, and creative exchange. Its programs connect the university community with the broader Abu Dhabi public and feature international artists alongside student, faculty, and community productions.
 
 #### The NYU Abu Dhabi Art Gallery
-Established in 2014, The NYU Abu Dhabi Art Gallery is the Gulf's first and only university gallery with a program of scholarly and experimental museum exhibitions. The program seeks to map new territories and ideas through presenting exhibitions by internationally established artists, curators, and scholars at its main space. Its auxiliary venue, the Project Space, is an exhibition laboratory for the University community, and for emerging artists and curators. Situated within NYUAD, The Art Gallery organizes free public programs and guided tours in conjunction with its groundbreaking exhibitions. It also produces scholarly publications, which are a core part of its curatorial framework and reflect its academic mission.
+The NYU Abu Dhabi Art Gallery presents scholarly and experimental exhibitions, public programs, tours, and publications. Its Project Space offers a dedicated platform for the university community and emerging artists and curators.
