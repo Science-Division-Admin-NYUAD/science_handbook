@@ -242,34 +242,17 @@ Order required books through the online [Course Book Ordering process](https://i
 :::
 :::
 
-### Teaching & Learning Resources
-
-NYUAD offers a range of teaching, learning, advising, writing, undergraduate research, and faculty development resources to support both faculty and students. These include Undergraduate Education, the Hilary Ballon Center for Excellence in Teaching and Learning, the Academic Resource Center, the Writing Program, Undergraduate Research, Faculty Advancement and Engagement, and NYUAD's New York space at 19 Washington Square North.
-
-For more information, please visit our [Faculty Resources](https://intranet.nyuad.nyu.edu/faculty-resources/) page on the intranet.
-
 ### Teaching
 
 
-#### Program Seminar Series & Research Talks
-
 #### Program Seminar Series
-Each program in the Division of Science hosts a collection of semi-formal weekly talks throughout the academic year. These Seminar Series, or Colloquium Series in the case of Mathematics, build the reputation of the programs, division, and university at large by facilitating networking connections and research collaborations with local and international scholars.
+Each program in the Division of Science hosts semi-formal weekly talks throughout the academic year, known as seminars. These seminars are open to the NYUAD community and help build research connections with local and international scholars. Some programs also organize informal research talks for PhD graduates and research staff.
 
-Seminars are open to the NYUAD community, and may be attended by staff, faculty, students, postdocs, and researchers. Seminars are scheduled in accordance with the Registrar and with other program series in mind, thus there is the expectation that the divisional community, including our passionate students, will attend and participate. Speakers are advised that topics should not be too niche, but rather broad enough to be understood by an audience of varied specializations and expertise. Some Programs in the Division of Science also organize informal research talks, as a means of offering PhD graduates and research staff the opportunity to present their work to peers. Please reach out to your Program Head or program administrative coordinators for more information.
+Program administrative coordinators work with faculty to plan and schedule seminar speakers. Each standing faculty member can usually invite at least one speaker per academic year, with additional speakers considered by the Program Head and Administrator on a case-by-case basis.
 
-#### Seminar Series Planning and Policies
-Your program administrative coordinators will work with you to plan and schedule seminar speakers. Each standing faculty member can usually invite at least one seminar speaker per academic year. Additional speakers may be invited at the discretion of the Program Head and Administrator, on a case-by-case basis.
+Program administrative coordinators will manage all travel bookings; approved seminar speakers should not book their own travel or submit travel expenses for reimbursement. NYUAD covers a round-trip economy flight, airport ground transfers in the UAE, campus or local hotel accommodation depending on availability, visa support if required, meal vouchers, and one seminar dinner with the host and one additional faculty member. Accommodation is usually covered for up to three nights for flights of eight hours or less, and up to four nights for longer flights. Reimbursements for seminar dinners are capped at AED 300 per person and AED 1,200 total. Please refer to [NYUAD’s Business Meals Policy](http://intranet.nyuad.nyu.edu/governance/policies-procedures-and-guidelines/) for full guidance and compliance requirements.
 
-NYUAD offers a complimentary economy return ticket, airport ground transfers in the UAE, campus or local hotel accommodation depending on availability, and a visa if required. If a speaker's flight time is more than eight hours, the program budget may cover up to four nights' accommodation. If the flight duration is eight hours or less, the program budget covers three nights.
-
-The program also covers the cost of one seminar dinner which allows the host and the speaker to have dinner off campus, with one additional faculty member of the host's choice. In line with NYUAD's Business Meals Policy, the amount that can be claimed is capped at AED 300 per person, up to a maximum of AED 1,200, and alcohol cannot be reimbursed. The program also provides meal vouchers for three or four days, depending on the length of the guest's stay.
-
-NYUAD policy will not reimburse speakers for booking their own travel, so please do not encourage invited speakers to book their own flights or submit travel or expense receipts for reimbursement.
-
-Upon arrival, all seminar speakers are given a welcome information packet, WiFi access instructions, and their campus meal vouchers.
-
-Faculty are the host of their invited speaker. They should plan the speaker's time on campus, be their main point of contact, and ensure they find their way around. Faculty should advise the administrator if any special meetings should be arranged outside of the regular programming, such as with faculty from other programs, divisions, or lab groups, or if the seminar should be announced outside of the regular audience, such as to other divisions or a particular class of students. It will always be the responsibility of the hosting faculty to facilitate internal connections and networking opportunities.
+Faculty hosts are responsible for planning the speaker’s campus schedule, serving as the main point of contact, helping them navigate campus, and coordinating any additional meetings, announcements, or networking opportunities with the program administrative coordinator.
 
 #### Global Perspectives in Science Lecture Series
 Each month, the Division of Science hosts an international speaker as part of its Global Perspectives in Science Lecture Series. The mission of the series is to expand academic networks by hosting leading scholars who are experts in scientific fields currently unexplored at NYUAD, or who come from regions or institutions with which faculty in the Division of Science have not yet collaborated. This lecture series reflects a commitment to diversity and excellence in STEM and is accessible to everyone within the Division of Science, and the broader NYUAD community. It aims to facilitate new collaborations, spark conversations, and introduce fresh ideas and perspectives.
@@ -296,6 +279,12 @@ No matter what form the Capstone takes, each student will have a faculty mentor 
 The Capstone Seminar provides students with an overview of the diverse multidisciplinary research areas that have captured the interest and fascination of NYUAD scientists and others in related fields. The seminar coordinators of each program will invite all program faculty to introduce their research to students, providing enough time to fuel the interests and mentorship opportunities of students.
 
 Through exposure to NYUAD faculty research, students identify potential areas of interest for their own Capstone research, and over the course of the semester, develop and put into writing an in-depth research proposal that will form the core of their Capstone Project. The final Capstone proposal is due at the end of the Capstone Seminar course, in the student's junior year, so that students can begin their Capstone Project in the fall semester of their senior year.
+
+#### Teaching & Learning Resources
+
+NYUAD offers a range of teaching, learning, advising, writing, undergraduate research, and faculty development resources to support both faculty and students. These include Undergraduate Education, the Hilary Ballon Center for Excellence in Teaching and Learning, the Academic Resource Center, the Writing Program, Undergraduate Research, Faculty Advancement and Engagement, and NYUAD's New York space at 19 Washington Square North.
+
+For more information, please visit our [Faculty Resources](https://intranet.nyuad.nyu.edu/faculty-resources/) page on the intranet.
 
 ### Research
 
