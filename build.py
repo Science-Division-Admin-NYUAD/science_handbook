@@ -30,7 +30,7 @@ FILES = ASSETS / "files"
 PDF_OUTPUT = SITE / "handbook.pdf"
 
 SITE_TITLE = "Division of Science - New Joiners Handbook"
-STYLE_VERSION = "20260731-pdf-layout-polish"
+STYLE_VERSION = "20260803-course-prep-timeline"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 FENCE_OPEN_RE = re.compile(r"^:::\s+(?P<classes>[\w\- ]+?)\s*$")
