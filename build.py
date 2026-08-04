@@ -283,6 +283,21 @@ def render_contents_row(section: dict) -> str:
       </a>"""
 
 
+def render_pdf_contents_row(section: dict) -> str:
+    contents_title = section.get("contents_title") or section["title"]
+    topics = "\n".join(
+        f'''          <li><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
+        for topic in section.get("toc", [])
+        if topic_class_name(topic) != "topic-subtopic"
+    )
+    return f"""        <div class="pdf-contents-row">
+          <h3>{contents_title}</h3>
+          <ul>
+{topics}
+          </ul>
+        </div>"""
+
+
 def topic_anchor_lookup(section: dict) -> dict[str, str]:
     return {
         normalize_heading(item["name"]): item["id"]
@@ -730,7 +745,7 @@ def render_redirect() -> str:
 
 def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     site_css = CSS.read_text(encoding="utf-8")
-    contents = "\n".join(render_contents_row(item) for item in nav)
+    contents = "\n".join(render_pdf_contents_row(item) for item in nav)
     section_blocks = "\n".join(
         f"""  <main class="page-shell pdf-section">
     <section class="page-title section-hero">
@@ -755,13 +770,13 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     @page {{
       size: A4;
-      margin: 10mm;
-      background: #f4f0f5;
+      margin: 13mm 8mm 10mm;
+      background: #f8f5f9;
     }}
 
     body {{
       margin: 0;
-      background: #f4f0f5;
+      background: #f8f5f9;
     }}
 
     .topbar,
@@ -779,7 +794,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
-      background: #f4f0f5;
+      background: #f8f5f9;
     }}
 
     .pdf-cover-page {{
@@ -796,16 +811,73 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       width: 100%;
       max-width: none;
       margin: 0;
-      padding: 0;
+      padding: 10mm 11mm 12mm;
       border: 0;
       box-shadow: none;
-      background: #f4f0f5;
+      background: #fff;
       page-break-before: always;
     }}
 
-    .contents-row {{
-      break-inside: avoid;
+    .contents-page .pdf-rule {{
+      height: 1pt;
+      margin: 0 0 8mm;
+      background: rgba(75, 54, 92, 0.45);
+    }}
+
+    .contents-page h2 {{
+      margin: 0 0 9mm;
+      color: var(--teal);
+      font-size: 27pt;
+      font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+    }}
+
+    .pdf-contents-row {{
+      display: grid;
+      grid-template-columns: 55mm minmax(0, 1fr);
+      gap: 8mm;
+      padding: 4.6mm 0;
+      border-top: 0.5pt solid rgba(75, 54, 92, 0.18);
+      color: var(--ink);
+      break-inside: avoid-page;
       page-break-inside: avoid;
+    }}
+
+    .contents-page h2 + .pdf-contents-row {{
+      border-top: 2pt solid rgba(75, 54, 92, 0.55);
+    }}
+
+    .pdf-contents-row h3 {{
+      margin: 0;
+      color: var(--teal-dark);
+      font-size: 12pt;
+      font-weight: 900;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }}
+
+    .pdf-contents-row ul {{
+      display: grid;
+      gap: 1.6mm;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }}
+
+    .pdf-contents-row li {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 12mm;
+      gap: 5mm;
+      color: #4f4a54;
+      font-size: 9.2pt;
+      font-weight: 500;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }}
+
+    .pdf-contents-row li span:last-child {{
+      text-align: right;
     }}
 
     .pdf-section {{
@@ -813,9 +885,9 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
-      break-before: auto;
-      page-break-before: auto;
-      background: #f4f0f5;
+      break-before: page;
+      page-break-before: always;
+      background: #f8f5f9;
     }}
 
     .cover + .pdf-section {{
@@ -829,10 +901,12 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       min-height: 0;
       height: auto;
       margin: 0 0 7mm;
-      padding: 11mm 12mm;
+      padding: 10mm 11mm;
       border-radius: 0;
       overflow: visible;
       page-break-after: avoid;
+      break-inside: avoid-page;
+      page-break-inside: avoid;
     }}
 
     .page-title h1 {{
@@ -846,19 +920,21 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       width: 100%;
       max-width: none;
       margin: 0;
-      padding: 0 6mm 8mm;
+      padding: 0 0 8mm;
       background: transparent;
     }}
 
     .article {{
       width: 100%;
       max-width: none;
-      padding: 10mm;
+      padding: 10mm 11mm 12mm;
       border: 1px solid rgba(75, 54, 92, 0.12);
       border-top: 2pt solid rgba(75, 54, 92, 0.54);
       box-shadow: none;
       background: #fff;
       page-break-before: avoid;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
     }}
 
     .article h2,
@@ -868,9 +944,15 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       page-break-after: avoid;
     }}
 
-    .article h2 + *,
-    .article h3 + *,
-    .article h4 + * {{
+    .article h2 + p,
+    .article h3 + p,
+    .article h4 + p,
+    .article h2 + ul,
+    .article h3 + ul,
+    .article h4 + ul,
+    .article h2 + ol,
+    .article h3 + ol,
+    .article h4 + ol {{
       break-before: avoid-page;
       page-break-before: avoid;
     }}
@@ -882,7 +964,11 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     }}
 
     .cards,
-    .people-grid {{
+    .people-grid,
+    .campus-essentials,
+    .program-heads,
+    .course-prep-briefing,
+    .prep-briefing-block {{
       break-inside: auto;
       page-break-inside: auto;
     }}
@@ -983,6 +1069,8 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .campus-essentials {{
       border-top: 1px solid rgba(75, 54, 92, 0.2);
+      break-before: auto;
+      page-break-before: auto;
     }}
 
     .campus-essential {{
@@ -1036,18 +1124,12 @@ def build_browser_pdf() -> None:
                 print_background=True,
                 prefer_css_page_size=True,
                 margin={
-                    "top": "10mm",
-                    "right": "10mm",
+                    "top": "13mm",
+                    "right": "8mm",
                     "bottom": "10mm",
-                    "left": "10mm",
+                    "left": "8mm",
                 },
-                display_header_footer=True,
-                header_template="<div></div>",
-                footer_template=(
-                    '<div style="width:100%;font-size:8px;color:#6f6475;'
-                    'text-align:right;padding-right:10mm;">'
-                    '<span class="pageNumber"></span></div>'
-                ),
+                display_header_footer=False,
             )
         finally:
             browser.close()
