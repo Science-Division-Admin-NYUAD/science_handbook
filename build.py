@@ -265,12 +265,13 @@ def render_cover(section: dict, nav: list[dict]) -> str:
 """
 
 
-def render_contents_row(section: dict) -> str:
+def render_contents_row(section: dict, include_subtopics: bool = True) -> str:
     image = f"assets/images/contents-{section['slug']}.jpg"
     contents_title = section.get("contents_title") or section["title"]
     topics = "\n".join(
         f'''            <li{topic_class_attr(topic)}><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
         for topic in section.get("toc", [])
+        if include_subtopics or topic_class_name(topic) != "topic-subtopic"
     )
     return f"""      <a class="contents-row" href="{section['slug']}.html">
         <img src="{image}" alt="">
@@ -281,21 +282,6 @@ def render_contents_row(section: dict) -> str:
           </ul>
         </div>
       </a>"""
-
-
-def render_pdf_contents_row(section: dict) -> str:
-    contents_title = section.get("contents_title") or section["title"]
-    topics = "\n".join(
-        f'''          <li><span>{topic[0]}</span><span>{topic[1]:02}</span></li>'''
-        for topic in section.get("toc", [])
-        if topic_class_name(topic) != "topic-subtopic"
-    )
-    return f"""        <div class="pdf-contents-row">
-          <h3>{contents_title}</h3>
-          <ul>
-{topics}
-          </ul>
-        </div>"""
 
 
 def topic_anchor_lookup(section: dict) -> dict[str, str]:
@@ -745,7 +731,7 @@ def render_redirect() -> str:
 
 def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     site_css = CSS.read_text(encoding="utf-8")
-    contents = "\n".join(render_pdf_contents_row(item) for item in nav)
+    contents = "\n".join(render_contents_row(item, include_subtopics=False) for item in nav)
     section_blocks = "\n".join(
         f"""  <main class="page-shell pdf-section">
     <section class="page-title section-hero">
@@ -833,50 +819,65 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       text-transform: uppercase;
     }}
 
-    .pdf-contents-row {{
+    .contents-row {{
       display: grid;
-      grid-template-columns: 55mm minmax(0, 1fr);
+      grid-template-columns: 70mm minmax(0, 1fr);
       gap: 8mm;
-      padding: 4.6mm 0;
-      border-top: 0.5pt solid rgba(75, 54, 92, 0.18);
+      align-items: start;
+      margin: 0 0 7mm;
+      padding: 0 0 7mm;
+      border-bottom: 0.5pt solid rgba(75, 54, 92, 0.28);
       color: var(--ink);
       break-inside: avoid-page;
       page-break-inside: avoid;
     }}
 
-    .contents-page h2 + .pdf-contents-row {{
-      border-top: 2pt solid rgba(75, 54, 92, 0.55);
+    .contents-row img {{
+      display: block;
+      width: 70mm;
+      max-width: 100%;
+      height: auto;
+      align-self: start;
     }}
 
-    .pdf-contents-row h3 {{
-      margin: 0;
-      color: var(--teal-dark);
-      font-size: 12pt;
-      font-weight: 900;
+    .contents-copy {{
+      padding-left: 7mm;
+      border-left: 0.5pt solid rgba(75, 54, 92, 0.45);
+    }}
+
+    .contents-copy h3 {{
+      margin: 0 0 3.5mm;
+      color: var(--teal);
+      font-size: 16pt;
+      font-weight: 500;
       line-height: 1.15;
       text-transform: uppercase;
     }}
 
-    .pdf-contents-row ul {{
+    .contents-copy ul {{
       display: grid;
-      gap: 1.6mm;
+      gap: 1.4mm;
       margin: 0;
       padding: 0;
       list-style: none;
     }}
 
-    .pdf-contents-row li {{
+    .contents-copy li {{
       display: grid;
       grid-template-columns: minmax(0, 1fr) 12mm;
-      gap: 5mm;
-      color: #4f4a54;
+      gap: 4mm;
+      color: #3d3d3d;
       font-size: 9.2pt;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.2;
       text-transform: uppercase;
     }}
 
-    .pdf-contents-row li span:last-child {{
+    .contents-copy li.topic-subtopic {{
+      display: none;
+    }}
+
+    .contents-copy li span:last-child {{
       text-align: right;
     }}
 
@@ -940,10 +941,16 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .article h2,
     .article h3,
     .article h4 {{
+      break-inside: avoid;
+      page-break-inside: avoid;
       break-after: avoid-page;
+      break-after: avoid;
       page-break-after: avoid;
     }}
 
+    .article h2 + h3,
+    .article h2 + h4,
+    .article h3 + h4,
     .article h2 + p,
     .article h3 + p,
     .article h4 + p,
@@ -952,8 +959,36 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .article h4 + ul,
     .article h2 + ol,
     .article h3 + ol,
-    .article h4 + ol {{
+    .article h4 + ol,
+    .article h2 + .cards,
+    .article h3 + .cards,
+    .article h4 + .cards,
+    .article h2 + .people-grid,
+    .article h3 + .people-grid,
+    .article h4 + .people-grid,
+    .article h2 + .dean-feature,
+    .article h3 + .dean-feature,
+    .article h4 + .dean-feature,
+    .article h2 + .program-heads,
+    .article h3 + .program-heads,
+    .article h4 + .program-heads,
+    .article h2 + .campus-essentials,
+    .article h3 + .campus-essentials,
+    .article h4 + .campus-essentials,
+    .article h2 + .course-prep-briefing,
+    .article h3 + .course-prep-briefing,
+    .article h4 + .course-prep-briefing,
+    .article h2 + .note,
+    .article h3 + .note,
+    .article h4 + .note,
+    .article h2 + blockquote,
+    .article h3 + blockquote,
+    .article h4 + blockquote,
+    .article h2 + table,
+    .article h3 + table,
+    .article h4 + table {{
       break-before: avoid-page;
+      break-before: avoid;
       page-break-before: avoid;
     }}
 
@@ -971,6 +1006,32 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .prep-briefing-block {{
       break-inside: auto;
       page-break-inside: auto;
+    }}
+
+    .cards,
+    .people-grid {{
+      display: block;
+      column-count: 2;
+      column-gap: 5mm;
+      margin: 5mm 0 7mm;
+    }}
+
+    .cards > *,
+    .people-grid > * {{
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 5mm;
+      vertical-align: top;
+    }}
+
+    #program-specific-groups + p + .cards,
+    .program-heads,
+    .course-prep-briefing {{
+      column-count: auto;
+    }}
+
+    #program-specific-groups + p + .cards {{
+      display: grid;
     }}
 
     .program-row,
