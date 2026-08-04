@@ -56,10 +56,10 @@ Standing faculty are expected to attend all faculty meetings. Visiting faculty a
 
 ## Undergraduate Programs
 
-Our division is home to six academic programs: Biology, Chemistry, Computer Science, Mathematics, Physics, and Psychology.
+Our division is home to six academic programs: **Biology**, **Chemistry**, **Computer Science**, **Mathematics**, **Physics**, and **Psychology**.
 
 #### Capstone Projects
-Every science student completes a fourth-year research project, working closely with one of our many research labs or groups throughout the year. Their work culminates in a significant piece of research, which is presented at the annual Science Capstone Festival.
+The Capstone Project is a required fourth-year experience for all NYUAD students. In the Division of Science, students complete a long-term mentored project, often through an ongoing NYUAD research project, that culminates in original empirical or theoretical research. Students begin preparing through a junior-year Capstone seminar, where they explore faculty research, identify possible project areas and mentors, and develop a written proposal for their senior-year Capstone Project. Their work is presented at the annual Science Capstone Festival.
 
 #### Foundations of Science
 Foundations of Science (FoS) is a required integrated program for Biology, Chemistry, and Physics undergraduates, designed to encourage interdisciplinary thinking and experimental learning.
@@ -331,6 +331,20 @@ Faculty and researchers from the Division of Science lead and/or collaborate in 
 - [Water Research Center](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/water-research-center.html)
 
 For more information, please visit our [Centers](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/centers/) page.
+
+#### Seminars & Research Talks
+Each program in the Division of Science hosts semi-formal weekly seminars during the academic year. Seminars are open to the NYUAD community, help build research connections with local and international scholars, and may include informal research talks for PhD graduates and research staff.
+
+Program administrative coordinators work with faculty to schedule speakers. Standing faculty can usually invite one seminar speaker per academic year, with additional invitations considered by the Program Head and Administrator.
+
+For approved speakers, program administrative coordinators manage all travel bookings. Speakers should not book their own travel or submit travel expenses for reimbursement. NYUAD typically covers economy round-trip travel, UAE airport transfers, accommodation, visa support if required, meal vouchers, and one seminar dinner. Accommodation is usually covered for up to three nights, or four nights for flights longer than eight hours. Seminar dinner reimbursements are capped at AED 300 per person and AED 1,200 total; please refer to [NYUAD’s Business Meals Policy](http://intranet.nyuad.nyu.edu/governance/policies-procedures-and-guidelines/) for full guidance.
+
+Faculty hosts are responsible for planning the speaker’s campus schedule, serving as the main point of contact, helping them navigate campus, and coordinating any additional meetings, announcements, or networking opportunities with the program administrative coordinator.
+
+#### Global Perspectives in Science Lecture Series
+Each month, the Division of Science hosts an international speaker through the Global Perspectives in Science Lecture Series. The series brings leading scholars to NYUAD to expand academic networks, introduce new areas of scientific expertise, and support the division's commitment to diversity and excellence in STEM. Lectures are open to the Division of Science and the broader NYUAD community.
+
+Faculty may propose speakers to Julie Brookes at julie.brookes@nyu.edu.
 
 ## Facilities and Infrastructure
 

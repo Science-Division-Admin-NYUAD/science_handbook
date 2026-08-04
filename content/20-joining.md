@@ -11,8 +11,7 @@ toc:
   - ["Software for Administrative Tasks", 27]
   - ["Policies", 31]
   - ["Academic and Research Essentials", 32]
-  - ["Teaching", 36, "subtopic"]
-  - ["Research", 40, "subtopic"]
+  - ["Research Administration", 40, "subtopic"]
 ---
 
 ## Before You Arrive
@@ -191,9 +190,7 @@ The complete workflow and approval process is available on the Intranet.
 
 ::: course-prep-new course-prep-briefing
 ::: prep-briefing-block
-<p class="prep-kicker">Course Documents</p>
-
-#### Submit, Review, and Archive
+<p class="prep-kicker">Course Documents: Submit, Review, and Archive</p>
 
 ::: prep-briefing-columns
 ::: prep-briefing-column
@@ -242,55 +239,20 @@ Order required books through the online [Course Book Ordering process](https://i
 :::
 :::
 
-### Teaching
-
-
-#### Program Seminar Series
-Each program in the Division of Science hosts semi-formal weekly talks throughout the academic year, known as seminars. These seminars are open to the NYUAD community and help build research connections with local and international scholars. Some programs also organize informal research talks for PhD graduates and research staff.
-
-Program administrative coordinators work with faculty to plan and schedule seminar speakers. Each standing faculty member can usually invite at least one speaker per academic year, with additional speakers considered by the Program Head and Administrator on a case-by-case basis.
-
-Program administrative coordinators will manage all travel bookings; approved seminar speakers should not book their own travel or submit travel expenses for reimbursement. NYUAD covers a round-trip economy flight, airport ground transfers in the UAE, campus or local hotel accommodation depending on availability, visa support if required, meal vouchers, and one seminar dinner with the host and one additional faculty member. Accommodation is usually covered for up to three nights for flights of eight hours or less, and up to four nights for longer flights. Reimbursements for seminar dinners are capped at AED 300 per person and AED 1,200 total. Please refer to [NYUAD’s Business Meals Policy](http://intranet.nyuad.nyu.edu/governance/policies-procedures-and-guidelines/) for full guidance and compliance requirements.
-
-Faculty hosts are responsible for planning the speaker’s campus schedule, serving as the main point of contact, helping them navigate campus, and coordinating any additional meetings, announcements, or networking opportunities with the program administrative coordinator.
-
-#### Global Perspectives in Science Lecture Series
-Each month, the Division of Science hosts an international speaker as part of its Global Perspectives in Science Lecture Series. The mission of the series is to expand academic networks by hosting leading scholars who are experts in scientific fields currently unexplored at NYUAD, or who come from regions or institutions with which faculty in the Division of Science have not yet collaborated. This lecture series reflects a commitment to diversity and excellence in STEM and is accessible to everyone within the Division of Science, and the broader NYUAD community. It aims to facilitate new collaborations, spark conversations, and introduce fresh ideas and perspectives.
-
-Faculty can propose speakers to Julie Brookes at julie.brookes@nyu.edu.
-
-#### Capstones
-
-
-The Capstone Project is one of the culminating experiences for all students at NYUAD. It is a mandatory requirement and completion is scheduled for the student's fourth year. The Capstone experience in the Division of Science requires students to engage in a long-term, mentored learning experience that culminates in a piece of original research, scientific theory, or both. It is typically, but not exclusively, associated with students joining ongoing NYUAD research projects. This approach enables students to:
-
-1. experience the teamwork required to succeed in the sciences,
-2. foster a strong relationship with a faculty mentor, and
-3. engage in weekly lab meetings and other research-related activities.
-
-Students are expected to use this experience to develop a Capstone thesis that either qualifies as an empirical project or as a theoretical treatise. In both cases, the thesis consists of a written document of significant length that describes the work in detail.
-
-#### Science Capstone Festival
-Students are expected to present their work at the annual Science Capstone Festival, which is typically hosted in April. Program faculty are strongly encouraged to attend the festival, which is open to the whole community.
-
-#### Capstone Research Seminar Courses
-No matter what form the Capstone takes, each student will have a faculty mentor and participate in a Capstone seminar that serves as a collaborative learning forum to discuss the research process and present work in progress.
-
-The Capstone Seminar provides students with an overview of the diverse multidisciplinary research areas that have captured the interest and fascination of NYUAD scientists and others in related fields. The seminar coordinators of each program will invite all program faculty to introduce their research to students, providing enough time to fuel the interests and mentorship opportunities of students.
-
-Through exposure to NYUAD faculty research, students identify potential areas of interest for their own Capstone research, and over the course of the semester, develop and put into writing an in-depth research proposal that will form the core of their Capstone Project. The final Capstone proposal is due at the end of the Capstone Seminar course, in the student's junior year, so that students can begin their Capstone Project in the fall semester of their senior year.
-
 #### Teaching & Learning Resources
 
-NYUAD offers a range of teaching, learning, advising, writing, undergraduate research, and faculty development resources to support both faculty and students. These include Undergraduate Education, the Hilary Ballon Center for Excellence in Teaching and Learning, the Academic Resource Center, the Writing Program, Undergraduate Research, Faculty Advancement and Engagement, and NYUAD's New York space at 19 Washington Square North.
+NYUAD offers teaching, learning, advising, writing, undergraduate research, and faculty development resources for faculty and students. These include Undergraduate Education, the Hilary Ballon Center for Excellence in Teaching and Learning, the Academic Resource Center, the Writing Program, Undergraduate Research, Faculty Advancement and Engagement, and NYUAD's New York space at 19 Washington Square North.
 
 For more information, please visit our [Faculty Resources](https://intranet.nyuad.nyu.edu/faculty-resources/) page on the intranet.
 
-### Research
+### Research Administration
 
+::: course-prep-new course-prep-briefing
+::: prep-briefing-block
+<p class="prep-kicker">Funds & Systems: Track, Review, and Approve</p>
 
-#### Research Fund Essentials
-
+::: prep-briefing-columns
+::: prep-briefing-column
 #### Chartfields and UDW+
 Chartfields store our charts of accounts and provide our financial system with the basic structure to segregate and categorize transactional and budget data fields. Every faculty research program has its own unique chartfield, as does each academic program and research grant.
 
@@ -298,19 +260,25 @@ The University Data Warehouse Plus (UDW+) is a program aimed at establishing dec
 
 Other Useful Links:
 
-- Research Account Spending Guidelines
-- Research Institute
-- Chartfield Access Authorization Form
+- [Research Account Spending Guidelines](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-administration/post-award/research-account-guide/)
+- [Research Institute](http://intranet.nyuad.nyu.edu/faculty-resources/research/research-institute/)
+- [Chartfield Access Authorization Form](http://intranet.nyuad.nyu.edu/administrative-services/financial-services/budgeting-financial-planning/budget-reporting-fails/)
+:::
 
+::: prep-briefing-column
 #### Cayuse
 Cayuse SP is an online tool used by PIs and Administrators to collaborate on and approve submissions for funding. It is also NYU's internal "digital filing cabinet" for documentation of grant proposals.
 
 #### Research Travel
 All research travel should be booked through the University's travel agency, Nirvana, using the Concur software platform. Guidelines are available, along with the Travel and Travel-Related Expense Reimbursement Policy. We encourage you to familiarize yourself with the policy before planning or booking any travel.
+:::
+:::
+:::
 
-#### Research: Space and Safety
+::: prep-briefing-block
+<p class="prep-kicker">Space</p>
 
-#### Space Access Requests
+#### Access Requests
 Space access requests should be submitted to Public Safety. Requests will be approved based on the expectation that a person has already, or will as soon as possible, complete all OSHMS and EHS training requirements. Non-compliance will result in access being revoked.
 
 Requests for undergraduate student access must be completed by the PI or supervising research staff member. Please leave a comment in the request form that details which year of study they are in, confirms they have taken the Laboratory Safety Induction training, and explains what supervision plans you have in place.
@@ -320,21 +288,23 @@ Undergraduate students requesting card access to laboratories, workshops, or equ
 ::: note
 NOTE: Students should never work alone in laboratories, workshops, or equipment rooms, and hazardous operations or experiments should only be performed in the presence of a trained laboratory staff member or technician.
 :::
+:::
+
+::: prep-briefing-block
+<p class="prep-kicker">Safety</p>
 
 #### Environmental Health and Safety (EHS)
-All personnel in the Division of Science must read and implement the OSH Policy. EHS provides training via an online course management system called Moodle, supplemented with additional online and classroom training, depending on the risks involved in your area of work.
+All Division of Science personnel must read and follow the OSH Policy and complete the required EHS trainings on Moodle, including the NYUAD OSH Management System modules, EHS Induction, and Fire Safety Induction.
 
-Irrespective of role or work area, it is mandatory that all personnel in the Division of Science complete the following three trainings on Moodle:
+Anyone requesting access to C1 (ERB) or expected to work in a laboratory must also complete EHS Classroom Training within their first 60 days; otherwise, access may be revoked. New joiners must also complete any role-specific training listed in the EHS Training Matrix, including laboratory, biological, laser, and radiation safety where applicable.
 
-1. All nine elements of the NYUAD OSH Management System.
-2. The online NYUAD EHS Induction training.
-3. The online Fire Safety Induction training.
+PIs are responsible for ensuring their group personnel are trained, use ChemTracker and AssessNET correctly, understand relevant risks and SOPs, and know how to report concerns and access EHS information. EHS information is available on the EHS [Intranet](http://intranet.nyuad.nyu.edu/) homepage.
 
-In addition to the above, if a new joiner is requesting access to the C1 (ERB) building or is expected to work in any laboratory, they must complete the EHS Classroom Training within their first 60 days. If this is not done, access will be revoked.
+Concerns or questions can be directed to nyuad.ehs@nyu.edu.
 
-New joiners must also complete any specialized training required for their role, as specified on the EHS Training Matrix, which includes specialized safety programs for laboratory, biological, laser, and radiation safety that are facilitated by NYUAD.
+#### See something? Report It
+All personnel should be aware that "Report It" is the appropriate channel to report all hazards, incidents, and safety concerns, in addition to notifying your supervisor. Report It is accessible through the EHS Intranet homepage.
 
-Please keep in mind that it is the responsibility of the PI to ensure all group personnel are trained, correctly make use of the tools Chemtracker and AssessNET, are aware of risks and SOPs, and know where and how to report and access EHS information. EHS information is accessible through the EHS Intranet homepage. Concerns or questions can be directed to nyuad.ehs@nyu.edu.
-
-#### See something? Report It. (EHS)
-All personnel should be aware that "Report It" is the appropriate channel to report all hazards, incidents, and safety concerns, in addition to notifying your supervisor. Report It is accessible through the EHS Intranet homepage. Please immediately notify EHS and PSD (Public Safety Department) of serious incidents. Contact: nyuad.ehs@nyu.edu.
+Please immediately notify EHS and PSD (Public Safety Department) of serious incidents. Contact: nyuad.ehs@nyu.edu.
+:::
+:::
