@@ -60,7 +60,7 @@ Campus dining options are available for the university community. For options an
 <div class="campus-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 13H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div>
 
 #### Convenience Store
-The campus convenience store sells groceries, fresh produce, baked items, frozen foods, ice-cream, toiletries, and daily necessities. It is open daily on the first floor of the Campus Center (C2).<br>
+The campus convenience store sells groceries, fresh produce, baked items, frozen foods, ice cream, toiletries, and daily necessities. It is open daily on the first floor of the Campus Center (C2).<br>
 For more information, please visit our [Convenience Store](http://intranet.nyuad.nyu.edu/administrative-services/dining/places-to-eat/convenience-store-fresh-market/) page.
 :::
 ::: campus-essential
