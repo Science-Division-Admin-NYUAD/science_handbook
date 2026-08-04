@@ -1906,7 +1906,7 @@ h1 {
 .prep-kicker {
   margin: 0 0 5px !important;
   color: var(--link);
-  font-size: 12px !important;
+  font-size: 13px !important;
   font-weight: 900;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1930,6 +1930,16 @@ h1 {
 
 .prep-briefing-block ul {
   margin-top: 10px;
+}
+
+.prep-briefing-block .note {
+  margin: 18px 0 24px;
+  padding: 15px 20px;
+  border: 1px solid rgba(75, 54, 92, 0.13);
+  border-top: 3px solid rgba(75, 54, 92, 0.78);
+  border-radius: 6px;
+  background: #f8f4fa;
+  box-shadow: 0 1px 0 rgba(75, 54, 92, 0.06);
 }
 
 .prep-systems-band {
