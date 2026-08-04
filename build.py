@@ -757,12 +757,18 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     @page {{
       size: A4;
       margin: 13mm 8mm 10mm;
-      background: #f8f5f9;
+      background: #e9eff2;
+    }}
+
+    html {{
+      background: #e9eff2;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }}
 
     body {{
       margin: 0;
-      background: #f8f5f9;
+      background: #e9eff2;
     }}
 
     .topbar,
@@ -780,10 +786,11 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
-      background: #f8f5f9;
+      background: #e9eff2;
     }}
 
     .pdf-cover-page {{
+      break-after: page;
       page-break-after: always;
     }}
 
@@ -801,7 +808,10 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       border: 0;
       box-shadow: none;
       background: #fff;
-      page-break-before: always;
+      break-before: auto;
+      page-break-before: auto;
+      break-after: page;
+      page-break-after: always;
     }}
 
     .contents-page .pdf-rule {{
@@ -821,11 +831,11 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .contents-row {{
       display: grid;
-      grid-template-columns: 70mm minmax(0, 1fr);
-      gap: 8mm;
+      grid-template-columns: 62mm minmax(0, 1fr);
+      gap: 7mm;
       align-items: start;
-      margin: 0 0 7mm;
-      padding: 0 0 7mm;
+      margin: 0 0 5.5mm;
+      padding: 0 0 5.5mm;
       border-bottom: 0.5pt solid rgba(75, 54, 92, 0.28);
       color: var(--ink);
       break-inside: avoid-page;
@@ -834,7 +844,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .contents-row img {{
       display: block;
-      width: 70mm;
+      width: 62mm;
       max-width: 100%;
       height: auto;
       align-self: start;
@@ -886,14 +896,19 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
-      break-before: page;
-      page-break-before: always;
-      background: #f8f5f9;
+      break-before: auto;
+      page-break-before: auto;
+      background: #e9eff2;
     }}
 
-    .cover + .pdf-section {{
+    .pdf-section + .pdf-section {{
       break-before: page;
       page-break-before: always;
+    }}
+
+    .contents-page + .pdf-section {{
+      break-before: auto;
+      page-break-before: auto;
     }}
 
     .page-title {{
@@ -940,7 +955,8 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .article h2,
     .article h3,
-    .article h4 {{
+    .article h4,
+    .prep-kicker {{
       break-inside: avoid;
       page-break-inside: avoid;
       break-after: avoid-page;
@@ -998,6 +1014,20 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       widows: 3;
     }}
 
+    .card,
+    .person,
+    .email,
+    .email-copy {{
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }}
+
+    .email,
+    .email-copy {{
+      white-space: nowrap;
+    }}
+
     .cards,
     .people-grid,
     .campus-essentials,
@@ -1013,6 +1043,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       display: block;
       column-count: 2;
       column-gap: 5mm;
+      column-fill: auto;
       margin: 5mm 0 7mm;
     }}
 
@@ -1134,6 +1165,21 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       page-break-before: auto;
     }}
 
+    .article h2 + .campus-essentials,
+    .article h3 + .campus-essentials,
+    .article h4 + .campus-essentials {{
+      break-before: auto;
+      page-break-before: auto;
+    }}
+
+    .prep-kicker + h4,
+    .prep-kicker + h5,
+    .prep-kicker + p,
+    .prep-kicker + .prep-briefing-columns {{
+      break-before: avoid-page;
+      page-break-before: avoid;
+    }}
+
     .campus-essential {{
       grid-template-columns: 34px minmax(110px, 0.3fr) minmax(0, 1fr);
     }}
@@ -1154,12 +1200,12 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
         <p>A handbook for new joiners</p>
       </div>
     </section>
-    <section class="contents-page" aria-label="Contents">
-      <div class="pdf-rule" aria-hidden="true"></div>
-      <h2>Contents</h2>
-{contents}
-    </section>
   </main>
+  <section class="contents-page" aria-label="Contents">
+    <div class="pdf-rule" aria-hidden="true"></div>
+    <h2>Contents</h2>
+{contents}
+  </section>
 {section_blocks}
 </body>
 </html>
