@@ -757,18 +757,18 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     @page {{
       size: A4;
       margin: 13mm 8mm 10mm;
-      background: #e9eff2;
+      background: #f6f8f9;
     }}
 
     html {{
-      background: #e9eff2;
+      background: #f6f8f9;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }}
 
     body {{
       margin: 0;
-      background: #e9eff2;
+      background: #f6f8f9;
       font-synthesis: none;
       font-kerning: normal;
       text-rendering: geometricPrecision;
@@ -809,7 +809,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       max-width: none;
       margin: 0;
       padding: 0;
-      background: #e9eff2;
+      background: #f6f8f9;
     }}
 
     .pdf-cover-page {{
@@ -937,7 +937,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       padding: 0;
       break-before: auto;
       page-break-before: auto;
-      background: #e9eff2;
+      background: #f6f8f9;
     }}
 
     .pdf-section + .pdf-section {{
