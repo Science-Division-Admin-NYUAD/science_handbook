@@ -229,7 +229,7 @@ def render_header(nav: list[dict], active_slug: str | None) -> str:
     <nav class="main-nav" aria-label="Main sections">
 {links}
     </nav>
-    <a class="download" href="handbook.pdf" download>Prefer a PDF? Download it here</a>
+    <a class="download" href="handbook.pdf" download="NewJoinersHandbook.pdf">Prefer a PDF? Download it here</a>
   </header>
 """
 
@@ -1196,6 +1196,24 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       line-height: 1.35;
     }}
 
+    #disciplinary-research + p + .cards {{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 5mm;
+      column-count: auto;
+      margin: 5mm 0 7mm;
+      break-inside: auto;
+      page-break-inside: auto;
+    }}
+
+    #disciplinary-research + p + .cards > * {{
+      display: block;
+      width: auto;
+      margin: 0;
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+    }}
+
     .program-row,
     .card,
     .person,
@@ -1284,6 +1302,43 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .dean-photo-frame {{
       width: 120px;
+    }}
+
+    #our-associate-deans {{
+      break-after: avoid-page;
+      page-break-after: avoid;
+    }}
+
+    #our-associate-deans + .associate-dean-feature {{
+      break-after: avoid-page;
+      page-break-after: avoid;
+    }}
+
+    #our-associate-deans + .associate-dean-feature,
+    #our-associate-deans + .associate-dean-feature + .associate-dean-feature {{
+      grid-template-columns: 28mm minmax(0, 1fr);
+      gap: 5mm;
+      max-width: none;
+      min-height: 0;
+      margin: 0 0 3mm;
+      padding: 4mm;
+    }}
+
+    #our-associate-deans + .associate-dean-feature .dean-photo-frame,
+    #our-associate-deans + .associate-dean-feature + .associate-dean-feature .dean-photo-frame {{
+      width: 28mm;
+    }}
+
+    #our-associate-deans + .associate-dean-feature h4,
+    #our-associate-deans + .associate-dean-feature + .associate-dean-feature h4 {{
+      font-size: 16pt;
+      line-height: 1.1;
+    }}
+
+    #our-associate-deans + .associate-dean-feature .dean-copy p,
+    #our-associate-deans + .associate-dean-feature + .associate-dean-feature .dean-copy p {{
+      font-size: 9.2pt;
+      line-height: 1.3;
     }}
 
     .email-copy::after {{
