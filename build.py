@@ -769,6 +769,29 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     body {{
       margin: 0;
       background: #e9eff2;
+      font-synthesis: none;
+      font-kerning: normal;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+    }}
+
+    body,
+    .contents-page,
+    .article {{
+      font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    }}
+
+    .contents-page,
+    .page-title,
+    .article,
+    .card,
+    .person,
+    .campus-essential,
+    .prep-briefing-block {{
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      font-synthesis: none;
+      text-shadow: none !important;
     }}
 
     .topbar,
@@ -804,7 +827,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
       width: 100%;
       max-width: none;
       margin: 0;
-      padding: 10mm 11mm 12mm;
+      padding: 8mm 10mm 8mm;
       border: 0;
       box-shadow: none;
       background: #fff;
@@ -816,14 +839,14 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .contents-page .pdf-rule {{
       height: 1pt;
-      margin: 0 0 8mm;
+      margin: 0 0 5mm;
       background: rgba(75, 54, 92, 0.45);
     }}
 
     .contents-page h2 {{
-      margin: 0 0 9mm;
+      margin: 0 0 6mm;
       color: var(--teal);
-      font-size: 27pt;
+      font-size: 24pt;
       font-weight: 800;
       line-height: 1;
       text-transform: uppercase;
@@ -831,11 +854,12 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .contents-row {{
       display: grid;
-      grid-template-columns: 62mm minmax(0, 1fr);
-      gap: 7mm;
+      grid-template-columns: 48mm minmax(0, 1fr);
+      gap: 5mm;
       align-items: start;
-      margin: 0 0 5.5mm;
-      padding: 0 0 5.5mm;
+      min-height: 28mm;
+      margin: 0 0 3mm;
+      padding: 0 0 3mm;
       border-bottom: 0.5pt solid rgba(75, 54, 92, 0.28);
       color: var(--ink);
       break-inside: avoid-page;
@@ -844,21 +868,23 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .contents-row img {{
       display: block;
-      width: 62mm;
+      width: 48mm;
       max-width: 100%;
-      height: auto;
+      height: 28mm;
       align-self: start;
+      object-fit: cover;
     }}
 
     .contents-copy {{
-      padding-left: 7mm;
+      min-height: 28mm;
+      padding-left: 5mm;
       border-left: 0.5pt solid rgba(75, 54, 92, 0.45);
     }}
 
     .contents-copy h3 {{
-      margin: 0 0 3.5mm;
+      margin: 0 0 2.2mm;
       color: var(--teal);
-      font-size: 16pt;
+      font-size: 13pt;
       font-weight: 500;
       line-height: 1.15;
       text-transform: uppercase;
@@ -866,7 +892,7 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
 
     .contents-copy ul {{
       display: grid;
-      gap: 1.4mm;
+      gap: 0.9mm;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -875,9 +901,9 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     .contents-copy li {{
       display: grid;
       grid-template-columns: minmax(0, 1fr) 12mm;
-      gap: 4mm;
+      gap: 3mm;
       color: #3d3d3d;
-      font-size: 9.2pt;
+      font-size: 7.8pt;
       font-weight: 400;
       line-height: 1.2;
       text-transform: uppercase;
@@ -1225,6 +1251,10 @@ def build_browser_pdf() -> None:
                 page.wait_for_load_state("networkidle", timeout=15000)
             except Exception:
                 pass
+            page.evaluate(
+                "() => document.fonts ? document.fonts.ready.then(() => true) : true"
+            )
+            page.wait_for_timeout(250)
             page.pdf(
                 path=str(PDF_OUTPUT),
                 format="A4",
