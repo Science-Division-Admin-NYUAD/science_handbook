@@ -813,14 +813,27 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     }}
 
     .pdf-cover-page {{
+      height: 273mm;
+      overflow: hidden;
       break-after: page;
       page-break-after: always;
     }}
 
     .cover-hero {{
-      min-height: 150mm;
-      margin: 0 0 10mm;
+      width: 100%;
+      height: 273mm;
+      min-height: 0;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      overflow: hidden;
       page-break-inside: avoid;
+    }}
+
+    .cover-hero img {{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }}
 
     .contents-page {{
