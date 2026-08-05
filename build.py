@@ -1095,13 +1095,105 @@ def render_pdf_html(sections: list[dict], nav: list[dict]) -> str:
     }}
 
     #program-specific-groups + p + .cards,
+    #key-contacts + .cards,
+    #our-admin-team + .people-grid,
+    #software-for-administrative-tasks + p + .cards,
     .program-heads,
     .course-prep-briefing {{
       column-count: auto;
     }}
 
-    #program-specific-groups + p + .cards {{
+    #program-specific-groups + p + .cards,
+    #key-contacts + .cards,
+    #our-admin-team + .people-grid {{
       display: grid;
+    }}
+
+    #key-contacts + .cards,
+    #our-admin-team + .people-grid {{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4mm;
+      margin: 4mm 0 6mm;
+      break-inside: auto;
+      page-break-inside: auto;
+    }}
+
+    #key-contacts + .cards > *,
+    #our-admin-team + .people-grid > * {{
+      display: block;
+      width: auto;
+      margin: 0;
+    }}
+
+    #key-contacts + .cards .card,
+    #our-admin-team + .people-grid .person {{
+      padding: 4mm;
+      min-height: 28mm;
+      border-radius: 4px;
+    }}
+
+    #key-contacts + .cards .card h4,
+    #our-admin-team + .people-grid .person h4 {{
+      margin: 0 0 1.5mm;
+      font-size: 11pt;
+      line-height: 1.2;
+    }}
+
+    #key-contacts + .cards .card p,
+    #our-admin-team + .people-grid .person p {{
+      margin: 0 0 1.6mm;
+      font-size: 8.8pt;
+      line-height: 1.35;
+    }}
+
+    #key-contacts + .cards .email,
+    #our-admin-team + .people-grid .email {{
+      display: block;
+      margin-top: 2mm;
+      padding-top: 2mm;
+      font-size: 8.6pt;
+    }}
+
+    #software-for-administrative-tasks + p {{
+      break-after: avoid;
+      page-break-after: avoid;
+    }}
+
+    #software-for-administrative-tasks + p + .cards {{
+      display: block;
+      margin: 3mm 0 6mm;
+      border-top: 0.5pt solid rgba(75, 54, 92, 0.16);
+      break-before: avoid-page;
+      page-break-before: avoid;
+      break-inside: auto;
+      page-break-inside: auto;
+    }}
+
+    #software-for-administrative-tasks + p + .cards > * {{
+      display: grid;
+      grid-template-columns: 35mm minmax(0, 1fr);
+      gap: 5mm;
+      width: auto;
+      margin: 0;
+      padding: 3mm 0;
+      border: 0;
+      border-bottom: 0.5pt solid rgba(75, 54, 92, 0.16);
+      border-radius: 0;
+      background: transparent;
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+    }}
+
+    #software-for-administrative-tasks + p + .cards .card h4 {{
+      margin: 0;
+      font-size: 9pt;
+      line-height: 1.25;
+    }}
+
+    #software-for-administrative-tasks + p + .cards .card p {{
+      margin: 0;
+      font-size: 8.4pt;
+      line-height: 1.35;
     }}
 
     .program-row,
