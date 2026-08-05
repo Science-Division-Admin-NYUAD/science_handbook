@@ -35,7 +35,7 @@ To facilitate a smooth onboarding journey, the Office of Academic Appointments a
 Additional steps for faculty only:
 
 12. Complete the onboarding questionnaire as soon as possible.
-13. Course Preparation: submit your syllabus and order your course books. Please review the updated syllabus checklist, an optional new syllabus template (DOCX), and a document about syllabus revisions.
+13. Course Preparation: submit your syllabus and order your course books. Please review the updated syllabus checklist, an optional new syllabus template, and a document about syllabus revisions.
 
 ### Key Contacts
 
