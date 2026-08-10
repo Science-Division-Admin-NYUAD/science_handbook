@@ -91,6 +91,8 @@ Your NYU ID Card will be available for collection when you arrive at the NYUAD W
 
 If you have difficulty accessing certain campus spaces, please submit a request to Public Safety. Access is approved with the expectation that all required OSHMS and EHS training has been completed, or will be completed as soon as possible. Non-compliance may result in access being revoked. For questions, contact <a class="email-copy" href="mailto:NYUAD.PublicSafetyIDAccess@nyu.edu" data-email="NYUAD.PublicSafetyIDAccess@nyu.edu" aria-label="Copy email address NYUAD.PublicSafetyIDAccess@nyu.edu">Public Safety</a> or call 02 628 7777.
 
+### Visitors & Guest Access: JRNY
+
 ### Work Spaces
 
 Your program administrative coordinator will arrange your workstation or office before you arrive, in line with NYUAD's space assignment policy. Workspaces include a desk, chair, and stationery pack; additional supplies or furniture can be requested through Facilities and the Intranet.
@@ -117,6 +119,12 @@ During your time at NYUAD, you will use various platforms to assist with necessa
 
 ::: cards
 ::: card
+#### AdminLink
+Centralized support for administrative tasks such as catering, travel, procurement, and finance.
+
+For more information, please visit our [AdminLink](http://intranet.nyuad.nyu.edu/administrative-services/administrative-support/adminlink/) page.
+:::
+::: card
 #### AssessNet
 Used for risk assessments, safety inspections, audits, and incident reporting. Contact nyuad.ehs@nyu.edu for login credentials or training.
 :::
@@ -130,7 +138,9 @@ NYU's sponsored-research platform for proposal development, submission, complian
 :::
 ::: card
 #### ChemTracker
-Tracks campus chemical inventory from arrival through disposal. Logistics records purchased chemicals, and lab managers add new lab members. For help, contact nyuad.ehs@nyu.edu. For more info, visit [ChemTracker](https://www.nyu.edu/life/safety-health-wellness/research-and-laboratory-safety/chemical-safety/chemical-inventory0.html?challenge=d06e90d7-4d8f-4b88-9d8c-10b73beb60f1).
+Tracks campus chemical inventory from arrival through disposal. Logistics records purchased chemicals, and lab managers add new lab members. For help, contact nyuad.ehs@nyu.edu.
+
+For more info, visit [ChemTracker](https://www.nyu.edu/life/safety-health-wellness/research-and-laboratory-safety/chemical-safety/chemical-inventory0.html?challenge=d06e90d7-4d8f-4b88-9d8c-10b73beb60f1).
 :::
 ::: card
 #### Concur
@@ -141,12 +151,24 @@ NYU's travel and expense system for booking, expense reports, and reimbursements
 NYUAD's eProcurement system for purchase requisitions. Requests route to budget holders for approval; access and brief training will be arranged. Access ePro through your bookmarks on the [Intranet](http://intranet.nyuad.nyu.edu/).
 :::
 ::: card
+#### iBUY
+NYUAD's procure-to-pay system (P2P) for supplier onboarding, contract requests, sourcing events, and payments for goods and services.
+
+For more information, please visit our [iBuy](http://intranet.nyuad.nyu.edu/administrative-services/financial-services/procurement-payment/buying-goods-and-services/ibuy/) page.
+:::
+::: card
 #### Interfolio
 Platform for faculty hiring, academic workflows, promotion and tenure, and scholarly materials. Access [Interfolio](https://account.interfolio.com/login) with your NYU NetID.
 :::
 ::: card
+#### Procurement Chatbot
+Guidance for procurement, travel, and finance, including PCard use, purchase orders, Purchase Request Forms (PRFs), and other purchasing routes. When unsure, please [*chat* with our *bot*](https://www.chatbase.co/chatbot-iframe/JAUltWPkku_kfMVJB01uX).
+:::
+::: card
 #### Research Central Store
-Stocks research and teaching consumables. Orders can be placed through the walk-in or online service. For inquiries, please email <a class="email-copy" href="mailto:nyuad.researchstores@nyu.edu" data-email="nyuad.researchstores@nyu.edu" aria-label="Copy email address nyuad.researchstores@nyu.edu">nyuad.researchstores@nyu.edu</a>.
+Stocks research and teaching consumables. Orders can be placed through the walk-in or online service.
+
+For inquiries, please email <a class="email-copy" href="mailto:nyuad.researchstores@nyu.edu" data-email="nyuad.researchstores@nyu.edu" aria-label="Copy email address nyuad.researchstores@nyu.edu">nyuad.researchstores@nyu.edu</a>.
 :::
 ::: card
 #### Workday/PeopleSync
