@@ -659,6 +659,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.article h3#ibuy {
+  text-transform: none;
+}
+
 .article h4 {
   margin: 16px 0 4px;
   color: var(--ink);
@@ -1830,15 +1834,24 @@ h1 {
 }
 
 #software-for-administrative-tasks + p + .cards .card p {
+  grid-column: 2;
   margin: 0;
   color: var(--ink);
   line-height: 1.5;
+}
+
+#software-for-administrative-tasks + p + .cards .card p + p {
+  margin-top: 8px;
 }
 
 @media (max-width: 700px) {
   #software-for-administrative-tasks + p + .cards .card {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  #software-for-administrative-tasks + p + .cards .card p {
+    grid-column: 1;
   }
 }
 
