@@ -91,8 +91,6 @@ Your NYU ID Card will be available for collection when you arrive at the NYUAD W
 
 If you have difficulty accessing certain campus spaces, please submit a request to Public Safety. Access is approved with the expectation that all required OSHMS and EHS training has been completed, or will be completed as soon as possible. Non-compliance may result in access being revoked. For questions, contact <a class="email-copy" href="mailto:NYUAD.PublicSafetyIDAccess@nyu.edu" data-email="NYUAD.PublicSafetyIDAccess@nyu.edu" aria-label="Copy email address NYUAD.PublicSafetyIDAccess@nyu.edu">Public Safety</a> or call 02 628 7777.
 
-### Visitors & Guest Access: JRNY
-
 ### Work Spaces
 
 Your program administrative coordinator will arrange your workstation or office before you arrive, in line with NYUAD's space assignment policy. Workspaces include a desk, chair, and stationery pack; additional supplies or furniture can be requested through Facilities and the Intranet.
@@ -159,6 +157,12 @@ For more information, please visit our [iBuy](http://intranet.nyuad.nyu.edu/admi
 ::: card
 #### Interfolio
 Platform for faculty hiring, academic workflows, promotion and tenure, and scholarly materials. Access [Interfolio](https://account.interfolio.com/login) with your NYU NetID.
+:::
+::: card
+#### JRNY
+Visitor registration platform that helps make campus guest access faster, more secure, and easier for visitors, staff, and faculty.
+
+For more information, please visit our [JRNY](http://intranet.nyuad.nyu.edu/administrative-services/safety/campus-safety/campus-visitor-registration/) page.
 :::
 ::: card
 #### Procurement Chatbot
