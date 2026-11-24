@@ -377,7 +377,7 @@ The CRB also houses many faculty labs and research groups, in addition to:
 #### Library and Academic Technology
 
 
-Service to scholars is the primary mission of the [NYUAD Library](https://nyuad.nyu.edu/en/library.html). Members of the NYU community have access to our extensive range of physical and electronic resources, including: over 88,000 physical books; over 6,000 DVDs; over 250,000 e-journals; over 1,400 databases; nearly 3 million e-books; and a wide range of equipment and software to help with research and teaching.
+Service to scholars is the primary mission of the [NYUAD Library](https://nyuad.nyu.edu/en/library.html) (<a class="email-copy" href="mailto:nyuad.library@nyu.edu" data-email="nyuad.library@nyu.edu" aria-label="Copy email address nyuad.library@nyu.edu">nyuad.library@nyu.edu</a>). Members of the NYU community have access to our extensive range of physical and electronic resources, including: over 88,000 physical books; over 6,000 DVDs; over 250,000 e-journals; over 1,400 databases; nearly 3 million e-books; and a wide range of equipment and software to help with research and teaching.
 
 The NYUAD Library is fully connected to NYU Libraries e-resources in New York, providing seamless access for our global scholars. These electronic resources are accessible within the library and remotely. Additionally, if a resource cannot be found in the main collection, eligible borrowers may request it from NYU Bobst Library or other libraries around the world.
 

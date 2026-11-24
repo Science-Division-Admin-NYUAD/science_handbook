@@ -89,6 +89,16 @@ If you are traveling with prescription medication, keep it in your carry-on lugg
 
 Your NYU ID Card will be available for collection when you arrive at the NYUAD Welcome Center. It provides access to most campus spaces, including your workspace, research space, the Library, Fitness Center, and dining spaces. To collect your card, you must first activate your NYU-issued NetID.
 
+You should have received an email with instructions to activate your NetID. If you haven't, follow these steps:
+
+- Go to [NYU Start](https://start.nyu.edu) to set your NetID password and, if you wish, your Google Apps password.
+- Enter your NetID and select Start, then follow the on-screen prompts.
+- Keep a record of the password information you set; you'll need it later.
+- Once you've set your password, log in to [NYUHome](https://home.nyu.edu) or use the link on the NYU Start page.
+- Access NYU email, Calendar, and other services through NYUHome from anywhere with an internet connection. Some services may require VPN when accessed off campus.
+- After logging in, open Preferences in the upper-right corner to create a personalized email address, such as [firstname.lastname@nyu.edu](mailto:firstname.lastname@nyu.edu), and access other account information.
+- For additional help, contact the IT Service Desk at [AskITS@nyu.edu](mailto:AskITS@nyu.edu) or 212-998-3333.
+
 If you have difficulty accessing certain campus spaces, please submit a request to Public Safety. Access is approved with the expectation that all required OSHMS and EHS training has been completed, or will be completed as soon as possible. Non-compliance may result in access being revoked. For questions, contact <a class="email-copy" href="mailto:NYUAD.PublicSafetyIDAccess@nyu.edu" data-email="NYUAD.PublicSafetyIDAccess@nyu.edu" aria-label="Copy email address NYUAD.PublicSafetyIDAccess@nyu.edu">Public Safety</a> or call 02 628 7777.
 
 ### Work Spaces
